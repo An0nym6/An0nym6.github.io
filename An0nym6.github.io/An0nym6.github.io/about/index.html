@@ -5,15 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>欢迎来到 Random Thoughts</title>
-  <meta name="description" content="<p>欢迎来到 Random Thoughts！</p>
-
-">
+  <title>关于</title>
+  <meta name="description" content="©️ Designed by shuq3 & An0nym6">
 
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/scss/main.css">
-  <link rel="canonical" href="/2018/02/12/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-Random-Thoughts.html">
+  <link rel="canonical" href="/about/">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -49,46 +47,36 @@
         <div class="container">
   <div class="row">
     <div class="col-md-8 padding-top">
-      <article itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <div class="title" itemprop="name headline">欢迎来到 Random Thoughts</div>
-    <div class="date" itemprop="datePublished">2018 年 02 月 12 日</div>
-  </header>
-
-  <div class="padding-top" itemprop="articleBody">
-    <p>欢迎来到 Random Thoughts！</p>
-
-<p><a href="https://github.com/shuq3">shuq3</a> 和 <a href="https://github.com/An0nym6">An0nym6</a>（我）共同设计搭建了这个个人博客平台，它的源码被共享在这个 <a href="https://github.com/An0nym6/PersonalBlog2">GitHub 仓库</a> 中。你现在访问的网站由我管理维护，另一个由 shuq3 管理维护的 Random Thoughts 网站运行在 <a href="https://shuq3.github.io/">https://shuq3.github.io/</a> 。</p>
-
-<h4 id="架构">架构</h4>
-<p>Random Thoughts 是基于 <a href="https://jekyllrb.com/">jekyll</a> 架构的静态网站，<a href="https://shuq3.github.io/">https://shuq3.github.io/</a> 和 <a href="https://ranthot.cn/">https://ranthot.cn/</a> 都通过 GitHub 仓库直接运行在 <a href="https://pages.github.com/">GitHub Pages</a> 上。</p>
-
-<p>shuq3 和我曾尝试自行实现博客平台的前后端，并使用 MongoDB、Express、Angular 2 和 Node.js 完成了一个博客平台的雏形（源码被共享在这个 <a href="https://github.com/FerretTeam/FerretsBlog">GitHub 仓库</a> 中），但无奈于其较为高昂的开发与维护成本，我们最终放弃了这个平台。</p>
-
-<p>使用 jekyll 开发博客一个很大的优势就在于你不需要花太多的精力就可以完成成品，并可以一键式地更新你的博文，这也是 shuq3 和我选择使用 jekyll 开发 Random Thoughts 的原因。</p>
-
-<h4 id="评论系统">评论系统</h4>
-<p>缺乏后端和服务器的静态网站需要外接评论系统。我们起初尝试直接映射 GitHub Issues 作为评论系统，但考虑到多数人没有 GitHub 账号，于是我们采用了更为简便的 Valine。Valine 使用 Leancloud 提供的 BaaS 服务实现了评论系统的功能，在一定量的访问下，Leancloud 提供的服务完全免费，同时也免去了复杂的认证流程。</p>
-
-  </div>
-  <!-- 引入评论系统 -->
-  <div>
-  <div class="divider"></div>
-  <div class="comment-title">评论</div>
-  <div id="comment"></div>
+      <!-- 大标题 -->
+<div class="page-title">关于我，An0nym6</div>
+<!-- 第一部分：教育 -->
+<div class="page-subtitle">
+  <i class="fa fa-book" aria-hidden="true"></i>
+  <span>教育</span>
 </div>
-
-<script>
-  new Valine({
-    el: '#comment',
-    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
-    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
-    placeholder: '添加评论',
-  })
-</script>
-
-</article>
-
+<div class="item">
+  <span class="badge badge-secondary">2014 年 8 月至 2018 年 6 月</span>
+  <span>中山大学，数据科学与计算机学院</span>
+</div>
+<!-- 第二部分：经历 -->
+<div class="page-subtitle">
+  <i class="fa fa-code" aria-hidden="true"></i>
+  <span>经历</span>
+</div>
+<div class="item">
+  <span class="badge badge-secondary">2017 年 3 月至 2018 年 6 月</span>
+  <span>中山大学，网络空间安全实验室</span>
+</div>
+<!-- 第三部分：项目摘要 -->
+<div class="page-subtitle">
+  <i class="fa fa-archive" aria-hidden="true"></i>
+  <span>项目</span>
+</div>
+<div class="item">
+  <span class="badge badge-secondary">2018 年 2 月</span>
+  <a href="https://github.com/An0nym6/An0nym6.github.io">Random Thoughts 博客（本网站）</a>
+</div>
+  
     </div>
     <div class="col-md-4 padding-top">
       <div class="card tags">
