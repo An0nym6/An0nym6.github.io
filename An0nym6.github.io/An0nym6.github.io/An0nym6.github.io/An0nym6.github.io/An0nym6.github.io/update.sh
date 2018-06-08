@@ -12,4 +12,3 @@ cp -r _site/. An0nym6.github.io
 cd An0nym6.github.io
 git add -A
 git add -A && git commit -m "更新博文"
-git push
