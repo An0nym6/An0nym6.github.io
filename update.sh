@@ -2,6 +2,9 @@
 
 # 编译网站
 jekyll build
+cd _site
+rm -r An0nym6.github.io
+cd ..
 mv _site/archives.html _site/archives/index.html
 cd An0nym6.github.io
 rm -rf *
