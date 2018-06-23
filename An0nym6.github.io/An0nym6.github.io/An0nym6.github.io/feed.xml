@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-06-08T11:42:32+08:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">如何在不同网络环境下调试网站</title><link href="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="如何在不同网络环境下调试网站" /><published>2018-03-12T12:00:00+08:00</published><updated>2018-03-12T12:00:00+08:00</updated><id>/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99</id><content type="html" xml:base="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html">&lt;p&gt;很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-06-08T11:46:57+08:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">香港澳门之旅</title><link href="/2018/05/13/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85.html" rel="alternate" type="text/html" title="香港澳门之旅" /><published>2018-05-13T12:00:00+08:00</published><updated>2018-05-13T12:00:00+08:00</updated><id>/2018/05/13/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85</id><content type="html" xml:base="/2018/05/13/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85.html">&lt;p&gt;最近和 shuq3 去了一趟香港和澳门，这些是我们在途中拍摄的照片。&lt;/p&gt;
+
+&lt;div id=&quot;photo-container&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;hint&quot;&gt;正在加载...加载完成大约需要 20M 的流量。&lt;/div&gt;
+
+&lt;script&gt;
+  times = 0;
+  interval = setInterval(function() {
+    times += 1;
+    if (times === 87) {
+      clearInterval(interval);
+      $('#hint').html('加载完成！');
+    }
+    $('#photo-container').append('&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Trip%20to%20HK%20%26%20MO/' + times + '.jpg&quot;/&gt;');
+  }, 2000);
+&lt;/script&gt;</content><author><name></name></author><category term="旅行" /><summary type="html">最近和 shuq3 去了一趟香港和澳门，这些是我们在途中拍摄的照片。</summary></entry><entry><title type="html">如何在不同网络环境下调试网站</title><link href="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="如何在不同网络环境下调试网站" /><published>2018-03-12T12:00:00+08:00</published><updated>2018-03-12T12:00:00+08:00</updated><id>/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99</id><content type="html" xml:base="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html">&lt;p&gt;很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fiddler%20%26%20Clumsy/1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
