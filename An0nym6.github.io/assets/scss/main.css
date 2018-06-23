@@ -1,0 +1,195 @@
+html {
+  height: 100%; }
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+  min-height: 100%;
+  position: relative; }
+
+a {
+  text-decoration: none !important;
+  color: #1e88e5; }
+
+.padding-top {
+  padding-top: 16px; }
+
+.page-subtitle {
+  font-size: 1.2rem;
+  padding-top: 16px; }
+  .page-subtitle span {
+    padding-left: 8px; }
+
+.item {
+  padding-top: 16px; }
+  .item span, .item a {
+    padding-left: 8px; }
+
+.page-title {
+  font-size: 1.5rem; }
+
+.year {
+  font-size: 1.2rem;
+  padding-top: 16px; }
+  .year span {
+    padding-left: 8px; }
+
+.post-title {
+  padding-top: 16px; }
+  .post-title a {
+    padding-left: 8px; }
+
+.divider {
+  margin-top: 32px;
+  border-top: 1px solid #e9ecef;
+  height: 1px; }
+
+.comment-title {
+  font-size: 1.5rem;
+  margin: 32px 0px 16px 0px; }
+
+.power {
+  display: none; }
+
+.col-60 {
+  padding-left: 0px; }
+
+textarea {
+  resize: none !important; }
+
+.vwrap {
+  padding: 0.5rem 1.25rem 1.25rem 1.25rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important; }
+  .vwrap .text-right {
+    padding: 0px; }
+    .vwrap .text-right .vsubmit {
+      border-radius: 0.25rem !important; }
+
+.vinfo {
+  display: none !important; }
+
+.txt-center {
+  padding: 0px !important; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 128px;
+  color: #828282; }
+  footer .container {
+    height: 100%; }
+    footer .container .divider {
+      margin-top: 32px;
+      border-top: 1px solid #e9ecef;
+      height: 1px; }
+    footer .container .footer-content {
+      padding-top: 32px;
+      font-size: 0.9rem; }
+      @media (max-width: 767px) {
+        footer .container .footer-content .col-left {
+          text-align: center;
+          padding-bottom: 8px; } }
+      footer .container .footer-content .col-middle {
+        text-align: center;
+        margin: 0 auto; }
+        @media (max-width: 767px) {
+          footer .container .footer-content .col-middle {
+            padding-bottom: 8px; } }
+      footer .container .footer-content .col-right {
+        text-align: right; }
+        @media (max-width: 767px) {
+          footer .container .footer-content .col-right {
+            text-align: center;
+            padding-bottom: 8px; } }
+      footer .container .footer-content .icon {
+        color: #828282;
+        font-size: 1.2rem;
+        padding-right: 4px; }
+
+.avatar {
+  width: 48px;
+  height: 48px; }
+
+.header-title {
+  padding-left: 8px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.2em;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  vertical-align: top; }
+
+main {
+  padding-top: 8px;
+  padding-bottom: 128px; }
+
+.nav-link {
+  padding-left: 30px !important;
+  padding-right: 0 !important; }
+
+.post {
+  margin-bottom: 32px; }
+  .post .title {
+    font-size: 1.5rem; }
+  .post .date {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.9rem; }
+
+.pagination {
+  margin: 0px; }
+
+.chip {
+  line-height: 32px;
+  padding-left: 16px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.09);
+  display: inline-block;
+  margin: 0px 8px 16px 0px; }
+  .chip .tag {
+    color: rgba(0, 0, 0, 0.87); }
+  .chip .count {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: inline-block;
+    color: #ffffff; }
+
+.card-title {
+  font-size: 1.5rem; }
+
+.tags {
+  margin-top: 10px; }
+  @media (max-width: 767px) {
+    .tags {
+      margin-top: 20px; } }
+
+.new-essays {
+  margin-top: 32px; }
+
+.title {
+  font-size: 1.5rem;
+  margin: 10px auto; }
+
+.date {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.9rem; }
+
+img {
+  max-width: 100%; }
+
+.photo {
+  margin-bottom: 16px; }
+
+.container-404 {
+  padding-top: 36px;
+  text-align: center; }
+  .container-404 .code {
+    font-size: 2rem; }
+  .container-404 .suggestion {
+    padding-top: 16px; }
+  .container-404 .button-container {
+    padding-top: 28px; }
+    .container-404 .button-container .support {
+      margin-left: 8px; }
