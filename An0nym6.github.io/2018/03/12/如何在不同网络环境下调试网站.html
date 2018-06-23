@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>如何在不同网络环境下调试网站</title>
+  <meta name="description" content="<p>很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：</p>
+
+">
+
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/scss/main.css">
+  <link rel="canonical" href="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+  <script src="/assets/js/av-min.js"></script>
+  <script src='https://unpkg.com/valine@1.1.9-beta4/dist/Valine.min.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <a href="/">
+      <img class="avatar" src="/assets/img/avatar.png" alt="">
+      <span class="header-title">Random Thoughts</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/archives/">归档</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">关于</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+    <main aria-label="Content">
+      <div>
+        <div class="container">
+  <div class="row">
+    <div class="col-md-8 padding-top">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">如何在不同网络环境下调试网站</div>
+    <div class="date" itemprop="datePublished">2018 年 03 月 12 日</div>
+  </header>
+
+  <div class="padding-top" itemprop="articleBody">
+    <p>很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：</p>
+
+<p><img src="https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fiddler%20%26%20Clumsy/1.jpg" alt="" /></p>
+
+<p>如果你只是想简单地调试调试本地网站，那么这个工具可以满足你的需求。但是使用这种方法只能“放慢”网络，如果你本身的网络环境就很糟糕，加载网站的时间很长，或者你需要更加高级的网络设置，比如设置丢包率，压低带宽值，那么这个工具并不能满足你的需求。这篇文章希望解决的问题是将网络环境可控化，基本的设想是，将外部网站缓存在不受网络环境干扰的内网，然后人工地制造时延、丢包、带宽限制等因素。</p>
+
+<p><img src="https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fiddler%20%26%20Clumsy/2.jpg" alt="" /></p>
+
+<h4 id="代理服务器">代理服务器</h4>
+
+<p>在代理服务器上我们需要用到 Web 调试工具 Fiddler。它本身的功能有很多，在这里我们需要用到的是它的监听功能和 AutoResponder。Fiddler 可以监听当前机器上发出的 HTTP 请求及收到的 HTTP 响应，并可以按照进程 ID 对捕获到的数据进行过滤。AutoResponder 可以使用捕获到的数据模拟 Web 服务器对客户端作出响应。</p>
+
+<p>首先，我们需要使用代理服务器上的浏览器访问我们需要调试的网站，在此期间使用 Fiddler 捕获所有进出的 HTTP 数据包，将它们缓存在本地。然后，我们打开 AutoResponder，它将使用先前缓存的 HTTP 响应回复发往本机 8888 端口的 HTTP 请求。最后，我们还需要设置 Clumsy 来制造我们所需的网络环境。</p>
+
+<p>下图为 AutoResponder 代理 http://www.qq.com：</p>
+
+<p><img src="https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fiddler%20%26%20Clumsy/3.jpg" alt="" /></p>
+
+<p>下图为使用 Clumsy 在 8888 端口上制造我们所需的网络环境：</p>
+
+<p><img src="https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fiddler%20%26%20Clumsy/4.jpg" alt="" /></p>
+
+<h4 id="访问方">访问方</h4>
+
+<p>我们只需要设置浏览器代理，让它将所有 HTTP 请求都发往 代理服务器IP:8888 即可，比如 Chrome 浏览器可以使用插件 SwitchyOmega。至此，我们需要调试的网站所处网络环境就是完全可控的了。</p>
+
+  </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
+
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
+
+</article>
+
+    </div>
+    <div class="col-md-4 padding-top">
+      <div class="card tags">
+        <div class="card-header card-title">
+          标签
+        </div>
+        <div class="card-body">
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/阅读">阅读</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 42%);">2</span>
+                </div>
+              
+            
+          
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/博客">博客</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 51%);">1</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/网络">网络</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 51%);">1</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/旅行">旅行</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 51%);">1</span>
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+      <div class="card new-essays">
+        <div class="card-header card-title">
+          最新文章
+        </div>
+        <ul class="list-group list-group-flush">
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/25/%E5%A4%A7%E8%B0%8B%E5%B0%8F%E8%AE%A1%E4%BA%94%E5%8D%81%E5%B9%B4-%E8%AF%B8%E8%91%9B%E4%BA%AE%E4%BC%A0-%E7%AC%AC%E4%B8%80%E5%8D%B7-%E4%B9%A6%E8%AF%84.html">《大谋小计五十年：诸葛亮传 第一卷》书评</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/25/%E5%A4%A9%E6%89%8D%E5%9C%A8%E5%B7%A6-%E7%96%AF%E5%AD%90%E5%9C%A8%E5%8F%B3-%E4%B9%A6%E8%AF%84.html">《天才在左 疯子在右》书评</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/13/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85.html">香港澳门之旅</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/03/12/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html">如何在不同网络环境下调试网站</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/02/12/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-Random-Thoughts.html">欢迎来到 Random Thoughts</a>
+                </li>
+              
+            
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </main>
+    <footer>
+  <div class="container">
+    <div class="divider"></div>
+    <div class="row footer-content">
+      <div class="col-md col-left">
+        <i class="fa fa-address-card icon" aria-hidden="true"></i>
+        <a href="http://www.miitbeian.gov.cn/">粤ICP备18024086号</a>
+        <span>| Designed by shuq3 & An0nym6</span>
+      </div>
+      <div class="col-md col-middle">
+        <i class="fa fa-github icon" aria-hidden="true"></i>
+        <a href="https://github.com/An0nym6">An0nym6</a>
+      </div>
+      <div class="col-md col-right">
+        <i class="fa fa-envelope-square icon" aria-hidden="true"></i>
+        <a href="mailto:liuren6@gmail.com">liuren6@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
