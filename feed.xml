@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-09-23T10:42:50-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;h1 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-09-23T10:44:50-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+
+&lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Agents are systems that perceive and act in some environment, including humans, robots, softbots, thermostats, etc.&lt;/li&gt;
@@ -27,7 +29,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lecture-2-4&quot;&gt;Lecture 2-4&lt;/h1&gt;
+&lt;h4 id=&quot;lecture-2-4&quot;&gt;Lecture 2-4&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Blind/uninformed search; heuristic/informed search&lt;/li&gt;
@@ -90,7 +92,7 @@
   &lt;li&gt;Why do people have a hard time solving missionaries and cannibals? There are a number of constraints on solutions to this problem, for example, the boat only holds one or two people, you can never have more cannibals than missionaries on either side of the river, etc. Constraints are generally thought of as making it harder to solve a problem.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h1&gt;
+&lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Informed search stratigies:&lt;/li&gt;
@@ -151,7 +153,7 @@
   &lt;li&gt;Branching factor → 1 ⇒ heuristic quality ↑.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h1&gt;
+&lt;h4 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;The success of hill climbing depends very much on the shape of the state-space land-scape: if there are few local maxima and plateaux, random-restart hill climbing will find a good solution very quickly. NP-hard problems typically have an exponential number of local maxima to get stuck on. Despite this, a reasonably good local maximum can often be found after a small number of restarts.&lt;/li&gt;
@@ -159,7 +161,7 @@
   &lt;li&gt;Simulated annealing: T ↓ ⇒ e^(△E / T) → -∞ ⇒ Probability of bad moves ↓&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h1&gt;
+&lt;h4 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;checkers/draughts: like chess; scrabble: like poker.&lt;/li&gt;
@@ -167,7 +169,7 @@
   &lt;li&gt;With “perfect ordering”, the alpha-beta pruning can reduce time complexity to O(b^(m/2)).&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h1&gt;
+&lt;h4 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Methods for imporving backtracking efficiency in CSP:
@@ -180,7 +182,7 @@
   &lt;li&gt;Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.&lt;/li&gt;
   &lt;li&gt;Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).&lt;/li&gt;
   &lt;li&gt;Iterative min-conflicts is often surprisingly effective in solving CSP.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">Lecture 1</summary></entry><entry><title type="html">《三体》书评</title><link href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《三体》书评" /><published>2018-08-17T21:00:00-07:00</published><updated>2018-08-17T21:00:00-07:00</updated><id>/2018/08/17/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★★&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">《三体》书评</title><link href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《三体》书评" /><published>2018-08-17T21:00:00-07:00</published><updated>2018-08-17T21:00:00-07:00</updated><id>/2018/08/17/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★★&lt;/p&gt;
 
 &lt;p&gt;文笔：★★★★☆&lt;/p&gt;
 
