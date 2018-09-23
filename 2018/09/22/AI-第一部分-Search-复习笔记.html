@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AI 第一部分 搜索 复习笔记</title>
+  <meta name="description" content="<h1 id="lecture-1">Lecture 1</h1>
+
+">
+
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/scss/main.css">
+  <link rel="canonical" href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Search-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+  <script src="/assets/js/av-min.js"></script>
+  <script src='https://unpkg.com/valine@1.1.9-beta4/dist/Valine.min.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <a href="/">
+      <img class="avatar" src="/assets/img/avatar.png" alt="">
+      <span class="header-title">Random Thoughts</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/archives/">归档</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">关于</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+    <main aria-label="Content">
+      <div>
+        <div class="container">
+  <div class="row">
+    <div class="col-md-8 padding-top">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">AI 第一部分 搜索 复习笔记</div>
+    <div class="date" itemprop="datePublished">2018 年 09 月 22 日</div>
+  </header>
+
+  <div class="padding-top" itemprop="articleBody">
+    <h1 id="lecture-1">Lecture 1</h1>
+
+<ol>
+  <li>Agents are systems that perceive and act in some environment, including humans, robots, softbots, thermostats, etc.</li>
+  <li>Environment is world in which agent operates.</li>
+  <li>Cognitive Cycle: Perception, Memory Access, Decision, Learning, Action.</li>
+  <li>The agent function is a mathematical relationship that maps percept sequences to actions in the environment.</li>
+  <li>The agent function is computed by an agent program; the agent program runs on the physical architecture to implement the function.</li>
+  <li>A rational agent chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date and the prior environment knowledge.</li>
+  <li>PEAS description of the task environment:
+    <ul>
+      <li>Performance: Measure for success/progress/quality;</li>
+      <li>Environment: The world in which the agent operates;</li>
+      <li>Actuators: How the agent affects the environment;</li>
+      <li>Sensors: How the agent perceives the environment.</li>
+    </ul>
+  </li>
+  <li>Environment Types: fully vs. partially observable; deterministic vs. stochastic; episodic vs. sequential; static vs. dynamic; discrete vs. continuous; single vs. multi-agent.</li>
+  <li>Four basic kinds of agent programs:
+    <ul>
+      <li>Simple reflex agents: Select action on the basis of only the current percept;</li>
+      <li>Model-based reflex agents: To tackle partially observable environments; maintain internal state representing best estimate of current world situation; over time update state using world knowledge;</li>
+      <li>Goal-based agents: Goals describe what agent wants; by changing goals, can change what agent does in same situation;</li>
+      <li>Utility-based agents: Some solutions may be “better” – have higher utility; utility function maps a (sequence of) state(s) onto a real number which can help in optimization or in arbitration among goals or solutions;</li>
+      <li>All can be turned into learning agents; And a more complex variation is Hybrid agents.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="lecture-2-4">Lecture 2-4</h1>
+
+<ol>
+  <li>Blind/uninformed search; heuristic/informed search</li>
+  <li>Uninformed search stratigies:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>BFS</th>
+      <th>Uniform Cost</th>
+      <th>DFS</th>
+      <th>Depth limited</th>
+      <th>Iterative deepening</th>
+      <th>Bidirectional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complete?</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Optimal?</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>b^d</td>
+      <td>b^(1 + C* / ε)</td>
+      <td>b^m</td>
+      <td>b^l</td>
+      <td>b^d</td>
+      <td>b^(d / 2)</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>b^d</td>
+      <td>b^(1 + C* / ε)</td>
+      <td>b * m</td>
+      <td>b * l</td>
+      <td>b * d</td>
+      <td>b^(d / 2)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Why do people have a hard time solving missionaries and cannibals? There are a number of constraints on solutions to this problem, for example, the boat only holds one or two people, you can never have more cannibals than missionaries on either side of the river, etc. Constraints are generally thought of as making it harder to solve a problem.</li>
+</ol>
+
+<h1 id="lecture-5">Lecture 5</h1>
+
+<ol>
+  <li>Informed search stratigies:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>BestFS</th>
+      <th>A*</th>
+      <th>RBFS</th>
+      <th>((S)MA*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complete?</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y (same as A*)</td>
+      <td>Y (if solution is reachable)</td>
+    </tr>
+    <tr>
+      <td>Optimal?</td>
+      <td>N</td>
+      <td>Y (if admissible (Tree Search) or consistent (Graph Search))</td>
+      <td>Y (same as A*)</td>
+      <td>Y (if solution is reachable)</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>b^m</td>
+      <td>A* expands all nodes with f(n) &lt; C* (C* is cost of optimal path); some nodes with f(n) = C<em>; no nodes with f(n) &gt; C</em></td>
+      <td>hard</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>b^m</td>
+      <td>Exponential</td>
+      <td>b * d</td>
+      <td>constant</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>A heuristic is admissible if it never overestimates the cost to reach the goal.</li>
+  <li>A heuristic is consistent if for every node n and every successor n’ of n generated by any action: h(n) ≤ c(n, a, n’) + h(n’). A consistent heuristic is also admissible. It is rare for an admissible heuristic to be inconsistent.</li>
+  <li>Memory-Bounded Heuristic Search:
+    <ul>
+      <li>Iterative-deepening A* (IDA*): Cutoff information is the f-cost (g + h) instead of depth;</li>
+      <li>Recursive best-first search (RBFS): Search depth-first, only keep current path and branches from it in memory (saves memory over keeping entire level); Keep track of f value (f-limit) of best sibling of path currently exploring; a bit more efficient than IDA*;</li>
+      <li>(Simple) Memory-bounded A* ((S)MA*): Drop the worst-leaf node when memory is full.</li>
+    </ul>
+  </li>
+  <li>Branching factor → 1 ⇒ heuristic quality ↑.</li>
+</ol>
+
+<h1 id="lecture-6">Lecture 6</h1>
+
+<ol>
+  <li>The success of hill climbing depends very much on the shape of the state-space land-scape: if there are few local maxima and plateaux, random-restart hill climbing will find a good solution very quickly. NP-hard problems typically have an exponential number of local maxima to get stuck on. Despite this, a reasonably good local maximum can often be found after a small number of restarts.</li>
+  <li>Local beam search: Start with k randomly generated nodes; generate all successors of each of the k; keep the best k out of the them; repeat till goal or stop condition reached.</li>
+  <li>Simulated annealing: T ↓ ⇒ e^(△E / T) → -∞ ⇒ Probability of bad moves ↓</li>
+</ol>
+
+<h1 id="lecture-7">Lecture 7</h1>
+
+<ol>
+  <li>checkers/draughts: like chess; scrabble: like poker.</li>
+  <li>Minimax: Complete? Y; Optimal? Y; Time? O(b^m); Space? O(b * m) or O(m).</li>
+  <li>With “perfect ordering”, the alpha-beta pruning can reduce time complexity to O(b^(m/2)).</li>
+</ol>
+
+<h1 id="lecture-8">Lecture 8</h1>
+
+<ol>
+  <li>Methods for imporving backtracking efficiency in CSP:
+    <ul>
+      <li>Most constrained variable (minimum remaining values (MRV) heuristic): Choose the variable with the fewest legal values;</li>
+      <li>Most constraining variable: Choose the variable with the most constraints on remaining variables;</li>
+      <li>Least constraining value: Given a variable, choose the one that rules out the fewest values in the remaining variables.</li>
+    </ul>
+  </li>
+  <li>Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.</li>
+  <li>Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).</li>
+  <li>Iterative min-conflicts is often surprisingly effective in solving CSP.</li>
+</ol>
+
+  </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
+
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
+
+</article>
+
+    </div>
+    <div class="col-md-4 padding-top">
+      <div class="card tags">
+        <div class="card-header card-title">
+          标签
+        </div>
+        <div class="card-body">
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/阅读">阅读</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 42%);">3</span>
+                </div>
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/博客">博客</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 54%);">1</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/网络">网络</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 54%);">1</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/旅行">旅行</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 54%);">1</span>
+                </div>
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/学习笔记">学习笔记</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 54%);">1</span>
+                </div>
+              
+            
+          
+        </div>
+      </div>
+      <div class="card new-essays">
+        <div class="card-header card-title">
+          最新文章
+        </div>
+        <ul class="list-group list-group-flush">
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Search-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">AI 第一部分 搜索 复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">《三体》书评</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/24/%E5%A4%A7%E8%B0%8B%E5%B0%8F%E8%AE%A1%E4%BA%94%E5%8D%81%E5%B9%B4-%E8%AF%B8%E8%91%9B%E4%BA%AE%E4%BC%A0-%E7%AC%AC%E4%B8%80%E5%8D%B7-%E4%B9%A6%E8%AF%84.html">《大谋小计五十年：诸葛亮传 第一卷》书评</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/24/%E5%A4%A9%E6%89%8D%E5%9C%A8%E5%B7%A6-%E7%96%AF%E5%AD%90%E5%9C%A8%E5%8F%B3-%E4%B9%A6%E8%AF%84.html">《天才在左 疯子在右》书评</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/05/12/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85.html">香港澳门之旅</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/03/11/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%B0%83%E8%AF%95%E7%BD%91%E7%AB%99.html">如何在不同网络环境下调试网站</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2018/02/11/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-Random-Thoughts.html">欢迎来到 Random Thoughts</a>
+                </li>
+              
+            
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </main>
+    <footer>
+  <div class="container">
+    <div class="divider"></div>
+    <div class="row footer-content">
+      <div class="col-md col-left">
+        <i class="fa fa-address-card icon" aria-hidden="true"></i>
+        <a href="http://www.miitbeian.gov.cn/">粤ICP备18024086号</a>
+        <span>| Designed by shuq3 & An0nym6</span>
+      </div>
+      <div class="col-md col-middle">
+        <i class="fa fa-github icon" aria-hidden="true"></i>
+        <a href="https://github.com/An0nym6">An0nym6</a>
+      </div>
+      <div class="col-md col-right">
+        <i class="fa fa-envelope-square icon" aria-hidden="true"></i>
+        <a href="mailto:liuren6@gmail.com">liuren6@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

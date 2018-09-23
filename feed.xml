@@ -1,4 +1,186 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-18T16:41:28-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">《三体》书评</title><link href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《三体》书评" /><published>2018-08-17T21:00:00-07:00</published><updated>2018-08-17T21:00:00-07:00</updated><id>/2018/08/17/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★★&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-09-23T10:41:16-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">AI 第一部分 搜索 复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Search-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分 搜索 复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%20Search%20%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Search-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;h1 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Agents are systems that perceive and act in some environment, including humans, robots, softbots, thermostats, etc.&lt;/li&gt;
+  &lt;li&gt;Environment is world in which agent operates.&lt;/li&gt;
+  &lt;li&gt;Cognitive Cycle: Perception, Memory Access, Decision, Learning, Action.&lt;/li&gt;
+  &lt;li&gt;The agent function is a mathematical relationship that maps percept sequences to actions in the environment.&lt;/li&gt;
+  &lt;li&gt;The agent function is computed by an agent program; the agent program runs on the physical architecture to implement the function.&lt;/li&gt;
+  &lt;li&gt;A rational agent chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date and the prior environment knowledge.&lt;/li&gt;
+  &lt;li&gt;PEAS description of the task environment:
+    &lt;ul&gt;
+      &lt;li&gt;Performance: Measure for success/progress/quality;&lt;/li&gt;
+      &lt;li&gt;Environment: The world in which the agent operates;&lt;/li&gt;
+      &lt;li&gt;Actuators: How the agent affects the environment;&lt;/li&gt;
+      &lt;li&gt;Sensors: How the agent perceives the environment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Environment Types: fully vs. partially observable; deterministic vs. stochastic; episodic vs. sequential; static vs. dynamic; discrete vs. continuous; single vs. multi-agent.&lt;/li&gt;
+  &lt;li&gt;Four basic kinds of agent programs:
+    &lt;ul&gt;
+      &lt;li&gt;Simple reflex agents: Select action on the basis of only the current percept;&lt;/li&gt;
+      &lt;li&gt;Model-based reflex agents: To tackle partially observable environments; maintain internal state representing best estimate of current world situation; over time update state using world knowledge;&lt;/li&gt;
+      &lt;li&gt;Goal-based agents: Goals describe what agent wants; by changing goals, can change what agent does in same situation;&lt;/li&gt;
+      &lt;li&gt;Utility-based agents: Some solutions may be “better” – have higher utility; utility function maps a (sequence of) state(s) onto a real number which can help in optimization or in arbitration among goals or solutions;&lt;/li&gt;
+      &lt;li&gt;All can be turned into learning agents; And a more complex variation is Hybrid agents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;lecture-2-4&quot;&gt;Lecture 2-4&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Blind/uninformed search; heuristic/informed search&lt;/li&gt;
+  &lt;li&gt;Uninformed search stratigies:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;BFS&lt;/th&gt;
+      &lt;th&gt;Uniform Cost&lt;/th&gt;
+      &lt;th&gt;DFS&lt;/th&gt;
+      &lt;th&gt;Depth limited&lt;/th&gt;
+      &lt;th&gt;Iterative deepening&lt;/th&gt;
+      &lt;th&gt;Bidirectional&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Complete?&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Optimal?&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Time&lt;/td&gt;
+      &lt;td&gt;b^d&lt;/td&gt;
+      &lt;td&gt;b^(1 + C* / ε)&lt;/td&gt;
+      &lt;td&gt;b^m&lt;/td&gt;
+      &lt;td&gt;b^l&lt;/td&gt;
+      &lt;td&gt;b^d&lt;/td&gt;
+      &lt;td&gt;b^(d / 2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Space&lt;/td&gt;
+      &lt;td&gt;b^d&lt;/td&gt;
+      &lt;td&gt;b^(1 + C* / ε)&lt;/td&gt;
+      &lt;td&gt;b * m&lt;/td&gt;
+      &lt;td&gt;b * l&lt;/td&gt;
+      &lt;td&gt;b * d&lt;/td&gt;
+      &lt;td&gt;b^(d / 2)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Why do people have a hard time solving missionaries and cannibals? There are a number of constraints on solutions to this problem, for example, the boat only holds one or two people, you can never have more cannibals than missionaries on either side of the river, etc. Constraints are generally thought of as making it harder to solve a problem.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Informed search stratigies:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;BestFS&lt;/th&gt;
+      &lt;th&gt;A*&lt;/th&gt;
+      &lt;th&gt;RBFS&lt;/th&gt;
+      &lt;th&gt;((S)MA*)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Complete?&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+      &lt;td&gt;Y (same as A*)&lt;/td&gt;
+      &lt;td&gt;Y (if solution is reachable)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Optimal?&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+      &lt;td&gt;Y (if admissible (Tree Search) or consistent (Graph Search))&lt;/td&gt;
+      &lt;td&gt;Y (same as A*)&lt;/td&gt;
+      &lt;td&gt;Y (if solution is reachable)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Time&lt;/td&gt;
+      &lt;td&gt;b^m&lt;/td&gt;
+      &lt;td&gt;A* expands all nodes with f(n) &amp;lt; C* (C* is cost of optimal path); some nodes with f(n) = C&lt;em&gt;; no nodes with f(n) &amp;gt; C&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;hard&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Space&lt;/td&gt;
+      &lt;td&gt;b^m&lt;/td&gt;
+      &lt;td&gt;Exponential&lt;/td&gt;
+      &lt;td&gt;b * d&lt;/td&gt;
+      &lt;td&gt;constant&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A heuristic is admissible if it never overestimates the cost to reach the goal.&lt;/li&gt;
+  &lt;li&gt;A heuristic is consistent if for every node n and every successor n’ of n generated by any action: h(n) ≤ c(n, a, n’) + h(n’). A consistent heuristic is also admissible. It is rare for an admissible heuristic to be inconsistent.&lt;/li&gt;
+  &lt;li&gt;Memory-Bounded Heuristic Search:
+    &lt;ul&gt;
+      &lt;li&gt;Iterative-deepening A* (IDA*): Cutoff information is the f-cost (g + h) instead of depth;&lt;/li&gt;
+      &lt;li&gt;Recursive best-first search (RBFS): Search depth-first, only keep current path and branches from it in memory (saves memory over keeping entire level); Keep track of f value (f-limit) of best sibling of path currently exploring; a bit more efficient than IDA*;&lt;/li&gt;
+      &lt;li&gt;(Simple) Memory-bounded A* ((S)MA*): Drop the worst-leaf node when memory is full.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Branching factor → 1 ⇒ heuristic quality ↑.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The success of hill climbing depends very much on the shape of the state-space land-scape: if there are few local maxima and plateaux, random-restart hill climbing will find a good solution very quickly. NP-hard problems typically have an exponential number of local maxima to get stuck on. Despite this, a reasonably good local maximum can often be found after a small number of restarts.&lt;/li&gt;
+  &lt;li&gt;Local beam search: Start with k randomly generated nodes; generate all successors of each of the k; keep the best k out of the them; repeat till goal or stop condition reached.&lt;/li&gt;
+  &lt;li&gt;Simulated annealing: T ↓ ⇒ e^(△E / T) → -∞ ⇒ Probability of bad moves ↓&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;checkers/draughts: like chess; scrabble: like poker.&lt;/li&gt;
+  &lt;li&gt;Minimax: Complete? Y; Optimal? Y; Time? O(b^m); Space? O(b * m) or O(m).&lt;/li&gt;
+  &lt;li&gt;With “perfect ordering”, the alpha-beta pruning can reduce time complexity to O(b^(m/2)).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Methods for imporving backtracking efficiency in CSP:
+    &lt;ul&gt;
+      &lt;li&gt;Most constrained variable (minimum remaining values (MRV) heuristic): Choose the variable with the fewest legal values;&lt;/li&gt;
+      &lt;li&gt;Most constraining variable: Choose the variable with the most constraints on remaining variables;&lt;/li&gt;
+      &lt;li&gt;Least constraining value: Given a variable, choose the one that rules out the fewest values in the remaining variables.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.&lt;/li&gt;
+  &lt;li&gt;Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).&lt;/li&gt;
+  &lt;li&gt;Iterative min-conflicts is often surprisingly effective in solving CSP.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">Lecture 1</summary></entry><entry><title type="html">《三体》书评</title><link href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《三体》书评" /><published>2018-08-17T21:00:00-07:00</published><updated>2018-08-17T21:00:00-07:00</updated><id>/2018/08/17/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★★&lt;/p&gt;
 
 &lt;p&gt;文笔：★★★★☆&lt;/p&gt;
 
