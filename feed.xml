@@ -1,4 +1,218 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-09-23T20:22:42-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-10-10T10:30:17-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">算法期中复习笔记</title><link href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期中复习笔记" /><published>2018-10-09T21:00:00-07:00</published><updated>2018-10-09T21:00:00-07:00</updated><id>/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+
+&lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;we say f(n) = O(g(n)) if g(n) eventually dominates f(n). Formally: there exists a constant c such that for all sufficiently large n: f(n) ≤ c * g(n). The definition for Ω is similar to the definition for O. If f(n) = O(g(n)) and f(n) = Ω(g(n)), then f(n) = Θ(g(n)).
+    &lt;ul&gt;
+      &lt;li&gt;(1/3)^n + 100 = O(1) is True.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The handshaking theorem: 2 * E = Σx∈V deg(x) (undirected graph)&lt;/li&gt;
+  &lt;li&gt;Adjacency List Representation is used for representation of the sparse (E = O(V)) graphs; Adjacency Matrix Representation is used for representation of the dense (E = Ω(V^2)) graphs.
+    &lt;ul&gt;
+      &lt;li&gt;Maximally sparse connected graph: tree;&lt;/li&gt;
+      &lt;li&gt;Maximally dense connected graph: complete graph Kn.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Linear time topological sort for DAG algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;Select a vertex;&lt;/li&gt;
+      &lt;li&gt;Run DFS and return vertices that has no undiscovered leaving edges;&lt;/li&gt;
+      &lt;li&gt;May run DFS several times.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is strongly connected graphs:
+    &lt;ul&gt;
+      &lt;li&gt;Select a vertex;&lt;/li&gt;
+      &lt;li&gt;Run DFS, if some vertices are not reachable, stop;&lt;/li&gt;
+      &lt;li&gt;Construct GT and run DFS again, if some vertices are not reachable, stop.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Euler’s Formula: If G is a connected planar graph, then V – E + F = 2 (proof is by induction).&lt;/li&gt;
+  &lt;li&gt;4 Color Theorem: Any simple planar graph can be colored with less than or equal to 4 colors.&lt;/li&gt;
+  &lt;li&gt;A graph is bipartite if the vertices can be partitioned into two disjoint sets. A subset of edges is a matching if no two edges have a common vertex.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-2&quot;&gt;Lecture 2&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Complete Binary Tree: completely filled, except the bottom level that is filled from left to right; and a binary heap is a complete binary tree which satisfies the heap ordering property.&lt;/li&gt;
+  &lt;li&gt;In heap, consider the k-th element of the array:
+    &lt;ul&gt;
+      &lt;li&gt;Its left child is located at 2 * k index;&lt;/li&gt;
+      &lt;li&gt;Its right child is located at 2 * k + 1 index;&lt;/li&gt;
+      &lt;li&gt;Its parent is located at k / 2 index.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Heap operations:
+    &lt;ul&gt;
+      &lt;li&gt;Insert: insert at the end, then percolate it up by swapping positions with the parent, if it’s necessary;&lt;/li&gt;
+      &lt;li&gt;deleteMin: move the last element of the heap to the root and then restore the heap property by percolating down; So the complexity for heap sort is O(n * log n)&lt;/li&gt;
+      &lt;li&gt;decreaseKey: restore a heap property by percolating up this item;&lt;/li&gt;
+      &lt;li&gt;buildHeap: by insertion: O(n * log n); heapify: O(n).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Binomial heap operations:
+    &lt;ul&gt;
+      &lt;li&gt;merge: make the larger root to be the child of the smaller root. Complexity: O(log n);&lt;/li&gt;
+      &lt;li&gt;deleteMin: find the binomial tree that contains the min; delete the root and move subtrees to top list; then merge the binomial trees. Complexity: O(log n);&lt;/li&gt;
+      &lt;li&gt;insert: merge trees.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Amortized analysis gives the average performance (over time) of each operation in the worst case.
+    &lt;ul&gt;
+      &lt;li&gt;The amortized cost of insertion of Binomial heap is constant O(2).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Complexities:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Binary&lt;/th&gt;
+      &lt;th&gt;Binomial&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;findMin&lt;/td&gt;
+      &lt;td&gt;Θ(1)&lt;/td&gt;
+      &lt;td&gt;Θ(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;deleteMin&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;insert&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+      &lt;td&gt;Θ(1) (amortized complexity)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;decreaseKey&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;merge&lt;/td&gt;
+      &lt;td&gt;Θ(n)&lt;/td&gt;
+      &lt;td&gt;Θ(log n)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;lecture-3&quot;&gt;Lecture 3&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Scheduling Problem: early finish time first. Complexity: O(n * log n).&lt;/li&gt;
+  &lt;li&gt;Minimum Spanning Tree:
+    &lt;ul&gt;
+      &lt;li&gt;Kruskal’s Algorithm: Continue choosing the minimum weight edge that will not create a cycle until all vertices are connected.
+        &lt;ul&gt;
+          &lt;li&gt;Sorting edges: O(E * log E);&lt;/li&gt;
+          &lt;li&gt;Cycle detection: O(V);&lt;/li&gt;
+          &lt;li&gt;Total: O(E * log E + E * V).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Prim’s Algorithm: Start with an arbitrary vertex as a sub-tree C; Expand C by adding a vertex having the minimum weight edge of the graph having exactly one end point in C; Update distances from C to adjacent vertices; Continue doing this until all vertices are connected.
+        &lt;ul&gt;
+          &lt;li&gt;If we use an array to maintain vertices distance to C, then findMin / deleteMin needs O(V), and update needs O(1). Complexity: O(V ^ 2 + E);&lt;/li&gt;
+          &lt;li&gt;If we use a heap, then findMin / deleteMin needs O(log V), and update needs O(log V). Complexity: O(V * log V + E * log V);&lt;/li&gt;
+          &lt;li&gt;If graph is dense -&amp;gt; array; if graph is sparse -&amp;gt; heap.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;If a connected undirected graph G = (V, E) has V + 10000 edges, we can find an MST of G in O(V) runtime.
+        &lt;ul&gt;
+          &lt;li&gt;True. Randomly generate a spanning tree (O(n)), for each edge in the last 10000 edges, add it to the tree, delete the max edge in the cycle (O(n)). So the total complexity should be 10000 * O(n) = O(n).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The Shortest Path Problem:
+    &lt;ul&gt;
+      &lt;li&gt;Dijkstra’s Algorithm: almost identical to Prim’s algorithm, but picks the shortest path from the source. It’s complexity is same as Prim’s Algorithm.
+        &lt;ul&gt;
+          &lt;li&gt;If priority queue is an array: O(V ^ 2 + E);&lt;/li&gt;
+          &lt;li&gt;If priority queue is a heap: O(V * log V + E * log V);&lt;/li&gt;
+          &lt;li&gt;If graph is dense (E = V ^ 2) -&amp;gt; array O(V ^ 2); if graph is sparse -&amp;gt; heap O(V * log V)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-4&quot;&gt;Lecture 4&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The Master Theorem: T(n) = a * T(n / b) + f(n), where a ≥ 1 and b &amp;gt; 1 are constants and f(n) is a positive function, c = logb(a):
+    &lt;ul&gt;
+      &lt;li&gt;Case 1: if f(n) = O(n^(c-ε)), then T(n) = Θ(n ^ c); (only leaves)&lt;/li&gt;
+      &lt;li&gt;Case 2: if f(n) = Θ(n^c * (log n) ^ k), k ≥ 0, then T(n) = Θ(n^c * (log n)^(k + 1)); (all nodes)&lt;/li&gt;
+      &lt;li&gt;Case 3: if f(n) = Ω(n^(c+ε)), then T(n) = Θ(f(n)); (only internal nodes)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Closest pair of points: T(n) = 2 * T(n / 2) + O(n * log n), so the complexity should be Θ(n * (log n) ^ 2)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Two Approaches for DP:
+    &lt;ul&gt;
+      &lt;li&gt;Memoization: a top-down approach;&lt;/li&gt;
+      &lt;li&gt;Tabulation: a bottom-up approach.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pseudo-Polynomial Algorithm: A numeric algorithm runs in pseudo-polynomial time if its running time is polynomial in the numeric value of the input, but is exponential in the length of the input: T(n) = Θ(n·W).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Basic steps for DP:
+    &lt;ul&gt;
+      &lt;li&gt;Define subproblems;&lt;/li&gt;
+      &lt;li&gt;Write the recurrence relation;&lt;/li&gt;
+      &lt;li&gt;Construct the solution in bottom-up way;&lt;/li&gt;
+      &lt;li&gt;Compute its runtime complexity.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bellman-Ford Algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;How would you apply the Bellman-Ford algorithm to find out if a graph has a negative cycle? Run 1 more round for k = V, if the distance reduced for some point, there must be a negative cycle.&lt;/li&gt;
+      &lt;li&gt;Complexity: O(E * V).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;D[v, 0] = INFINITY for all v != s
+D[s, k] = 0 for all k
+for k = 1 to V-1 do
+  for each v in V do
+    for each neighbor w of v do
+      D[v, k] = min(D[v, k - 1], c(w, v) + D[w, k - 1])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Floyd-Warshall Algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;If the diagonal has negative numbers, then there must be a negative cycle.&lt;/li&gt;
+      &lt;li&gt;How do we extract the shortest path? Every time we update D[i, j], we set P[i, j] to k. Then we recursively compute the shortest path from from i to k = P[i, j] and the path from from k = P[i, j] to j.&lt;/li&gt;
+      &lt;li&gt;Complexity: O(V ^ 3)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;D[i, j, 0] = c[i, j] for all i and j
+for k = 1 ... V do
+  for i = 1 ... V do
+    for j = 1 ... V do
+      D[i, j, k] = min (D[i, j, k - 1], D[i, k, k - 1] + D[k, j, k - 1])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
 
