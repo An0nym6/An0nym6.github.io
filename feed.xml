@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-10-10T10:30:17-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">算法期中复习笔记</title><link href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期中复习笔记" /><published>2018-10-09T21:00:00-07:00</published><updated>2018-10-09T21:00:00-07:00</updated><id>/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-10-27T15:48:16-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">算法期中复习笔记</title><link href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期中复习笔记" /><published>2018-10-09T21:00:00-07:00</published><updated>2018-10-09T21:00:00-07:00</updated><id>/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
 
@@ -212,7 +212,270 @@ for k = 1 ... V do
   for i = 1 ... V do
     for j = 1 ... V do
       D[i, j, k] = min (D[i, j, k - 1], D[i, k, k - 1] + D[k, j, k - 1])
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第二部分“逻辑”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第二部分“逻辑”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E2%80%9C%E9%80%BB%E8%BE%91%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+
+&lt;h4 id=&quot;lecture-9-10&quot;&gt;Lecture 9-10&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Syntax (语法): how sentences are expressed; semantics (语义): meaning of the sentence, e.g., truth value.&lt;/li&gt;
+  &lt;li&gt;If a sentence α is true in model m, we say m satisfies α, or m is a model of α:
+    &lt;ul&gt;
+      &lt;li&gt;M(α) is the set of all models of α; M(KB) is the set of all models of KB;&lt;/li&gt;
+      &lt;li&gt;KB ⊨ α if and only if M(KB) is a subset M(α).&lt;/li&gt;
+      &lt;li&gt;KB ⊨ α: KB entails sentence α, if and only if, α is true in all worlds where KB is true.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Entailment (⊨) is different from inference (⊢). Think of inference a the process of finding the entailment:
+    &lt;ul&gt;
+      &lt;li&gt;KB ⊢i α = sentence α can be derived from KB by procedure i.&lt;/li&gt;
+      &lt;li&gt;Soundness: i is sound if whenever KB ⊢i α, it is also true that KB ⊨ α.&lt;/li&gt;
+      &lt;li&gt;Completeness: i is complete if whenever KB ⊨ α, it is also true that KB ⊢i α.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Proof methods:
+    &lt;ol&gt;
+      &lt;li&gt;Model checking: Truth table enumeration (sound and complete); Heuristic search in model space (sound but incomplete);&lt;/li&gt;
+      &lt;li&gt;Application of inference rules.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A sentence is valid if it is true in all models (tautologies); A sentence is satisfiable if it is true in at least one model.
+    &lt;ul&gt;
+      &lt;li&gt;α is valid if and only if ¬α is unsatisfiable;&lt;/li&gt;
+      &lt;li&gt;α is satisfiable if and only if ¬α is not valid.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Names for important tautologies:
+    &lt;ul&gt;
+      &lt;li&gt;Commutativity of ⋀ / ⋁: 交换律&lt;/li&gt;
+      &lt;li&gt;Associativity of ⋀ / ⋁: 结合律&lt;/li&gt;
+      &lt;li&gt;Double-negation elimination&lt;/li&gt;
+      &lt;li&gt;Contraposition: α ⇒ β ⇔ ¬β ⇒ ¬α&lt;/li&gt;
+      &lt;li&gt;Implication elimination&lt;/li&gt;
+      &lt;li&gt;Biconditional elimination&lt;/li&gt;
+      &lt;li&gt;De Morgan&lt;/li&gt;
+      &lt;li&gt;Distributivity of ⋀ / ⋁ over ⋁ / ⋀: 分配律&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;α ⊨ β if and only if the sentence (α ⋀ ¬β) is unsatisfiable.&lt;/li&gt;
+  &lt;li&gt;Names for inference rules:
+    &lt;ul&gt;
+      &lt;li&gt;Modus ponens: from α ⇒ β, α, we get β&lt;/li&gt;
+      &lt;li&gt;Modus tollens: from α ⇒ β, ¬β, we get ¬α&lt;/li&gt;
+      &lt;li&gt;And-elimination: from α ⋀ β, we get α&lt;/li&gt;
+      &lt;li&gt;Or-introduction: from α, we get α ⋁ β&lt;/li&gt;
+      &lt;li&gt;Both directions of all tautologies like contraposition: (α ⇒ β) ⇔ (¬β ⇒ ¬α)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-11-12&quot;&gt;Lecture 11-12&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Resolution Inference: Complete when coupled with complete search algorithm.
+    &lt;ul&gt;
+      &lt;li&gt;To prove that KB ⊨ α, we show that (KB ⋀ ¬α) is unsatisfiable:
+        &lt;ol&gt;
+          &lt;li&gt;Convert (KB ⋀ ¬α) to CNF;&lt;/li&gt;
+          &lt;li&gt;Apply the resolution rule wherever possible and add the result as an additional clause in the conjunction;&lt;/li&gt;
+          &lt;li&gt;Repeat step 2 until either:
+            &lt;ul&gt;
+              &lt;li&gt;No new clauses can be added: KB does not entail α.&lt;/li&gt;
+              &lt;li&gt;Two clauses resolve to yield the empty clause: KB entails α.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If each clause is a horn clause in KB and the queries are atomic, then we can use linear-time algorithm forward chaining and backward chaining to do the inference. Complexity for backward chaining can be much less than linear in size of KB.&lt;/li&gt;
+  &lt;li&gt;Symbols for constants, predicates and functions usually start with upper-case letters; Variables are written in lowercase letters.&lt;/li&gt;
+  &lt;li&gt;⇒ is a natural connective to use with ∀; ⋀ is a natural connective to use with ∃.&lt;/li&gt;
+  &lt;li&gt;De Morgan for quantifier negation: ¬∀x P ⇔ ∃x ¬P.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-13&quot;&gt;Lecture 13&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A ground literal’s terms are all ground terms; A ground term is a term without variables.&lt;/li&gt;
+  &lt;li&gt;SUBST(θ, α): rewrite a sentence, α, by applying substitution, θ.&lt;/li&gt;
+  &lt;li&gt;For every unifiable pair of expressions there is a Most General Unifier (a unique substitution) that equates the pair while making the fewest restrictions on the values of the variables.&lt;/li&gt;
+  &lt;li&gt;First-order definite clauses are disjunctions of literals, of which exactly one is positive:
+    &lt;ul&gt;
+      &lt;li&gt;Atomic sentences (positive literals) are also definite clauses;&lt;/li&gt;
+      &lt;li&gt;Definite clauses can include variables. The variables are assumed to be universally quantified.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Datalog Knowledge base contains only first-order definite clauses with no function symbols.&lt;/li&gt;
+  &lt;li&gt;Forward chaining is sound and complete for first-order definete clauses. We can use CSP heuristics like Minimum-Remaining Value to imporve efficiency. We can also do incremental forward chaining – only consider rules with premise that involves a literal that can unify with the facts newly inferred from the previous iteration.&lt;/li&gt;
+  &lt;li&gt;Backward chaining is sound but incomplete due to infinite loops. But it’s linear in size of proof.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-14&quot;&gt;Lecture 14&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Herbrand’s theorem: If there is a proof that a sentence is entailed by the original first-order knowledge base, then there is a proof involving just a finite subset of the propositionalized knowledge base. Entailment for first-order logic is semidecidable. We can say yes to every entailed sentence, but there is no way to say no to every non-entailed sentence.&lt;/li&gt;
+  &lt;li&gt;CNF conversion for first-order logic:
+    &lt;ol&gt;
+      &lt;li&gt;Eliminate implications;&lt;/li&gt;
+      &lt;li&gt;Move ¬ inward;&lt;/li&gt;
+      &lt;li&gt;Standardize variables;&lt;/li&gt;
+      &lt;li&gt;Skolemization;
+        &lt;ul&gt;
+          &lt;li&gt;Unique function names;&lt;/li&gt;
+          &lt;li&gt;Arguments for all of the universally quantified variables in whose scope the existential quantifier appears;&lt;/li&gt;
+          &lt;li&gt;We used Skolem Constants to remove existential quantifiers when the sentence was in a specific form (存在量词在最外面);&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Drop universal quantifiers;&lt;/li&gt;
+      &lt;li&gt;Distribute ⋁ over ⋀.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Russell’s Paradox:
+    &lt;ul&gt;
+      &lt;li&gt;The paradox arises within naive set theory by considering the set of all sets that are not members of themselves.&lt;/li&gt;
+      &lt;li&gt;A master catalog of all library catalogs which do not include themselves.&lt;/li&gt;
+      &lt;li&gt;A barber who shaves exactly those people who do not shave themselves.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Prolog.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;(不知道为什么没有 Lecture 15)&lt;/p&gt;
+
+&lt;h4 id=&quot;lecture-16&quot;&gt;Lecture 16&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Knowledge engineering is declarative (not procedural).&lt;/li&gt;
+  &lt;li&gt;Propositional and first-order logic are monotonic:
+    &lt;ul&gt;
+      &lt;li&gt;As new sentences α are added to KB what is entailed can never decrease.&lt;/li&gt;
+      &lt;li&gt;Non-monotonic logic eliminates this restriction.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;4 efforts of knowledge sharing:
+    &lt;ul&gt;
+      &lt;li&gt;Knowledge Interchange Format (KIF): Translate from KB1 to KIF then to KB2;&lt;/li&gt;
+      &lt;li&gt;Knowledge Representation System Specification: Create “standard” specification for KR language within a particular family of languages;&lt;/li&gt;
+      &lt;li&gt;Standardized Query Interface: Share across KBs by querying from one KB to the other (as in databases);&lt;/li&gt;
+      &lt;li&gt;Shared, Reusable Knowledge Bases: Create a common “upper” ontology that can form the basis for many knowledge based systems.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;4 possible KRR (knowledge representation and reasoning) approaches:
+    &lt;ul&gt;
+      &lt;li&gt;Knowledge engineering: Write down all of the necessary knowledge in a manner that supports automated inference;
+        &lt;ul&gt;
+          &lt;li&gt;Cyc / OpenMind Common Sense&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Semantic web: Distribute the knowledge engineering task across the entire world, supported by international standards for encoding knowledge;
+        &lt;ul&gt;
+          &lt;li&gt;WikiData&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Knowledge extraction: Find knowledge in natural language text (e.g. social media), and convert it into a representation that supports automated reasoning;
+        &lt;ul&gt;
+          &lt;li&gt;Hearst Patterns / Commonsense axioms from text&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Experiential learning: Build a robot that can learn the knowledge by interacting with the world, just like a human child does;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-17&quot;&gt;Lecture 17&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Situation Calculus:
+    &lt;ul&gt;
+      &lt;li&gt;Situations: Each time step is a “situation”. A function Result(a, s) gives the situation resulting from applying action a in situation s;&lt;/li&gt;
+      &lt;li&gt;Fluents: Functions &amp;amp; predicates whose truth values can change from one situation to the other;&lt;/li&gt;
+      &lt;li&gt;Atemporal (or eternal) predicates and functions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Classical issues:
+    &lt;ul&gt;
+      &lt;li&gt;Frame problem: Representing all things that stay the same from one situation to the next;&lt;/li&gt;
+      &lt;li&gt;Qualification problem: Defining the circumstances under which an action is guaranteed to work;&lt;/li&gt;
+      &lt;li&gt;Ramification problem: Proliferation of implicit consequences of actions as actions may have secondary consequences.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;STRIPS-style planning:
+    &lt;ul&gt;
+      &lt;li&gt;Representing states:
+        &lt;ul&gt;
+          &lt;li&gt;A conjunction of positive literals (must be grounded and function free);&lt;/li&gt;
+          &lt;li&gt;Closed world assumption: If not explicitly mentioned as true, assumed false.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Representing goals:
+        &lt;ul&gt;
+          &lt;li&gt;Generally a partial state specification (still must be positive, grounded and function free);&lt;/li&gt;
+          &lt;li&gt;A goal is satisfied if state contains all literals in goal.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Representing actions:
+        &lt;ul&gt;
+          &lt;li&gt;An action is specified by a name, a list of parameters, a precondition and an effect:
+            &lt;ul&gt;
+              &lt;li&gt;PRECOND: Must be true in state for action to execute (conjunction of function-free positive literals);&lt;/li&gt;
+              &lt;li&gt;EFFECT: Changes to state when action executes (conjunction of function-free literals); Positive literals add facts, negated literals remove facts.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Assumption: Every literal not modified by EFFECT remains unchanged to avoids representational frame problem.&lt;/li&gt;
+      &lt;li&gt;Planning Domain Definition Language (PDDL) is slightly more expressive (allows negative literals in goals and preconditions):
+        &lt;ul&gt;
+          &lt;li&gt;Neither language allows functions;&lt;/li&gt;
+          &lt;li&gt;Neither deals with the ramification problem;&lt;/li&gt;
+          &lt;li&gt;Neither deals with the qualification problem.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Forward: Progression planner / Backward: Regression planner. Both progression and regression are still NP-hard.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Partial-order planning (POP):
+    &lt;ul&gt;
+      &lt;li&gt;Each plan has 4 components:
+        &lt;ul&gt;
+          &lt;li&gt;A set of actions (steps in the plan);&lt;/li&gt;
+          &lt;li&gt;A set of ordering constraints: A &amp;lt; B (A before B);&lt;/li&gt;
+          &lt;li&gt;A set of causal links (protection intervals);&lt;/li&gt;
+          &lt;li&gt;A set of open preconditions (goals).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Planning graph:
+    &lt;ul&gt;
+      &lt;li&gt;A planning graph consists of a sequence of levels that correspond to steps in the plan; each level consists of a set of literals and a set of actions:
+        &lt;ul&gt;
+          &lt;li&gt;Literals = all those that could be true at that time step, based on the actions executed at preceding time steps;&lt;/li&gt;
+          &lt;li&gt;Actions = all those actions that could have their preconditions satisfied at that time step, based on which literals actually hold;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Connect preconditions of actions in A0 to S0 and effects to S1; Inaction is represented by persistence actions (like frame axioms);&lt;/li&gt;
+      &lt;li&gt;Conflicts:
+        &lt;ul&gt;
+          &lt;li&gt;A mutex relation holds between two actions when:
+            &lt;ul&gt;
+              &lt;li&gt;Inconsistent effects: one action negates the effect of another;&lt;/li&gt;
+              &lt;li&gt;Interference: an effect of one action negates a precondition of the other;&lt;/li&gt;
+              &lt;li&gt;Competing needs: a precondition of one action is mutually exclusive with a precondition of the other;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;A mutex relation holds between two literals when:
+            &lt;ul&gt;
+              &lt;li&gt;One is the negation of the other;&lt;/li&gt;
+              &lt;li&gt;Each possible action pair that could achieve the literals is mutex;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Stop when two consecutive levels are identical; complexity is polynomial.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-22T21:00:00-07:00</published><updated>2018-09-22T21:00:00-07:00</updated><id>/2018/09/22/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
 
