@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>旅行</title>
-  <meta name="description" content="©️ Designed by shuq3 & An0nym6">
+  <title>AI 第三部分“机器学习”复习笔记</title>
+  <meta name="description" content="<p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
+
+">
 
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/scss/main.css">
-  <link rel="canonical" href="/archives/tag/%E6%97%85%E8%A1%8C/">
+  <link rel="canonical" href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -47,26 +49,132 @@
         <div class="container">
   <div class="row">
     <div class="col-md-8 padding-top">
-      
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">AI 第三部分“机器学习”复习笔记</div>
+    <div class="date" itemprop="datePublished">2018 年 11 月 24 日</div>
+  </header>
+
+  <div class="padding-top" itemprop="articleBody">
+    <p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
+
+<h4 id="lecture-18-19">Lecture 18-19</h4>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Bayes’ rule: P(A</td>
+          <td>B) = (P(B</td>
+          <td>A) · P(A)) / P(B).</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Normalization &amp; marginalization: P(X</td>
+          <td>e) = P(X, e) / P(e) = α · P(X, e) = α · Σ<sub>y</sub> P(X, e, y).</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>In the alarm network, calls are conditionally independent of burglaries and earthquakes, but not independent of them.</li>
+</ol>
+
+<h4 id="lecture-20">Lecture 20</h4>
+
+<ol>
+  <li>Entropy: -Σ<sub>i</sub> P(v<sub>i</sub>) · ln(P(v<sub>i</sub>)):
+    <ul>
+      <li>The more uniform the probability distribution, the greater its information.</li>
+    </ul>
+  </li>
+  <li>ID3 algorithm: Top-down construction of decision tree by recursively selecting “best attribute” to use at the current node in tree.
+    <ul>
+      <li>“best attribute”: Choose the attribute that has the largest expected information gain.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-20-21">Lecture 20-21</h4>
+
+<ol>
+  <li>Back-propagation is synchronous while Hopfield net is asynchronous; Back-propagation tries to minimize the error while Hopfield net tries to minimize the energy.</li>
+</ol>
+
+<h4 id="lecture-22">Lecture 22</h4>
+
+<ol>
+  <li>Markov Decision Process (MDP):
+    <ul>
+      <li>The problem is to find the optimal policy, which maximizes utility at each state;</li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Bellman equation: U(s) = R(s) + γ max<sub>a</sub>(Σ<sub>s<sub>1</sub></sub>(P(s<sub>1</sub></td>
+              <td>s, a) · U(s<sub>1</sub>))). Repeating this formula will converge to optimal policy.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-23">Lecture 23</h4>
+
+<ol>
+  <li>Reinforcement Learning:
+    <ul>
+      <li>Utility-based agent: if it already knows the transition model, then use MDP algorithm to solve for Maximum Expectation Utility (MEU) actions.</li>
+      <li>Q-learning agent: if it doesn’t know the transition model, then pick action that has highest utility in current state.<br />
+        <ul>
+          <li>Q(s, a) = Q(s, a) + α(R(s) + γ max<sub>a’</sub> (Q(s’, a’) − Q(s, a))) →<br />
+  Q(s, a) = (1 - α)Q(s, a) + α(R(s) + γ max<sub>a’</sub> Q(s’, a’))</li>
+          <li>Converge to correct values if α decays over time.</li>
+        </ul>
+      </li>
+      <li>Reflex agent: learn a policy directly, then pick the action that the policy says.
+        <ul>
+          <li>Can start right away and then learn as it goes.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-24-25">Lecture 24-25</h4>
+
+<p>Guest speaker.</p>
+
+<h4 id="lecture-26">Lecture 26</h4>
+
+<p>🍺</p>
 
 
-<div class="page-title">归档</div>
-
-
-  
-    
-    <div class="year">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>2018</span>
-    </div>
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">05-12</span>
-    <a href="/2018/05/12/%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8%E4%B9%8B%E6%97%85.html">香港澳门之旅</a>
   </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
 
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
+
+</article>
 
     </div>
     <div class="col-md-4 padding-top">
