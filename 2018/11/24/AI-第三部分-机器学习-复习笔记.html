@@ -61,27 +61,8 @@
 <h4 id="lecture-18-19">Lecture 18-19</h4>
 
 <ol>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Bayes’ rule: P(A</td>
-          <td>B) = (P(B</td>
-          <td>A) · P(A)) / P(B).</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Normalization &amp; marginalization: P(X</td>
-          <td>e) = P(X, e) / P(e) = α · P(X, e) = α · Σ<sub>y</sub> P(X, e, y).</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li>Bayes’ rule: P(A|B) = (P(B|A) · P(A)) / P(B).</li>
+  <li>Normalization &amp; marginalization: P(X|e) = P(X, e) / P(e) = α · P(X, e) = α · Σ<sub>y</sub> P(X, e, y).</li>
   <li>In the alarm network, calls are conditionally independent of burglaries and earthquakes, but not independent of them.</li>
 </ol>
 
@@ -112,16 +93,7 @@
   <li>Markov Decision Process (MDP):
     <ul>
       <li>The problem is to find the optimal policy, which maximizes utility at each state;</li>
-      <li>
-        <table>
-          <tbody>
-            <tr>
-              <td>Bellman equation: U(s) = R(s) + γ max<sub>a</sub>(Σ<sub>s<sub>1</sub></sub>(P(s<sub>1</sub></td>
-              <td>s, a) · U(s<sub>1</sub>))). Repeating this formula will converge to optimal policy.</td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
+      <li>Bellman equation: U(s) = R(s) + γ max<sub>a</sub>(Σ<sub>s<sub>1</sub></sub>(P(s<sub>1</sub> | s, a) · U(s<sub>1</sub>))). Repeating this formula will converge to optimal policy.</li>
     </ul>
   </li>
 </ol>
