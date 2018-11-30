@@ -1,4 +1,254 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-25T09:22:11-08:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">AI 第三部分“机器学习”复习笔记</title><link href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第三部分“机器学习”复习笔记" /><published>2018-11-24T20:00:00-08:00</published><updated>2018-11-24T20:00:00-08:00</updated><id>/2018/11/24/AI%20%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%E2%80%9C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-30T09:42:47-08:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">算法期末复习笔记</title><link href="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期末复习笔记" /><published>2018-11-29T20:00:00-08:00</published><updated>2018-11-29T20:00:00-08:00</updated><id>/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+
+&lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Steps for solving DP problems:
+    &lt;ol&gt;
+      &lt;li&gt;Describe subproblem;&lt;/li&gt;
+      &lt;li&gt;Describe base case;&lt;/li&gt;
+      &lt;li&gt;Describe recurrence;&lt;/li&gt;
+      &lt;li&gt;Analyze complexity;&lt;/li&gt;
+      &lt;li&gt;Write pseudo code.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Shortest path:
+    &lt;ul&gt;
+      &lt;li&gt;Single source &amp;amp; positive-weighted: Dijkstra’s Algorithm;&lt;/li&gt;
+      &lt;li&gt;Single source &amp;amp; negative-weighted: Bellman-Ford Algorithm;
+        &lt;ul&gt;
+          &lt;li&gt;Case 1: D[v, k] = D[v, k - 1], path uses at most k - 1 edges;&lt;/li&gt;
+          &lt;li&gt;Case 2: D[v, k] = min&lt;sub&gt;(w, v)∈E&lt;/sub&gt;(D[w, k - 1] + C&lt;sub&gt;wv&lt;/sub&gt;);&lt;/li&gt;
+          &lt;li&gt;Goal: Compute D(t, v - 1);&lt;/li&gt;
+          &lt;li&gt;Complexity: O(EV);&lt;/li&gt;
+          &lt;li&gt;Negative cycle? Run 1 more round for k = v, if D decrease for some point, then yes.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;All-pairs: 1. Run Bellman-Ford V times: O(EV&lt;sup&gt;2&lt;/sup&gt;); 2. Floyd-Warshall Algorithm;
+        &lt;ul&gt;
+          &lt;li&gt;D[i, j, k] = min&lt;sub&gt;u&lt;/sub&gt;(D[i, u, k - 1] + D[u, j, k - 1], D[i, j, k - 1]);&lt;/li&gt;
+          &lt;li&gt;Pseudo code:
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  D[i,j,V[0]] = c[i,j] for all i and j
+  for k in V:
+    for i in V:
+      for j in V:
+        D[i,j,k] = min(D[i,k,k-1]+D[k,j,k-1],D[i,j,k-1])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Complexity: O(V&lt;sup&gt;3&lt;/sup&gt;)&lt;/li&gt;
+          &lt;li&gt;Negative cycle? If the diagonal has nagetive elements, then yes;&lt;/li&gt;
+          &lt;li&gt;Extract the shortest path? Every time we update D[i, j], we set P[i, j] to k. Then we recursively compute the shortest path from i to k = P[i, j] and the path from k = P[i, j] to j.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Max-flow problem: Ford-Fulkerson Algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;Complexity: O(|f|(E + V));&lt;/li&gt;
+      &lt;li&gt;Edmonds-Karp Algorithm: If we replace DFS with BFS, the complexity would be O(E&lt;sup&gt;2&lt;/sup&gt;V);&lt;/li&gt;
+      &lt;li&gt;Capacity-Scaling Algorithm: If we choose the augmenting path with highest bottleneck capacity, the complexity would be O(log|f|E&lt;sup&gt;2&lt;/sup&gt;).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Max-flow theorem: the following conditions are equivalent for any f:
+    &lt;ul&gt;
+      &lt;li&gt;∃ cut(A, B) s.t. cap(A, B) = |f|;&lt;/li&gt;
+      &lt;li&gt;f is a max-flow;&lt;/li&gt;
+      &lt;li&gt;There is no augmenting path wrt to f.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Value of the max-flow = capacity of the min-cut.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Applications of max-flow:
+    &lt;ul&gt;
+      &lt;li&gt;Bipartite max matching: |f| ≤ V, V’ = 2V, so complexity: O(V(E + 2V)) = O(EV).&lt;/li&gt;
+      &lt;li&gt;Maximum number of edge disjoint paths. Complexity: O(EV)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Image segmentation problem: soloved by min-cut problem.&lt;/li&gt;
+  &lt;li&gt;Circulation problem can be reduced to max-flow problem: there is a feasible circulation in G if and only if the max-flow can achieve Σ&lt;sub&gt;d(v)&amp;gt;0&lt;/sub&gt;d(v).&lt;/li&gt;
+  &lt;li&gt;Circulation problem with demands can be reduced to circulation problem without demands: just push the lower bounds of flow through each edges, then modify the capacity of each edge and demand of each vertex respectively.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Survey Design Problem.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-9&quot;&gt;Lecture 9&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Undecidable problems: there is no computer program that can always give the right answer: it may give the wrong answer, or run forever. NP-Hard contains undecidable problems.
+    &lt;ul&gt;
+      &lt;li&gt;Example: The halting problem.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To prove X is in NP-Complete, we first prove X is in NP (answer can be verified in polynomial time), then we prove X is in NP-Hard (∃Y ∈ NP, Y ≤&lt;sub&gt;p&lt;/sub&gt; X).&lt;/li&gt;
+  &lt;li&gt;NP-Complete problems are the most difficult NP problems.&lt;/li&gt;
+  &lt;li&gt;Reductions of NP-Complete problems:
+    &lt;ul&gt;
+      &lt;li&gt;SAT is in NP-Complete without proof;&lt;/li&gt;
+      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; Independent set;&lt;/li&gt;
+      &lt;li&gt;Independent set ≤&lt;sub&gt;p&lt;/sub&gt; Vertex cover;&lt;/li&gt;
+      &lt;li&gt;Vertex cover ≤&lt;sub&gt;p&lt;/sub&gt; Vertex cover-even;&lt;/li&gt;
+      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; 3-colorable;&lt;/li&gt;
+      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; Hamiltonian Cycle (without proof).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-10&quot;&gt;Lecture 10&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Standard linear programming problem in matrix form:&lt;br /&gt;
+ max(c&lt;sup&gt;T&lt;/sup&gt;x),&lt;br /&gt;
+ subject to: Ax ≤ b, x ≥ 0.
+    &lt;ul&gt;
+      &lt;li&gt;Linear programming can be used to solve max-flow and shortest path problem.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Integer linear programming (ILP) is in NP-Hard.
+    &lt;ul&gt;
+      &lt;li&gt;Independent set ≤&lt;sub&gt;p&lt;/sub&gt; ILP;&lt;/li&gt;
+      &lt;li&gt;ILP can be used to solve 0-1 Knapsack.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The dual of standard linear programming problem:&lt;br /&gt;
+ min(b&lt;sup&gt;T&lt;/sup&gt;y),&lt;br /&gt;
+ subject to: A&lt;sup&gt;T&lt;/sup&gt;y ≥ c, y ≥ 0.
+    &lt;ul&gt;
+      &lt;li&gt;The weak duality: if x is a feasible solution for primal and y is a feasible solution for dual, then c&lt;sup&gt;T&lt;/sup&gt;x ≤ b&lt;sup&gt;T&lt;/sup&gt;y;&lt;/li&gt;
+      &lt;li&gt;The strong duality: opt(primal) = opt(dual);&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;P \ D&lt;/th&gt;
+              &lt;th&gt;F.B.&lt;/th&gt;
+              &lt;th&gt;F.U.&lt;/th&gt;
+              &lt;th&gt;I.&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;F.B.&lt;/td&gt;
+              &lt;td&gt;Yes&lt;/td&gt;
+              &lt;td&gt;No&lt;/td&gt;
+              &lt;td&gt;No&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;F.U.&lt;/td&gt;
+              &lt;td&gt;No&lt;/td&gt;
+              &lt;td&gt;No&lt;/td&gt;
+              &lt;td&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;I.&lt;/td&gt;
+              &lt;td&gt;No&lt;/td&gt;
+              &lt;td&gt;Yes&lt;/td&gt;
+              &lt;td&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;General form of primal and dual:&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Primal&lt;/th&gt;
+          &lt;th&gt;Dual&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;max(c&lt;sup&gt;T&lt;/sup&gt;x)&lt;/td&gt;
+          &lt;td&gt;min(b&lt;sub&gt;1&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;1&lt;/sub&gt; + b&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;2&lt;/sub&gt; + b&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;3&lt;/sub&gt;)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A&lt;sub&gt;1&lt;/sub&gt;x ≤ b&lt;sub&gt;1&lt;/sub&gt;&lt;/td&gt;
+          &lt;td&gt;A&lt;sub&gt;1&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;1&lt;/sub&gt; + A&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;2&lt;/sub&gt; + A&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;3&lt;/sub&gt; ≥ c&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A&lt;sub&gt;2&lt;/sub&gt;x = b&lt;sub&gt;2&lt;/sub&gt;&lt;/td&gt;
+          &lt;td&gt;y&lt;sub&gt;1&lt;/sub&gt; ≥ 0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A&lt;sub&gt;3&lt;/sub&gt;x ≥ b&lt;sub&gt;3&lt;/sub&gt;&lt;/td&gt;
+          &lt;td&gt;y&lt;sub&gt;2&lt;/sub&gt; unrestricted&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;x ≥ 0&lt;/td&gt;
+          &lt;td&gt;y&lt;sub&gt;3&lt;/sub&gt; ≤ 0&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-11&quot;&gt;Lecture 11&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Classic approximation algorithms:
+    &lt;ul&gt;
+      &lt;li&gt;2-approximation vertex cover: find matchings in graph;&lt;/li&gt;
+      &lt;li&gt;2-approximation TSP on complete graph with triangle inequality: use MST;&lt;/li&gt;
+      &lt;li&gt;1.5-approximation TSP on complete graph with triangle inequality:
+        &lt;ul&gt;
+          &lt;li&gt;MST of G → T;&lt;/li&gt;
+          &lt;li&gt;Vertices of odd degree in T → S;&lt;/li&gt;
+          &lt;li&gt;Min-cost matching on S → M;&lt;/li&gt;
+          &lt;li&gt;return T ∪ M.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;There is no polynomial α-approximation algorithm for general TSP: if such algorithm exists, we can use it to solve Hamiltonian Cycle.&lt;/li&gt;
+      &lt;li&gt;ln n-approximation set cover: greedy, each move covers at least 1/k of the elements, so k * ln n moves will cover all (k is the optimal).&lt;/li&gt;
+      &lt;li&gt;2-approximation load balance: greedy: assign next job to the machine with least load.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lecture-12&quot;&gt;Lecture 12&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Classification of random algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;Las Vegas algorithms: always returns the correct answer, but may run longer than you expect.
+        &lt;ul&gt;
+          &lt;li&gt;Example: quick sort.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Monte Carlo algorithms: may fail or return incorrect answer, but the runtime is independent of input randomness.
+        &lt;ul&gt;
+          &lt;li&gt;Example: random global min-cut.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Random data structre:
+    &lt;ul&gt;
+      &lt;li&gt;Skip list: O(log n) search time;&lt;/li&gt;
+      &lt;li&gt;Treap: a binary search tree with the heap ordering property (use rotation to maintain heap ordering property while do no change to BST ordering property).
+        &lt;ul&gt;
+          &lt;li&gt;Complexity: O(log n) search time &amp;amp; O(log n) insert time.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第三部分“机器学习”复习笔记</title><link href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第三部分“机器学习”复习笔记" /><published>2018-11-24T20:00:00-08:00</published><updated>2018-11-24T20:00:00-08:00</updated><id>/2018/11/24/AI%20%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%E2%80%9C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-18-19&quot;&gt;Lecture 18-19&lt;/h4&gt;
 
@@ -819,16 +1069,4 @@ for k = 1 ... V do
 
 &lt;h4 id=&quot;访问方&quot;&gt;访问方&lt;/h4&gt;
 
-&lt;p&gt;我们只需要设置浏览器代理，让它将所有 HTTP 请求都发往 代理服务器IP:8888 即可，比如 Chrome 浏览器可以使用插件 SwitchyOmega。至此，我们需要调试的网站所处网络环境就是完全可控的了。&lt;/p&gt;</content><author><name></name></author><category term="网络" /><summary type="html">很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：</summary></entry><entry><title type="html">欢迎来到 Random Thoughts</title><link href="/2018/02/11/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-Random-Thoughts.html" rel="alternate" type="text/html" title="欢迎来到 Random Thoughts" /><published>2018-02-11T20:00:00-08:00</published><updated>2018-02-11T20:00:00-08:00</updated><id>/2018/02/11/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%20Random%20Thoughts</id><content type="html" xml:base="/2018/02/11/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-Random-Thoughts.html">&lt;p&gt;欢迎来到 Random Thoughts！&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/shuq3&quot;&gt;shuq3&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/An0nym6&quot;&gt;An0nym6&lt;/a&gt;（我）共同设计搭建了这个个人博客平台，它的源码被共享在这个 &lt;a href=&quot;https://github.com/An0nym6/PersonalBlog2&quot;&gt;GitHub 仓库&lt;/a&gt; 中。你现在访问的网站由我管理维护，另一个由 shuq3 管理维护的 Random Thoughts 网站运行在 &lt;a href=&quot;https://shuq3.github.io/&quot;&gt;https://shuq3.github.io/&lt;/a&gt; 。&lt;/p&gt;
-
-&lt;h4 id=&quot;架构&quot;&gt;架构&lt;/h4&gt;
-&lt;p&gt;Random Thoughts 是基于 &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; 架构的静态网站，&lt;a href=&quot;https://shuq3.github.io/&quot;&gt;https://shuq3.github.io/&lt;/a&gt; 和 &lt;a href=&quot;https://ranthot.cn/&quot;&gt;https://ranthot.cn/&lt;/a&gt; 都通过 GitHub 仓库直接运行在 &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; 上。&lt;/p&gt;
-
-&lt;p&gt;shuq3 和我曾尝试自行实现博客平台的前后端，并使用 MongoDB、Express、Angular 2 和 Node.js 完成了一个博客平台的雏形（源码被共享在这个 &lt;a href=&quot;https://github.com/FerretTeam/FerretsBlog&quot;&gt;GitHub 仓库&lt;/a&gt; 中），但无奈于其较为高昂的开发与维护成本，我们最终放弃了这个平台。&lt;/p&gt;
-
-&lt;p&gt;使用 jekyll 开发博客一个很大的优势就在于你不需要花太多的精力就可以完成成品，并可以一键式地更新你的博文，这也是 shuq3 和我选择使用 jekyll 开发 Random Thoughts 的原因。&lt;/p&gt;
-
-&lt;h4 id=&quot;评论系统&quot;&gt;评论系统&lt;/h4&gt;
-&lt;p&gt;缺乏后端和服务器的静态网站需要外接评论系统。我们起初尝试直接映射 GitHub Issues 作为评论系统，但考虑到多数人没有 GitHub 账号，于是我们采用了更为简便的 Valine。Valine 使用 Leancloud 提供的 BaaS 服务实现了评论系统的功能，在一定量的访问下，Leancloud 提供的服务完全免费，同时也免去了复杂的认证流程。&lt;/p&gt;</content><author><name></name></author><category term="博客" /><summary type="html">欢迎来到 Random Thoughts！</summary></entry></feed>
+&lt;p&gt;我们只需要设置浏览器代理，让它将所有 HTTP 请求都发往 代理服务器IP:8888 即可，比如 Chrome 浏览器可以使用插件 SwitchyOmega。至此，我们需要调试的网站所处网络环境就是完全可控的了。&lt;/p&gt;</content><author><name></name></author><category term="网络" /><summary type="html">很多人都知道 Chrome 开发者工具的 Network 下可以自定义网络环境，Chrome 可以模拟在 Fast 3G、Slow 3G 等一系列网络环境中加载页面：</summary></entry></feed>
