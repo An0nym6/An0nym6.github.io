@@ -1,4 +1,267 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-03-21T10:44:14-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">如何写出高效的代码期中复习笔记</title><link href="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期中复习笔记" /><published>2019-03-20T21:00:00-07:00</published><updated>2019-03-20T21:00:00-07:00</updated><id>/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:05:52-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
+
+&lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Evolution of Software Engineering:
+    &lt;ul&gt;
+      &lt;li&gt;Waterfall Approach;&lt;/li&gt;
+      &lt;li&gt;Iterative &amp;amp; Incremental Approach:
+        &lt;ul&gt;
+          &lt;li&gt;Work is prioritized based on &lt;strong&gt;&lt;em&gt;risk&lt;/em&gt;&lt;/strong&gt;;&lt;/li&gt;
+          &lt;li&gt;Examples: Spiral, Rational Unified Process (RUP).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Agile Approach:
+        &lt;ul&gt;
+          &lt;li&gt;Work is prioritized based on &lt;strong&gt;&lt;em&gt;value&lt;/em&gt;&lt;/strong&gt;;&lt;/li&gt;
+          &lt;li&gt;Examples: XP, Scrum, Feature-Driven Development (FDD), Dynamic System Development Method (DSDM), Adaptive Software Development (ASD), Crystal Method.&lt;/li&gt;
+          &lt;li&gt;Key barrier: Inability to change organization culture.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Lean Approach:
+        &lt;ul&gt;
+          &lt;li&gt;Optimize flows by reducing waste; Main prioritization criteria is still &lt;strong&gt;&lt;em&gt;value&lt;/em&gt;&lt;/strong&gt;;&lt;/li&gt;
+          &lt;li&gt;From Toyota;&lt;/li&gt;
+          &lt;li&gt;Examples: Lean, Kanban.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Hybrid Approach:
+        &lt;ul&gt;
+          &lt;li&gt;Examples: Scrumban, Scaled Agile Framework (SAFe), Disciplined Agile Delivery (DAD).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Agile:
+ | Values | Practices |
+ | - | - |
+ | Customer collaboration | Onsite customer (XP), Embedded product manager (Scrum) |
+ | Responding to change | Continuously updated &amp;amp; prioritized product backlog (Scrum) |
+ | Working software | Iterative Development (Sprints) &amp;amp; Sprint Review (Scrum) |
+ | Individuals and interations | Sprint retrospective (Scrum) |&lt;/li&gt;
+  &lt;li&gt;XP:
+    &lt;ul&gt;
+      &lt;li&gt;Test first, pair programming, incremental design.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Other:
+    &lt;ul&gt;
+      &lt;li&gt;Scrum has “product owner”, “development team” and “Scrum master”, while Kanban has no roles;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-2&quot;&gt;Week 2&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Iron Triangle for Planning (Project Constraints):
+ | | Scope | |
+ |:-:|:-:|:-:|
+ | / | Quality | \ |
+ | Cost | ——- | Time |
+    &lt;ul&gt;
+      &lt;li&gt;Fixed-scope: Then variables are time and cost;&lt;/li&gt;
+      &lt;li&gt;Fixed-date: Then varaible is scope.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Definition of “Done” (DOD): two columns: Task/Action, Quality Check, or just one column like the ones on Trello;&lt;/li&gt;
+  &lt;li&gt;People usually underestimate by a factor of 2;&lt;/li&gt;
+  &lt;li&gt;Planning Poker combines analogy, disaggregation and expert judgment.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-3&quot;&gt;Week 3&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Four principles of OO:
+    &lt;ul&gt;
+      &lt;li&gt;Abstraction: Essential characteristics of an entity relative to certain perspective; Manage complexity by eliminating details;&lt;/li&gt;
+      &lt;li&gt;Encapsulation: Facilitate information hiding; Manage complexity by grouping related elements into a single entity;&lt;/li&gt;
+      &lt;li&gt;Hierachy: Ranking or ordering entities into a tree-like structure; Manage complexity by organizing into this tree-like structure:
+        &lt;ul&gt;
+          &lt;li&gt;Aggregation: is-part-of;&lt;/li&gt;
+          &lt;li&gt;Inheritance: is-a-kind-of, implements polymorphos, which means having many forms;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Modularity: Manage complexity by breaking large entities into smaller, independent and cohesive modules (low coupling, high cohesion).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Apart from aggregation and inheritance, there’s association (knows-about relation);&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-4&quot;&gt;Week 4&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Analysis vs Design:
+    &lt;ul&gt;
+      &lt;li&gt;Analysis:
+        &lt;ul&gt;
+          &lt;li&gt;Focus on understanding the problem: WHAT;&lt;/li&gt;
+          &lt;li&gt;Define behavior and structure;&lt;/li&gt;
+          &lt;li&gt;Analysis classes, interaction diagrams, class diagrams.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Design:
+        &lt;ul&gt;
+          &lt;li&gt;Focus on understanding the solution: WHY;&lt;/li&gt;
+          &lt;li&gt;System design: Define a robust architecture (Use case view, logical view, development view, process view, deployment view);&lt;/li&gt;
+          &lt;li&gt;Object design: Refine the design of components and classes for easy implementation (Design patterns).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;OOAD is architecture-centric. OOAD toolset can be leveraged as needed to create “good enough” models.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;View of Participating Classes (VOPC).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-5&quot;&gt;Week 5&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Design patterns: Singleton; Bridge; Observer; Composite; Facade; Strategy; Factory Method; Adapter.&lt;/li&gt;
+  &lt;li&gt;Hierarchy in Design Pattern (most basic mechanisms): Inheritance and Delegation;&lt;/li&gt;
+  &lt;li&gt;SOLID Principles:
+    &lt;ul&gt;
+      &lt;li&gt;Single responsibility;&lt;/li&gt;
+      &lt;li&gt;Open-closed principle: Open to extension, closed to modification;&lt;/li&gt;
+      &lt;li&gt;Liskov’s substitution: One class can only be treated as a subtype of another if it can be substituted for the super class in every context;&lt;/li&gt;
+      &lt;li&gt;Interface segregation: interfaces should be small and specialized;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Dependency_inversion_principle#/media/File:Dependency_inversion.png&quot;&gt;Dependency Inversion&lt;/a&gt;;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Other Principles:
+    &lt;ul&gt;
+      &lt;li&gt;Dependency injection: &lt;a href=&quot;https://piazza.com/class/jqrne75jnbw58q?cid=69&quot;&gt;link&lt;/a&gt;;&lt;/li&gt;
+      &lt;li&gt;Inversion of control principle: Traditionally, we write main function which controls the flow; Now we use framework, we just fill in the blanks. Framework controls the flow.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;7 ± 2 Rules: Number of subsystems, partitions, layers, functions per subsystem, components per subsystem should be no more than 9.&lt;/li&gt;
+  &lt;li&gt;Architectural styles and patterns:
+    &lt;ul&gt;
+      &lt;li&gt;Architectural styles: Emphasize on organization, control flow, communication; More high level; Examples: Layered, pipe-and-filter, repository, client-server, peer-to-peer, event-based, hybrid/heterogeneous: compiler, REST, MVC;&lt;/li&gt;
+      &lt;li&gt;Architectural patterns: Solve problems like security, federation, integration…;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Decomposition: Partitioning should increase cohesion, and layering should reduce coupling.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-6&quot;&gt;Week 6&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Technical practices: Pair programming, in-process testing, refactoring, version control (Diff based: CVS, SUBVERSION, file-based: git, mercurial&lt;/td&gt;
+          &lt;td&gt;Centralized, distributed), continuous integration, incremental delivery.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-7&quot;&gt;Week 7&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Testing is a whole-team responsibility;&lt;/li&gt;
+  &lt;li&gt;Components:
+    &lt;ul&gt;
+      &lt;li&gt;Entity Under Test (EUT);&lt;/li&gt;
+      &lt;li&gt;Fixture: Test driver, test stub;&lt;/li&gt;
+      &lt;li&gt;Test case:
+        &lt;ul&gt;
+          &lt;li&gt;Inputs or stimuli (triggers);&lt;/li&gt;
+          &lt;li&gt;Oracle (expected behavior);&lt;/li&gt;
+          &lt;li&gt;Outputs or results;&lt;/li&gt;
+          &lt;li&gt;Assessment;&lt;/li&gt;
+          &lt;li&gt;Verdict (pass or fail).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Others:
+    &lt;ul&gt;
+      &lt;li&gt;Test suite: collection of test cases;&lt;/li&gt;
+      &lt;li&gt;Not all testing needs an oracle;&lt;/li&gt;
+      &lt;li&gt;White-box testing misses unimplemented behaviors;&lt;/li&gt;
+      &lt;li&gt;Black-box testing may miss unexpected behaviors;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-8&quot;&gt;Week 8&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Only intentional short-term focused debt and intentional long-term debt are healthy.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-9&quot;&gt;Week 9&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Defect repairs (maintenance) are usually the largest annual cost;&lt;/li&gt;
+  &lt;li&gt;Fight against defects:
+    &lt;ul&gt;
+      &lt;li&gt;Defect prevention: Reuse, formal inspection;&lt;/li&gt;
+      &lt;li&gt;Pre-test defect removal: Formal inspection, static analysis, Scrum daily stand-up meetings;&lt;/li&gt;
+      &lt;li&gt;Testing defect removal: Software testing has low defect removal efficiency;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Best practice: Review fewer than 200-400 lines of code at a time, no more than 60-90 minutes at a time, inspection rate less than 300-500 LOC / hour at a time.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-10&quot;&gt;Week 10&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Requirements Envisioning:
+    &lt;ul&gt;
+      &lt;li&gt;Functional Requirements: Using Use Cases or User Stories;
+        &lt;ul&gt;
+          &lt;li&gt;INVEST criteria for stories: Independent, Negotiable, Valuable, Estimable, Small, Testable;&lt;/li&gt;
+          &lt;li&gt;SMART criteria for tasks: Specific, Measurable, Achievable, Relevant, Time-boxed;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Non-Functional Requirements: Using Shall Statements or User Stories;&lt;/li&gt;
+      &lt;li&gt;Validation: Using Prototypes;&lt;/li&gt;
+      &lt;li&gt;Planning: Using Roadmaps and Backlogs;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Requirements Elaboration (just-in-time elaboration):
+    &lt;ul&gt;
+      &lt;li&gt;Use Case Specification (Basic Flow, Alternatives Flows);&lt;/li&gt;
+      &lt;li&gt;User Story Acceptance Criteria (Given / When / Then);&lt;/li&gt;
+      &lt;li&gt;Planguage for Non-Functional Requirements;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/FSE/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;week-11&quot;&gt;Week 11&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;External Qualities (Performance) &amp;amp; Internal Qualities (Testability);&lt;/li&gt;
+  &lt;li&gt;Qualities Attributes of Architectural Styles:
+ | | Maintainability | Security | Reliability | Usability |
+ |-|-|-|-|-|
+ | Layered | Key Strength | Key Strength | Strength | Neutral |
+ | Pipe and Filter | Strength | Liability | Key Liability | Liability |
+ | MVC | Liability | Neutral | Neutral | Key Strength |&lt;/li&gt;
+  &lt;li&gt;Design patterns generally improve the expandability of code, and decrease reusability;&lt;/li&gt;
+  &lt;li&gt;Quality Attribute Tradeoffs are asymmetric.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;others&quot;&gt;Others&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The behavior of the system can be modeled using a UML &lt;strong&gt;Use-case diagram&lt;/strong&gt;, Sequence diagram and Communication diagram.&lt;/li&gt;
+  &lt;li&gt;The Facade pattern needs only delegations.&lt;/li&gt;
+  &lt;li&gt;ES6 does not support class­-based inheritance.&lt;/li&gt;
+  &lt;li&gt;Refactoring is enabled by in-process testing.&lt;/li&gt;
+  &lt;li&gt;To be able to effectively test asynchronous behavior, we must isolate the behavior in a function, and make the side effect accessible to a test.&lt;/li&gt;
+  &lt;li&gt;Technical debt is not incurred to save money in the long term.&lt;/li&gt;
+  &lt;li&gt;“Feature debt”, or features in the backlog is not a type of technical debt.&lt;/li&gt;
+  &lt;li&gt;Grace Hopper first came up with the term “bug”.&lt;/li&gt;
+  &lt;li&gt;Latent defects: unknown defects, fixed defects, unfixed known defects.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。</summary></entry><entry><title type="html">如何写出高效的代码期中复习笔记</title><link href="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期中复习笔记" /><published>2019-03-20T21:00:00-07:00</published><updated>2019-03-20T21:00:00-07:00</updated><id>/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期中复习笔记</title><link href="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期中复习笔记" /><published>2019-03-03T20:00:00-08:00</published><updated>2019-03-03T20:00:00-08:00</updated><id>/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
 
@@ -1275,22 +1538,4 @@ for k = 1 ... V do
 
 &lt;p&gt;在我看来，卷一美中不足的是作者并没能“抹去诸葛亮脸上的油彩”。可能因为作者本身对诸葛亮的痴情，全书字里行间内都透着他/她对诸葛亮的喜爱。除在他年幼习棋时，本书中的诸葛亮对弈未尝败过一场。这里的对弈不只指围棋，还指围棋的各种变体，以及民间大众喜欢的各种博弈游戏；诸葛亮的对手也不只指路人甲乙丙丁，还包括世间各路顶级高手。但凡是智力比拼，诸葛亮也未尝败过一场，唯一的遗憾是在队友拖后腿的情况下与庞统战平，除此之外的比拼诸葛亮均全胜。若虚去除了“草船借箭”、“空城计”这样的神话，但他/她却杜撰出了另一批神话。&lt;/p&gt;
 
-&lt;p&gt;《大谋小计五十年：诸葛亮传》全书分为五卷，我所借阅的是第一卷。本卷内容是人们较少知晓的诸葛亮幼年时期的故事，如果大家有兴趣的话，不妨一读。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★☆</summary></entry><entry><title type="html">《天才在左 疯子在右》书评</title><link href="/2018/05/24/%E5%A4%A9%E6%89%8D%E5%9C%A8%E5%B7%A6-%E7%96%AF%E5%AD%90%E5%9C%A8%E5%8F%B3-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《天才在左 疯子在右》书评" /><published>2018-05-24T21:00:00-07:00</published><updated>2018-05-24T21:00:00-07:00</updated><id>/2018/05/24/%E3%80%8A%E5%A4%A9%E6%89%8D%E5%9C%A8%E5%B7%A6%20%E7%96%AF%E5%AD%90%E5%9C%A8%E5%8F%B3%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/05/24/%E5%A4%A9%E6%89%8D%E5%9C%A8%E5%B7%A6-%E7%96%AF%E5%AD%90%E5%9C%A8%E5%8F%B3-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★☆&lt;/p&gt;
-
-&lt;p&gt;文笔：★★★☆☆&lt;/p&gt;
-
-&lt;p&gt;排版：★★☆☆☆&lt;/p&gt;
-
-&lt;p&gt;综合：★★★☆☆&lt;/p&gt;
-
-&lt;p&gt;作为一名工科生，我在文学方面并没有多大的造诣，本文只简单谈谈自己一些片面的观后感，如有谬误，欢迎指正。&lt;/p&gt;
-
-&lt;p&gt;这本书最吸引人的当属它的内容，作者高铭耗时数年与数百位精神病人进行深入交谈，期间通过录音和笔记详细地记录了他与病人间的交流过程，最后经过整理，完成了这一本书。&lt;/p&gt;
-
-&lt;p&gt;值得注意的是，这本书并不是一份客观的访谈手记。照作者的原话，正文 48 个篇章中仅“近20余篇”来自真实案例，且这些案例也经过“增添或删减”。也许是为了达到某些艺术效果，作者“神化”了不少精神病人。比如书中多次提到有病人使用尖端的量子物理知识来构造自己的世界观，我很怀疑作者在著书时查阅了不少相关资料，替那些病人圆他们的观点，让那些病人的理论显得天衣无缝。这样一来，书的可读性和趣味性都会上升，但书也会因丢失了真实性而成为小说。当然，书中的一些思考是深刻的，作者写书的目的不在于将其作为医学案例供后人分析，而是希望读者能看到更宽广的世界。&lt;/p&gt;
-
-&lt;p&gt;本书包含大段对白，遣词造句十分口语化，对交谈双方的神情、动作和心理没有过多的描写，不过也不奇怪，本书是事发后一年由作者按录音和笔记进行整理，缺乏细节在所难免。另外作者本身并不严谨，书中出现了类似“按百分比来说，某某大概占三分之一”这样的措辞，作者对《黑客帝国》这一部电影的英语称呼在书中也前后不一。&lt;/p&gt;
-
-&lt;p&gt;我从中山大学图书馆中借到了这本书，它由 2015 届某毕业生捐赠，因此可能为盗版书籍。书中有数量可观的错别字，印刷质量也不高。&lt;/p&gt;
-
-&lt;p&gt;总的来说，这是一本有意思的书。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★☆</summary></entry></feed>
+&lt;p&gt;《大谋小计五十年：诸葛亮传》全书分为五卷，我所借阅的是第一卷。本卷内容是人们较少知晓的诸葛亮幼年时期的故事，如果大家有兴趣的话，不妨一读。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★☆</summary></entry></feed>
