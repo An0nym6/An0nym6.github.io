@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:09:10-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:09:41-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -284,12 +284,45 @@
 
 &lt;ol&gt;
   &lt;li&gt;External Qualities (Performance) &amp;amp; Internal Qualities (Testability);&lt;/li&gt;
-  &lt;li&gt;Qualities Attributes of Architectural Styles:
- | | Maintainability | Security | Reliability | Usability |
- |-|-|-|-|-|
- | Layered | Key Strength | Key Strength | Strength | Neutral |
- | Pipe and Filter | Strength | Liability | Key Liability | Liability |
- | MVC | Liability | Neutral | Neutral | Key Strength |&lt;/li&gt;
+  &lt;li&gt;Qualities Attributes of Architectural Styles:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Maintainability&lt;/th&gt;
+      &lt;th&gt;Security&lt;/th&gt;
+      &lt;th&gt;Reliability&lt;/th&gt;
+      &lt;th&gt;Usability&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Layered&lt;/td&gt;
+      &lt;td&gt;Key Strength&lt;/td&gt;
+      &lt;td&gt;Key Strength&lt;/td&gt;
+      &lt;td&gt;Strength&lt;/td&gt;
+      &lt;td&gt;Neutral&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pipe and Filter&lt;/td&gt;
+      &lt;td&gt;Strength&lt;/td&gt;
+      &lt;td&gt;Liability&lt;/td&gt;
+      &lt;td&gt;Key Liability&lt;/td&gt;
+      &lt;td&gt;Liability&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MVC&lt;/td&gt;
+      &lt;td&gt;Liability&lt;/td&gt;
+      &lt;td&gt;Neutral&lt;/td&gt;
+      &lt;td&gt;Neutral&lt;/td&gt;
+      &lt;td&gt;Key Strength&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
   &lt;li&gt;Design patterns generally improve the expandability of code, and decrease reusability;&lt;/li&gt;
   &lt;li&gt;Quality Attribute Tradeoffs are asymmetric.&lt;/li&gt;
 &lt;/ol&gt;
