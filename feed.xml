@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:05:52-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:09:10-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -33,13 +33,37 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Agile:
- | Values | Practices |
- | - | - |
- | Customer collaboration | Onsite customer (XP), Embedded product manager (Scrum) |
- | Responding to change | Continuously updated &amp;amp; prioritized product backlog (Scrum) |
- | Working software | Iterative Development (Sprints) &amp;amp; Sprint Review (Scrum) |
- | Individuals and interations | Sprint retrospective (Scrum) |&lt;/li&gt;
+  &lt;li&gt;Agile:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Values&lt;/th&gt;
+      &lt;th&gt;Practices&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Customer collaboration&lt;/td&gt;
+      &lt;td&gt;Onsite customer (XP), Embedded product manager (Scrum)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Responding to change&lt;/td&gt;
+      &lt;td&gt;Continuously updated &amp;amp; prioritized product backlog (Scrum)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Working software&lt;/td&gt;
+      &lt;td&gt;Iterative Development (Sprints) &amp;amp; Sprint Review (Scrum)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Individuals and interations&lt;/td&gt;
+      &lt;td&gt;Sprint retrospective (Scrum)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
   &lt;li&gt;XP:
     &lt;ul&gt;
       &lt;li&gt;Test first, pair programming, incremental design.&lt;/li&gt;
@@ -56,15 +80,36 @@
 
 &lt;ol&gt;
   &lt;li&gt;Iron Triangle for Planning (Project Constraints):
- | | Scope | |
- |:-:|:-:|:-:|
- | / | Quality | \ |
- | Cost | ——- | Time |
     &lt;ul&gt;
       &lt;li&gt;Fixed-scope: Then variables are time and cost;&lt;/li&gt;
       &lt;li&gt;Fixed-date: Then varaible is scope.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Scope&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;/&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Quality&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;\&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Cost&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;——-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Time&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
   &lt;li&gt;Definition of “Done” (DOD): two columns: Task/Action, Quality Check, or just one column like the ones on Trello;&lt;/li&gt;
   &lt;li&gt;People usually underestimate by a factor of 2;&lt;/li&gt;
   &lt;li&gt;Planning Poker combines analogy, disaggregation and expert judgment.&lt;/li&gt;
