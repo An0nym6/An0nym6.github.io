@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-08T18:21:37-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
-
-&lt;style&gt;
-    .image-container {
-        text-align: center;
-    }
-    img {
-        max-width: 400px;
-        max-height: 300px;
-        width: auto;
-        height: auto;
-    }
-&lt;/style&gt;
-
-&lt;h1 id=&quot;service-oriented-computing&quot;&gt;Service Oriented Computing&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-08T18:24:08-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -105,7 +91,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;XPath examples:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/1.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/2.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/3.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+    &lt;p&gt;XPath examples:&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/1.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/2.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;XQuery: For, Let, Where, Order by, Return (FLWOR). Example:&lt;/li&gt;
 &lt;/ol&gt;
@@ -174,7 +160,7 @@ return $x/title
       &lt;li&gt;WSDL / REST supports a stateless model; While a business process (BP) is characterized by long-running, stateful sequence of operations;&lt;/li&gt;
       &lt;li&gt;Business process orchestration;&lt;/li&gt;
       &lt;li&gt;BPEL also has &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;throw&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;catch&amp;gt;&lt;/code&gt;;&lt;/li&gt;
-      &lt;li&gt;Example:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/4.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/5.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+      &lt;li&gt;Example:&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/4.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/5.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;WSRF (Web Services Resource Framework) is stateful.&lt;/li&gt;
@@ -189,11 +175,11 @@ return $x/title
       &lt;li&gt;UDDI (Universal Description Discovery and Integration) registry is one typical example of centralized ~:
         &lt;ul&gt;
           &lt;li&gt;Four elements: BusinessEntity, BusinessService, BindingTemplate, tModel.&lt;/li&gt;
-          &lt;li&gt;WSDL and UDDI:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/7.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+          &lt;li&gt;WSDL and UDDI:&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/7.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
           &lt;li&gt;UDDI Search Markup Language (USML) for supporting “Google” style services Search.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;WSIL (Web Services Inspection Language) is one example of publishing web services as distributed documents. Example:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/6.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+      &lt;li&gt;WSIL (Web Services Inspection Language) is one example of publishing web services as distributed documents. Example:&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/6.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Advanced UDDI Search Engine (AUSE); Dynamic Service Discovery Framework (DSDF);&lt;/li&gt;
       &lt;li&gt;The federated framework provides a uniform interface for both UDDI-based and WSIL-based service discovery.&lt;/li&gt;
     &lt;/ul&gt;
@@ -209,7 +195,7 @@ return $x/title
 &lt;h4 id=&quot;week-10&quot;&gt;Week 10&lt;/h4&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;MetaWSDL is a superset of WSDL: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/8.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;
+  &lt;li&gt;MetaWSDL is a superset of WSDL: &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/8.png&quot; alt=&quot;&quot; /&gt;
     &lt;ul&gt;
       &lt;li&gt;It should be published to the Internet associated with the original WSDL documents.&lt;/li&gt;
     &lt;/ul&gt;
@@ -286,13 +272,13 @@ return $x/title
       &lt;li&gt;FROM, FROM NAMED.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Turtle (Terse RDF Triple Language). Turtle and SPARQL example: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/9.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+  &lt;li&gt;Turtle (Terse RDF Triple Language). Turtle and SPARQL example: &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/9.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;week-14&quot;&gt;Week 14&lt;/h4&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;A more complex example of RDF: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/10.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+  &lt;li&gt;A more complex example of RDF: &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/10.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;OWL (Web Ontology Language); OWL-S (Semantic Markup for Web Service).&lt;/li&gt;
   &lt;li&gt;WSMF (Web Service Modeling Framework).&lt;/li&gt;
 &lt;/ol&gt;
