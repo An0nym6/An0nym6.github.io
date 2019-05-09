@@ -1,4 +1,355 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-21T22:09:41-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-08T18:21:37-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
+
+&lt;style&gt;
+    .image-container {
+        text-align: center;
+    }
+    img {
+        max-width: 400px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;h1 id=&quot;service-oriented-computing&quot;&gt;Service Oriented Computing&lt;/h1&gt;
+
+&lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Generations of Software Engineering:
+    &lt;ul&gt;
+      &lt;li&gt;1st: Waterfall, compiler, OS, &lt;strong&gt;&lt;em&gt;programming language&lt;/em&gt;&lt;/strong&gt;;&lt;/li&gt;
+      &lt;li&gt;2nd: Stuffs we learned in FSE (OOAD, patterns, modeling…);&lt;/li&gt;
+      &lt;li&gt;3rd: SOC, &lt;strong&gt;&lt;em&gt;platform&lt;/em&gt;&lt;/strong&gt; is the key.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Service operational models:
+    &lt;ul&gt;
+      &lt;li&gt;Hosted service model;&lt;/li&gt;
+      &lt;li&gt;Business process outsourcing;&lt;/li&gt;
+      &lt;li&gt;Data-center outsourcing;&lt;/li&gt;
+      &lt;li&gt;Services through online broker agency.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Service charge models:
+    &lt;ul&gt;
+      &lt;li&gt;Free-of-charge models;&lt;/li&gt;
+      &lt;li&gt;Fee-based models;&lt;/li&gt;
+      &lt;li&gt;Government service models.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Service Level Agreement (SLA): Pay more for better service. Can support large user base and usage scenarios.&lt;/li&gt;
+  &lt;li&gt;A service-oriented system is modeled as a feedback system.&lt;/li&gt;
+  &lt;li&gt;Service lifecycle:
+    &lt;ul&gt;
+      &lt;li&gt;Consulting &amp;amp; strategic plan;&lt;/li&gt;
+      &lt;li&gt;Service engagement;&lt;/li&gt;
+      &lt;li&gt;Service delivery;&lt;/li&gt;
+      &lt;li&gt;Service operation;&lt;/li&gt;
+      &lt;li&gt;Billing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vertical services: Service industries (banking, telecom, …); Horizontal services: Commom services (Business services: CRM, …, has business logic, supports multiple scenarios; IT services: database, OS).&lt;/li&gt;
+  &lt;li&gt;SOC is a discipline (umbrella); SOA is a architectural model (overall software system design); Web service is the best enabling technology.&lt;/li&gt;
+  &lt;li&gt;Typical service system: &amp;lt;Inputs, Outputs, Goals, Transformation, Components, Sensors&amp;gt;.&lt;/li&gt;
+  &lt;li&gt;IT-enabled service: Outsourcing of processes that can be enabled with information technology and covers diverse areas; It’s about relationship between providers and consumers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-2&quot;&gt;Week 2&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTML and XML are both based on SGML (Standard Generalized Markup Language).&lt;/li&gt;
+  &lt;li&gt;XML tags are case-sensitive.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;![CDATA[This is a comment]]&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Each XML document must have a unique first element: the root node.&lt;/li&gt;
+  &lt;li&gt;DTD serves as the &lt;strong&gt;&lt;em&gt;grammar&lt;/em&gt;&lt;/strong&gt; for underlying XML document. Example:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-DTD&quot;&gt;&amp;lt;!DOCTYPE db[
+    &amp;lt;!ELEMENT db(person*)&amp;gt;
+    &amp;lt;!ELEMENT person(name, age, email)&amp;gt;
+    &amp;lt;!ELEMENT name(#PCDATA)&amp;gt;
+    &amp;lt;!ELEMENT age(#PCDATA)&amp;gt;
+    &amp;lt;!ELEMENT email(#PCDATA)&amp;gt;
+]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;XML Schema: Grammar for specifying valid XML documents. It is XML itself, so it’s verbose. Example:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;xs:element name=&quot;note&quot;&amp;gt;
+    &amp;lt;xs:complexType&amp;gt;
+        &amp;lt;xs:sequence&amp;gt;
+            &amp;lt;xs:element name=&quot;to&quot; type=&quot;xs:string&quot; /&amp;gt;
+            &amp;lt;xs:element name=&quot;from&quot; type=&quot;xs:string&quot; /&amp;gt;
+            &amp;lt;xs:element name=&quot;heading&quot; type=&quot;xs:string&quot; /&amp;gt;
+            &amp;lt;xs:element name=&quot;body&quot; type=&quot;xs:string&quot; /&amp;gt;
+        &amp;lt;/xs:sequence&amp;gt;
+    &amp;lt;/xs:complexType&amp;gt;
+&amp;lt;/xs:element&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;DTD vs. XML Schema:
+    &lt;ul&gt;
+      &lt;li&gt;DTD (Old): Learning curve but terse;&lt;/li&gt;
+      &lt;li&gt;XML Schema: Verbose but powerful (extensible, data types, namespaces).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XML parsing:
+    &lt;ul&gt;
+      &lt;li&gt;DOM (Document Object Model): Load whole XML document in memory: Faster;&lt;/li&gt;
+      &lt;li&gt;SAX (Simple API for XML Parsing): Supports larger files.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;XPath examples:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/1.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/2.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/3.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XQuery: For, Let, Where, Order by, Return (FLWOR). Example:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-XQuery&quot;&gt;for $x in doc(&quot;book.xml&quot;)/bookstore/book
+where $x/price &amp;gt; 30
+order by $x/title
+return $x/title
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Other information:
+    &lt;ul&gt;
+      &lt;li&gt;JSON also has JSON Schema for validation;&lt;/li&gt;
+      &lt;li&gt;Same Origin Policy (SOP): Full access to same origin (network, documents, storage, cookies);&lt;/li&gt;
+      &lt;li&gt;XSLT (Extensible Stylesheet Language Transformations) is a language for transforming XML documents into other documents;&lt;/li&gt;
+      &lt;li&gt;XML data binding refers to the process of representing the information in an XML document as an object in computer memory.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-3&quot;&gt;Week 3&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;REST (Representational State Transfer) is a server-side technique; AJAX is a web technique which can only retrieve data from the server side. AJAX can be part of REST but REST can never be AJAX.&lt;/li&gt;
+  &lt;li&gt;HTTP (Hypertext Transfer Protocol).&lt;/li&gt;
+  &lt;li&gt;Mashup:
+    &lt;ul&gt;
+      &lt;li&gt;Pros: lightweight app, lightweight &amp;amp; rapid development, low cost for gathering data;&lt;/li&gt;
+      &lt;li&gt;Cons: Dependency, versioning, copyright, security.&lt;/li&gt;
+      &lt;li&gt;Component discovery &amp;amp; selection -&amp;gt; Composition &amp;amp; immediate deployment -&amp;gt; Use and evolution -&amp;gt; … (loop).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-4&quot;&gt;Week 4&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;WSDL (Web Service Description Language). WSDL 1.1 example:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;message name=&quot;getPriceRequest&quot;&amp;gt;
+    &amp;lt;part name=&quot;productId&quot; type=&quot;xs:string&quot; /&amp;gt;
+&amp;lt;/message&amp;gt;
+
+&amp;lt;message name=&quot;getPriceResponse&quot;&amp;gt;
+    &amp;lt;part name=&quot;value&quot; type=&quot;xs:string&quot; /&amp;gt;
+&amp;lt;/message&amp;gt;
+
+&amp;lt;portType name=&quot;productPrice&quot;&amp;gt;
+    &amp;lt;operation&amp;gt;
+        &amp;lt;input message=&quot;getPriceRequest&quot; /&amp;gt;
+        &amp;lt;output message=&quot;getPriceResponse&quot; /&amp;gt;
+    &amp;lt;/operation&amp;gt;
+&amp;lt;/portType&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;SOAP (Single Object Access Protocol) acts as the &lt;strong&gt;&lt;em&gt;messaging protocol&lt;/em&gt;&lt;/strong&gt; binding to HTTP and SMTP:
+    &lt;ul&gt;
+      &lt;li&gt;WSDL binding to SOAP: In WSDL, you will need to specify binding with SOAP, then you can write SOAP message to communicate with the service.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BPEL (Business Process Execution Language):
+    &lt;ul&gt;
+      &lt;li&gt;WSDL / REST supports a stateless model; While a business process (BP) is characterized by long-running, stateful sequence of operations;&lt;/li&gt;
+      &lt;li&gt;Business process orchestration;&lt;/li&gt;
+      &lt;li&gt;BPEL also has &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;throw&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;catch&amp;gt;&lt;/code&gt;;&lt;/li&gt;
+      &lt;li&gt;Example:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/4.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/5.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;WSRF (Web Services Resource Framework) is stateful.&lt;/li&gt;
+  &lt;li&gt;WS-I (Web Services Interoperability) organization is to tackle the challenges of interoperability among web services by introducing conventions and best practices.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-5&quot;&gt;Week 5&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A web service can be published in a centralized services registry or a distributed services registry:
+    &lt;ul&gt;
+      &lt;li&gt;UDDI (Universal Description Discovery and Integration) registry is one typical example of centralized ~:
+        &lt;ul&gt;
+          &lt;li&gt;Four elements: BusinessEntity, BusinessService, BindingTemplate, tModel.&lt;/li&gt;
+          &lt;li&gt;WSDL and UDDI:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/7.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+          &lt;li&gt;UDDI Search Markup Language (USML) for supporting “Google” style services Search.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;WSIL (Web Services Inspection Language) is one example of publishing web services as distributed documents. Example:&amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/6.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+      &lt;li&gt;Advanced UDDI Search Engine (AUSE); Dynamic Service Discovery Framework (DSDF);&lt;/li&gt;
+      &lt;li&gt;The federated framework provides a uniform interface for both UDDI-based and WSIL-based service discovery.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-7&quot;&gt;Week 7&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;LDA (Latent Dirichlet Allocation): Using Gibbs Sampling to calculate the result.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-10&quot;&gt;Week 10&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;MetaWSDL is a superset of WSDL: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/8.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;
+    &lt;ul&gt;
+      &lt;li&gt;It should be published to the Internet associated with the original WSDL documents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ESB (Enterprise Service Bus) consists of 4 components: mediators, services registry, choreographer, rule engine. ESB can do:
+    &lt;ul&gt;
+      &lt;li&gt;Routing;&lt;/li&gt;
+      &lt;li&gt;Message transformation: XML to object),&lt;/li&gt;
+      &lt;li&gt;Message enhancement: Supply data included in original data;&lt;/li&gt;
+      &lt;li&gt;Protocol transformation;&lt;/li&gt;
+      &lt;li&gt;Service mapping;&lt;/li&gt;
+      &lt;li&gt;Message processing;&lt;/li&gt;
+      &lt;li&gt;Process choreography: Co-ordination of multiple &lt;strong&gt;&lt;em&gt;business services&lt;/em&gt;&lt;/strong&gt;, usually BPEL-based;&lt;/li&gt;
+      &lt;li&gt;Services orchestration: Co-ordination of multiple &lt;strong&gt;&lt;em&gt;implement services&lt;/em&gt;&lt;/strong&gt;, usually BPEL-based;&lt;/li&gt;
+      &lt;li&gt;Transaction management;&lt;/li&gt;
+      &lt;li&gt;Security.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SOA Reference Architecture (SOA-RA) partitions an SOA-based system into reusable achitecture components.&lt;/li&gt;
+  &lt;li&gt;Service-Oriented Modeling and Architecture (SOMA) guides a generic engineering process. It identifies 3 steps: identification, specification, realization.&lt;/li&gt;
+  &lt;li&gt;Different layers of web service standards:
+    &lt;ul&gt;
+      &lt;li&gt;Transport Layer: HTTP / HTTPS, SMTP (Simple Mail Transport Protocol, on port 25), RMI (Java Remote Method Invocation) / IIOP (Internet Inter-ORB Protocol), JMS (Java Message Service);&lt;/li&gt;
+      &lt;li&gt;Messaging Layer: XML, SOAP, WS-Adressing, WS-Renewable;&lt;/li&gt;
+      &lt;li&gt;Description / Publishing / Discovery Layer: XSD (XML Schema Definition), WSDL, WSRF (WS-Resource Framework), WS-Resource Properties (part of WSRF), UDDI, Others (WS-Based Faults, WS-Policy, WS-Metadata Exchange);&lt;/li&gt;
+      &lt;li&gt;QoS (Quality of Service Layer): WS-Security, WS-Policy, WS-TM (WS-Transaction Management), WS-Reliable Messaging, WS-Resource Lifetime;&lt;/li&gt;
+      &lt;li&gt;Service Composition Layer: SOAP + WSDL + UDDI, BPEL4WS, WS-Service Group, WS-Notification&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Industry-specific service-oriented standards:
+    &lt;ul&gt;
+      &lt;li&gt;Electronic Industry: RosettaNet.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-11&quot;&gt;Week 11&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;BPOL (Business Process Outsourcing Language).&lt;/li&gt;
+  &lt;li&gt;SGA (Simple Genetic Algorithm) steps:
+    &lt;ul&gt;
+      &lt;li&gt;Select parents from population;&lt;/li&gt;
+      &lt;li&gt;Shuffle mating pool;&lt;/li&gt;
+      &lt;li&gt;For each pair, apply crossover with probability p&lt;sub&gt;c&lt;/sub&gt;;&lt;/li&gt;
+      &lt;li&gt;For each offspring, apply mutation with probability p&lt;sub&gt;m&lt;/sub&gt; for each bit;&lt;/li&gt;
+      &lt;li&gt;Replace old population with new offsprings.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Mutation-only-EA is possible, xover-only-EA won’t work.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-12&quot;&gt;Week 12&lt;/h4&gt;
+
+&lt;p&gt;🍺&lt;/p&gt;
+
+&lt;h4 id=&quot;week-13&quot;&gt;Week 13&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;RDF (Resource Description Framework):
+    &lt;ul&gt;
+      &lt;li&gt;It also has RDFS (RDF Schema): XMLS (XML Schema) is not an ontology language, while RDFS is an ontology language;&lt;/li&gt;
+      &lt;li&gt;It is graphical formalism;&lt;/li&gt;
+      &lt;li&gt;It supports containers: Bag, Seq, Alt.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In graph database, we have: Subject –Predicate–&amp;gt; Object; In RDF statement, we have: Resource –Property–&amp;gt;Value.&lt;/li&gt;
+  &lt;li&gt;Relational Database has tables with pre-defined schema, while RDF has knowledge without constraints.&lt;/li&gt;
+  &lt;li&gt;SPARQL (SPARQL Protocol and RDF Query Language):
+    &lt;ul&gt;
+      &lt;li&gt;SELECT, ASK (return a boolean), DESCRIBE, CONSTRUCT;&lt;/li&gt;
+      &lt;li&gt;FILTER, DISTINCT, ORDER BY, LIMIT, OFFSET;&lt;/li&gt;
+      &lt;li&gt;UNION (like “or”), OPTIONAL;&lt;/li&gt;
+      &lt;li&gt;FROM, FROM NAMED.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Turtle (Terse RDF Triple Language). Turtle and SPARQL example: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/9.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-14&quot;&gt;Week 14&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A more complex example of RDF: &amp;lt;div class=&quot;image-container&quot;&amp;gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/SOC/10.png&quot; alt=&quot;&quot; /&gt;&amp;lt;/div&amp;gt;&lt;/li&gt;
+  &lt;li&gt;OWL (Web Ontology Language); OWL-S (Semantic Markup for Web Service).&lt;/li&gt;
+  &lt;li&gt;WSMF (Web Service Modeling Framework).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;week-15&quot;&gt;Week 15&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A microservices architecture puts each element of functionality into a separate service. Modules run in different processes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;key-information&quot;&gt;Key Information&lt;/h4&gt;
+
+&lt;h5 id=&quot;web-service-standard-stack&quot;&gt;Web Service Standard Stack&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Transport layer: Provides core communication and interactions for web services.
+    &lt;ul&gt;
+      &lt;li&gt;HTTP / HTTPS: Runs on 80 / 443; Over TCP; Request / response protocol to transfer information over the Internet;&lt;/li&gt;
+      &lt;li&gt;SMTP: Runs on 25; Simple Mail Transfer Protocol; Text-based protocol to send mail over the Internet;&lt;/li&gt;
+      &lt;li&gt;RMI / IIOP: Java Romote Method Invocation to create distributed Java-based app; Internet Inter-ORB Protocol is a tranport protocol for communication under CORBA;&lt;/li&gt;
+      &lt;li&gt;JMS (Java Message Service): A standard for reliable enterprise messaging.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Messaging layer: Appropriately formats messages for exchanging information between web services.
+    &lt;ul&gt;
+      &lt;li&gt;XML: “Common language” for services to exchange information;&lt;/li&gt;
+      &lt;li&gt;SOAP: A simple, lightweight protocol to exchange structured and typed information;&lt;/li&gt;
+      &lt;li&gt;WS-Adressing: Identifies WS endpoints, and to secure end-to-end identifications in messages;&lt;/li&gt;
+      &lt;li&gt;WS-Renewable: provides a mechanism for renewing reference to web resource.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Description / Publishing / Discovery layer: No need to explain.
+    &lt;ul&gt;
+      &lt;li&gt;XSD: XML Schema Definition, no need to explain;&lt;/li&gt;
+      &lt;li&gt;WSDL: No need to explain;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;em&gt;WS-Resource Property: Part of WSRF, describes how to view and modify web resourse;&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;UDDI: No need to explain;&lt;/li&gt;
+      &lt;li&gt;WS-Base Faults: Defines an XML Schema type for base faults, and how they can be extended;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;em&gt;WS-Policy: Describe capabilities, requirements and general characteristics of a WS;&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;WS-Metadata Exchange: Facilitate the retrieval of metadata from WS.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;QoS layer: Addresses the NFR of WS.
+    &lt;ul&gt;
+      &lt;li&gt;WS-Security: A set of mechanisms to secure SOAP message exchange;&lt;/li&gt;
+      &lt;li&gt;WS-TM: “TM” for “Transaction Model”, protocols for managing transaction features in business activities;&lt;/li&gt;
+      &lt;li&gt;WS-Resource Lifetime: To inspect and moniter the lifetime of WS and how WS can be destroyed;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Service Composition Layer: Allows developers to compose services together for a common business goal.
+    &lt;ul&gt;
+      &lt;li&gt;BPEL4WS: No need to explain;&lt;/li&gt;
+      &lt;li&gt;WS-Service Group: A wide variety of collections of web services or WS-Resources;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;em&gt;WS-Notification: A set of specifications that provide support for events.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -1600,20 +1951,4 @@ for k = 1 ... V do
 
 &lt;p&gt;我在“文笔”这一项给出的四星并不代表大刘的文学素质不够好，相反，我这样的工科生难以望其项背。四星只是为了和《诸葛亮传》那样极致优美的文笔加以区分，《三体》中存在极少数的语言不规范并不影响它的伟大。&lt;/p&gt;
 
-&lt;p&gt;我非常推荐所有理工科的同学们都阅读一下《三体》，它给你带来的震撼难以用言语形容，只有自己读过之后才能真切感受。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★★</summary></entry><entry><title type="html">《大谋小计五十年：诸葛亮传 第一卷》书评</title><link href="/2018/05/24/%E5%A4%A7%E8%B0%8B%E5%B0%8F%E8%AE%A1%E4%BA%94%E5%8D%81%E5%B9%B4-%E8%AF%B8%E8%91%9B%E4%BA%AE%E4%BC%A0-%E7%AC%AC%E4%B8%80%E5%8D%B7-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《大谋小计五十年：诸葛亮传 第一卷》书评" /><published>2018-05-24T21:00:00-07:00</published><updated>2018-05-24T21:00:00-07:00</updated><id>/2018/05/24/%E3%80%8A%E5%A4%A7%E8%B0%8B%E5%B0%8F%E8%AE%A1%E4%BA%94%E5%8D%81%E5%B9%B4:%E8%AF%B8%E8%91%9B%E4%BA%AE%E4%BC%A0%20%E7%AC%AC%E4%B8%80%E5%8D%B7%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/05/24/%E5%A4%A7%E8%B0%8B%E5%B0%8F%E8%AE%A1%E4%BA%94%E5%8D%81%E5%B9%B4-%E8%AF%B8%E8%91%9B%E4%BA%AE%E4%BC%A0-%E7%AC%AC%E4%B8%80%E5%8D%B7-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★☆&lt;/p&gt;
-
-&lt;p&gt;文笔：★★★★★&lt;/p&gt;
-
-&lt;p&gt;排版：★★★★★&lt;/p&gt;
-
-&lt;p&gt;综合：★★★★★&lt;/p&gt;
-
-&lt;p&gt;作为一名工科生，我在文学方面并没有多大的造诣，本文只简单谈谈自己一些片面的观后感，如有谬误，欢迎指正。&lt;/p&gt;
-
-&lt;p&gt;正如马伯庸在本书序言中所述，作者若虚著此书的目的是洗去诸葛亮脸上的油彩。人们熟知的《三国演义》中有太多诸葛亮的浮夸故事，因此若虚希望能还原出一个“有血有肉、真情实感”的诸葛亮。作者确实做到了这一点，若虚在研读大量史实之后在此基础上进行猜想，细节丰富地描述了诸葛亮从几岁到二十几岁这一时间阶段的生活经历，如果将历史文献中的诸葛亮比作像素图，那么这本书中的诸葛亮就如 AR 立体模型一般真实。&lt;/p&gt;
-
-&lt;p&gt;作者对文字的驾驭能力堪称一流。书中诸葛亮和刘备这两条主线同时推进，起初它们像两条平行线，但渐渐地它们有了夹角，似乎会在不久的将来相会。作者善以景衬情，对自然事物的描写信手拈来，让读者眼中有画，也能真切体会到人物情感。作者还会时不时摘来一两句引用，或是赋一两首诗歌，让读者嗅到书香。最令我惊叹的是书中对诸葛亮几次辩述的描写，诸葛亮通过言语辩倒对手时，作者也需辩倒读者，诸葛亮有理有据地证明着自己论点时，也是体现着本书作者对这些问题的深刻思考。&lt;/p&gt;
-
-&lt;p&gt;在我看来，卷一美中不足的是作者并没能“抹去诸葛亮脸上的油彩”。可能因为作者本身对诸葛亮的痴情，全书字里行间内都透着他/她对诸葛亮的喜爱。除在他年幼习棋时，本书中的诸葛亮对弈未尝败过一场。这里的对弈不只指围棋，还指围棋的各种变体，以及民间大众喜欢的各种博弈游戏；诸葛亮的对手也不只指路人甲乙丙丁，还包括世间各路顶级高手。但凡是智力比拼，诸葛亮也未尝败过一场，唯一的遗憾是在队友拖后腿的情况下与庞统战平，除此之外的比拼诸葛亮均全胜。若虚去除了“草船借箭”、“空城计”这样的神话，但他/她却杜撰出了另一批神话。&lt;/p&gt;
-
-&lt;p&gt;《大谋小计五十年：诸葛亮传》全书分为五卷，我所借阅的是第一卷。本卷内容是人们较少知晓的诸葛亮幼年时期的故事，如果大家有兴趣的话，不妨一读。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★☆</summary></entry></feed>
+&lt;p&gt;我非常推荐所有理工科的同学们都阅读一下《三体》，它给你带来的震撼难以用言语形容，只有自己读过之后才能真切感受。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★★</summary></entry></feed>
