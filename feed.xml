@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-08T18:24:08-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-10T11:51:45-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">如何写出高效的代码期末复习笔记</title><link href="/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期末复习笔记" /><published>2019-05-09T21:00:00-07:00</published><updated>2019-05-09T21:00:00-07:00</updated><id>/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Final%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -1921,20 +1923,4 @@ for k = 1 ... V do
   &lt;li&gt;Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.&lt;/li&gt;
   &lt;li&gt;Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).&lt;/li&gt;
   &lt;li&gt;Iterative min-conflicts is often surprisingly effective in solving CSP.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">《三体》书评</title><link href="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html" rel="alternate" type="text/html" title="《三体》书评" /><published>2018-08-17T21:00:00-07:00</published><updated>2018-08-17T21:00:00-07:00</updated><id>/2018/08/17/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B9%A6%E8%AF%84</id><content type="html" xml:base="/2018/08/17/%E4%B8%89%E4%BD%93-%E4%B9%A6%E8%AF%84.html">&lt;p&gt;内容：★★★★★&lt;/p&gt;
-
-&lt;p&gt;文笔：★★★★☆&lt;/p&gt;
-
-&lt;p&gt;排版：★★★★★&lt;/p&gt;
-
-&lt;p&gt;综合：★★★★★&lt;/p&gt;
-
-&lt;p&gt;作为一名工科生，我在文学方面并没有多大的造诣，本文只简单谈谈自己一些片面的观后感，如有谬误，欢迎指正。&lt;/p&gt;
-
-&lt;p&gt;《三体》最令我震惊的是其合理性，它不像是一本科幻小说，而是一本千万年后未来文明的历史教科书。科幻作品要做到这一点并不容易，其作者需要兼具过硬科学素质和极好的文学修养，而大刘做到了这一点。《三体》从“近代”讲起，一步一步走向深空，一步一步走向未来。在《三体 I》中人类了解到了外星文明的存在，并试图与它们建立联系，逐层揭开三体人的神秘面纱；《三体 II·黑暗森林》中罗辑与雕刻在质子上的微型计算机“智子”斗智斗勇，并悟出了“黑暗森林法则”；在《三体 III·死神永生》中人类受到了灭世的打击，太阳系被推往二维，程心与残存的人类突破光速，飞往深空，逐步认识到宇宙的终极秘密……&lt;/p&gt;
-
-&lt;p&gt;这样一个宏大的世界观中充满了严谨的逻辑，书中不断抛出一个个困难的问题，大刘给出的解决方案让你一次次豁然开朗：面壁者们应该如何躲避智子的监控，凭一己之力对抗与自己实力悬殊的三体文明？在黑暗森林法则下三体人暗示的安全声明究竟是什么？云天明的童话中暗示的科技信息又是什么？书中给出的答案精妙无比，让你不断拍手称快。这种感受很接近你对一道数学题苦思冥想很久后，翻阅答案时的那种顿悟感。&lt;/p&gt;
-
-&lt;p&gt;我在“文笔”这一项给出的四星并不代表大刘的文学素质不够好，相反，我这样的工科生难以望其项背。四星只是为了和《诸葛亮传》那样极致优美的文笔加以区分，《三体》中存在极少数的语言不规范并不影响它的伟大。&lt;/p&gt;
-
-&lt;p&gt;我非常推荐所有理工科的同学们都阅读一下《三体》，它给你带来的震撼难以用言语形容，只有自己读过之后才能真切感受。&lt;/p&gt;</content><author><name></name></author><category term="阅读" /><summary type="html">内容：★★★★★</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry></feed>
