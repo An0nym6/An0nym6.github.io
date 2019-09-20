@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>学习笔记</title>
-  <meta name="description" content="©️ Designed by shuq3 & An0nym6">
+  <title>AI 第三部分“机器学习”复习笔记</title>
+  <meta name="description" content="<p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
+
+">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/scss/main.css">
-  <link rel="canonical" href="/archives/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+  <link rel="canonical" href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,104 +48,104 @@
         <div class="container">
   <div class="row">
     <div class="col-md-8 padding-top">
-      
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">AI 第三部分“机器学习”复习笔记</div>
+    <div class="date" itemprop="datePublished">2018 年 11 月 24 日</div>
+  </header>
+
+  <div class="padding-top" itemprop="articleBody">
+    <p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
+
+<h4 id="lecture-18-19">Lecture 18-19</h4>
+
+<ol>
+  <li>Bayes’ rule: P(A|B) = (P(B|A) · P(A)) / P(B).</li>
+  <li>Normalization &amp; marginalization: P(X|e) = P(X, e) / P(e) = α · P(X, e) = α · Σ<sub>y</sub> P(X, e, y).</li>
+  <li>In the alarm network, calls are conditionally independent of burglaries and earthquakes, but not independent of them.</li>
+</ol>
+
+<h4 id="lecture-20">Lecture 20</h4>
+
+<ol>
+  <li>Entropy: -Σ<sub>i</sub> P(v<sub>i</sub>) · ln(P(v<sub>i</sub>)):
+    <ul>
+      <li>The more uniform the probability distribution, the greater its information.</li>
+    </ul>
+  </li>
+  <li>ID3 algorithm: Top-down construction of decision tree by recursively selecting “best attribute” to use at the current node in tree.
+    <ul>
+      <li>“best attribute”: Choose the attribute that has the largest expected information gain.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-20-21">Lecture 20-21</h4>
+
+<ol>
+  <li>Back-propagation is synchronous while Hopfield net is asynchronous; Back-propagation tries to minimize the error while Hopfield net tries to minimize the energy.</li>
+</ol>
+
+<h4 id="lecture-22">Lecture 22</h4>
+
+<ol>
+  <li>Markov Decision Process (MDP):
+    <ul>
+      <li>The problem is to find the optimal policy, which maximizes utility at each state;</li>
+      <li>Bellman equation: U(s) = R(s) + γ max<sub>a</sub>(Σ<sub>s<sub>1</sub></sub>(P(s<sub>1</sub> | s, a) · U(s<sub>1</sub>))). Repeating this formula will converge to optimal policy.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-23">Lecture 23</h4>
+
+<ol>
+  <li>Reinforcement Learning:
+    <ul>
+      <li>Utility-based agent: if it already knows the transition model, then use MDP algorithm to solve for Maximum Expectation Utility (MEU) actions.</li>
+      <li>Q-learning agent: if it doesn’t know the transition model, then pick action that has highest utility in current state.<br />
+        <ul>
+          <li>Q(s, a) = Q(s, a) + α(R(s) + γ max<sub>a’</sub> (Q(s’, a’) − Q(s, a))) →<br />
+  Q(s, a) = (1 - α)Q(s, a) + α(R(s) + γ max<sub>a’</sub> Q(s’, a’))</li>
+          <li>Converge to correct values if α decays over time.</li>
+        </ul>
+      </li>
+      <li>Reflex agent: learn a policy directly, then pick the action that the policy says.
+        <ul>
+          <li>Can start right away and then learn as it goes.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="lecture-24-25">Lecture 24-25</h4>
+
+<p>Guest speaker.</p>
+
+<h4 id="lecture-26">Lecture 26</h4>
+
+<p>🍺</p>
 
 
-<div class="page-title">归档</div>
-
-
-  
-    
-    <div class="year">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>2019</span>
-    </div>
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">05-09</span>
-    <a href="/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">如何写出高效的代码期末复习笔记</a>
   </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
 
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">05-07</span>
-    <a href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">面向服务的计算期末复习笔记</a>
-  </div>
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
 
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">04-20</span>
-    <a href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">软件工程基础期末复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">03-20</span>
-    <a href="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">如何写出高效的代码期中复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">03-03</span>
-    <a href="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">面向服务的计算期中复习笔记</a>
-  </div>
-
-  
-  
-  
-    
-    <div class="year">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>2018</span>
-    </div>
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">11-29</span>
-    <a href="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">算法期末复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">11-24</span>
-    <a href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">AI 第三部分“机器学习”复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">10-26</span>
-    <a href="/2018/10/26/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">AI 第二部分“逻辑”复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">10-09</span>
-    <a href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">算法期中复习笔记</a>
-  </div>
-
-  
-  
-  
-  <div class="post-title">
-    <span class="badge badge-secondary">09-22</span>
-    <a href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">AI 第一部分“搜索”复习笔记</a>
-  </div>
-
+</article>
 
     </div>
     <div class="col-md-4 padding-top">

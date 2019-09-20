@@ -1,6 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-30T20:32:49+08:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">如何写出高效的代码期末复习笔记</title><link href="/2019/05/10/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期末复习笔记" /><published>2019-05-10T12:00:00+08:00</published><updated>2019-05-10T12:00:00+08:00</updated><id>/2019/05/10/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/10/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-20T10:36:05-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Final%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/08/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-08T12:00:00+08:00</published><updated>2019-05-08T12:00:00+08:00</updated><id>/2019/05/08/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/08/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
+&lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/median-of-two-sorted-arrays/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们很容易想到需要使用二分来完成这道题，但它的输入却是两个数组，这使普通的二分对此题无效。解这道题的关键在于意识到如果数组 1 的 break point i 确定了，那么数组 2 的 break point j 也确定了，因为我们需要维持中位数两端数字个数一致，因此我们只需要对 i 进行二分即可。这道题即使想到这里可能也需要一些时间才能写出，实现时我们需要对奇偶等一些细节进行探讨。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-5&quot;&gt;Problem 5&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/longest-palindromic-substring/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 看到这道题的直观想法是生成一个倒序字符串，然后使用动规找出最长公共子串，但是这样做需要考虑一种情况：acxyzca，它的“ac”和“ca”会被匹配到一起；另一种做法是直接动规，从一个点开始往两端寻找。但是这道题最快的解法其实是最简单的解法，那就是遍历字符串的每一个字符，同时往两端查找，虽然这种做法和动规同样是 O(n^2) 的最坏复杂度，但是考虑到多数情况下字符串都不对称，因此它的实际复杂度应该接近于 O(n)。我相信这道题应该还有更快的解法，但是刚刚提到的解法已经可以过这道题的要求了。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-11&quot;&gt;Problem 11&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/container-with-most-water/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们显然不能使用暴力 O(n^2) 来解这道题，凭直觉来看也不大可能是任何带 log 的复杂度，因此我们只能硬着头皮使用 O(n) 复杂度的算法：贪心。想出贪心算法非常简单，贪心的难点永远在于对它正确性的证明。&lt;/p&gt;
+
+&lt;p&gt;这道题我们使用的贪心算法是：起初将左边界和右边界分别安放在最两端，然后我们将较矮的那个边界向中心收，以此循环，直到左右边界相碰，最优解一定存在于这个过程的某个状态中。我们需要通过反证法来证明这个算法的正确性：假设某一时刻左边界为 i，右边界为 j，我们假设左边界较矮，因此我们需要进行 i++。算法的反面是，存在一个最优解，它的左边界就是 i，右边界是小于 j 的某一个值，而我们 i++ 时把它错过了。我们很容易证明这个反面的错误性，因为任何以 i 为左边界，右边界小于 j 的容器体积都不可能有容器 (i, j) 大，从而我们证明了贪心算法的正确性。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-16&quot;&gt;Problem 16&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/3sum-closest/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 这道题的解法其实很直观，暴力的话我们需要三重循环，但是其实这里有一个非常简单有效的优化，我们可以把首尾合到一个循环里，这样我们就可以使用 O(n^2) 的复杂度来解出这道题了。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-31&quot;&gt;Problem 31&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/next-permutation/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 先举一个例子：126543，它的下一个排列数是 132456。通过这个例子我们便已经可以得出算法了：倒序搜索这个数，找到第一个下降的点 2，颠倒它之后的所有数字 123456，再交换它与它之后的那个数字即可。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-32&quot;&gt;Problem 32&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/longest-valid-parentheses/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 直接给出一维动规的解法，这个答案有点巧妙：假设我们已经找到了当字符串长度为 n - 1 时的最长合理括号，那么如果第 n 位是“(”，答案保持不变；如果第 n 位是“)”，那么答案分两种情况：1. 如果第 n - 1 位是“(”，那么答案为上一步的答案加 2；2. 如果第 n - 1 位是“)”，上一步的答案为 a，那么答案为上一步的答案加 2 加上追踪到 a + 1 步前的答案。&lt;/p&gt;
+
+&lt;p&gt;一个简单的例子是：()((()))，前 7 步的答案是 ans = [0, 2, 2, 2, 2, 2, 4]，那么第 8 步的答案为 ans[7] + 2 + ans[7 - ans[7] - 1] = 4 + 2 + ans[2] = 8。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-37&quot;&gt;Problem 37&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/sudoku-solver/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 不用多想，DFS 是效率最高的解。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-41&quot;&gt;Problem 41&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/first-missing-positive/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 这道题很有意思，我们需要意识到一个问题，如果数组长度是 n 的话，那么我们需要找的那个丢掉的数一定是小于 n 的。根据这个思路我们就可以得出解决了，我们只需要遍历一下这个数组，如果扫描到数字 x，那么我们就把它放在第 x 位，如果 x 超出了 n，那么我们直接不管它即可；接着我们再扫描一次数组，找出数字不等于位置的第一个数，那个位置就是我们需要找的第一个丢失的整数。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-42&quot;&gt;Problem 42&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/trapping-rain-water/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 首先说这题的暴力思路：遍历每一个位置，往左往右找到边界，该位置的水的体积就是左右边界中的小值，这样的复杂度时 O(n^2)。优化它的思路也很简单，我们只需要实现正序倒序各遍历一次数组，求出每个位置的左右边界，计算水体积的时候直接查表，就可以成功地将复杂度压缩到 O(n)。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-45&quot;&gt;Problem 45&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;链接：&lt;/strong&gt; https://leetcode.com/problems/jump-game-ii/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我觉得这个问题是有难度的。我们很容易可以想出 O(n^2) 复杂度的解，但是我们需要用线性的时间来完成这道题。解决它的思路是使用 BFS 去搜索，但是我们不会将图给建起来，因为建图的代价本身就是 O(n^2)。这里用了一个小技巧来标记 BFS 的 level，那就是当前能达到的最远的点：一旦越过了这个点，那么我们就需要另一跳来达到它之后的点。&lt;/p&gt;
+
+&lt;p&gt;还是举一个简单的例子：[2, 3, 1, 1, 4]，第一 level 是 2，因为 0 跳只能到起始点；第二 level 是 3， 1，因为根据 0 + 2 我们最远只能到 1 的位置；第三 level 是 1，4，因为 1 + 3 已经可以达到终点 4 了。&lt;/p&gt;
+
+&lt;p&gt;算法做的事情很简单，线性地扫描一次数组，如果当前位置超过了当前最大值，那么跳数加一；如果没有则看当前位置加当前距离能否更新当前最大值。当走到终点时的跳数就是我们需要的答案。&lt;/p&gt;</content><author><name></name></author><category term="算法" /><summary type="html">为了找工作，题还是要刷起来~</summary></entry><entry><title type="html">如何写出高效的代码期末复习笔记</title><link href="/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期末复习笔记" /><published>2019-05-09T21:00:00-07:00</published><updated>2019-05-09T21:00:00-07:00</updated><id>/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/09/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Final%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期末复习笔记</title><link href="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期末复习笔记" /><published>2019-05-07T21:00:00-07:00</published><updated>2019-05-07T21:00:00-07:00</updated><id>/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/05/07/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -337,7 +405,7 @@ return $x/title
       &lt;li&gt;&lt;strong&gt;&lt;em&gt;WS-Notification: A set of specifications that provide support for events.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-21T12:00:00+08:00</published><updated>2019-04-21T12:00:00+08:00</updated><id>/2019/04/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">软件工程基础期末复习笔记</title><link href="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件工程基础期末复习笔记" /><published>2019-04-20T21:00:00-07:00</published><updated>2019-04-20T21:00:00-07:00</updated><id>/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/04/20/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -678,9 +746,9 @@ return $x/title
   &lt;li&gt;“Feature debt”, or features in the backlog is not a type of technical debt.&lt;/li&gt;
   &lt;li&gt;Grace Hopper first came up with the term “bug”.&lt;/li&gt;
   &lt;li&gt;Latent defects: unknown defects, fixed defects, unfixed known defects.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。</summary></entry><entry><title type="html">如何写出高效的代码期中复习笔记</title><link href="/2019/03/21/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期中复习笔记" /><published>2019-03-21T12:00:00+08:00</published><updated>2019-03-21T12:00:00+08:00</updated><id>/2019/03/21/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/21/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。</summary></entry><entry><title type="html">如何写出高效的代码期中复习笔记</title><link href="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期中复习笔记" /><published>2019-03-20T21:00:00-07:00</published><updated>2019-03-20T21:00:00-07:00</updated><id>/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期中复习笔记</title><link href="/2019/03/04/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期中复习笔记" /><published>2019-03-04T12:00:00+08:00</published><updated>2019-03-04T12:00:00+08:00</updated><id>/2019/03/04/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/04/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期中复习笔记</title><link href="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期中复习笔记" /><published>2019-03-03T20:00:00-08:00</published><updated>2019-03-03T20:00:00-08:00</updated><id>/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
 
 &lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
 
@@ -942,7 +1010,7 @@ return $x/title
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;BPEL supports long-running, stateful sequence, while WSDL supports a single, stateless model.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">算法期末复习笔记</title><link href="/2018/11/30/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期末复习笔记" /><published>2018-11-30T12:00:00+08:00</published><updated>2018-11-30T12:00:00+08:00</updated><id>/2018/11/30/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/30/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">算法期末复习笔记</title><link href="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期末复习笔记" /><published>2018-11-29T20:00:00-08:00</published><updated>2018-11-29T20:00:00-08:00</updated><id>/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
 
@@ -1192,7 +1260,7 @@ return $x/title
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第三部分“机器学习”复习笔记</title><link href="/2018/11/25/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第三部分“机器学习”复习笔记" /><published>2018-11-25T12:00:00+08:00</published><updated>2018-11-25T12:00:00+08:00</updated><id>/2018/11/25/AI%20%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%E2%80%9C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/25/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第三部分“机器学习”复习笔记</title><link href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第三部分“机器学习”复习笔记" /><published>2018-11-24T20:00:00-08:00</published><updated>2018-11-24T20:00:00-08:00</updated><id>/2018/11/24/AI%20%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%E2%80%9C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-18-19&quot;&gt;Lecture 18-19&lt;/h4&gt;
 
@@ -1262,7 +1330,7 @@ return $x/title
 
 &lt;h4 id=&quot;lecture-26&quot;&gt;Lecture 26&lt;/h4&gt;
 
-&lt;p&gt;🍺&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第二部分“逻辑”复习笔记</title><link href="/2018/10/27/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第二部分“逻辑”复习笔记" /><published>2018-10-27T12:00:00+08:00</published><updated>2018-10-27T12:00:00+08:00</updated><id>/2018/10/27/AI%20%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E2%80%9C%E9%80%BB%E8%BE%91%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/27/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+&lt;p&gt;🍺&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第二部分“逻辑”复习笔记</title><link href="/2018/10/26/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第二部分“逻辑”复习笔记" /><published>2018-10-26T21:00:00-07:00</published><updated>2018-10-26T21:00:00-07:00</updated><id>/2018/10/26/AI%20%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E2%80%9C%E9%80%BB%E8%BE%91%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/26/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-9-10&quot;&gt;Lecture 9-10&lt;/h4&gt;
 
@@ -1525,7 +1593,7 @@ return $x/title
       &lt;li&gt;Stop when two consecutive levels are identical; complexity is polynomial.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">算法期中复习笔记</title><link href="/2018/10/10/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期中复习笔记" /><published>2018-10-10T12:00:00+08:00</published><updated>2018-10-10T12:00:00+08:00</updated><id>/2018/10/10/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/10/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">算法期中复习笔记</title><link href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期中复习笔记" /><published>2018-10-09T21:00:00-07:00</published><updated>2018-10-09T21:00:00-07:00</updated><id>/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
 
 &lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
 
@@ -1739,188 +1807,4 @@ for k = 1 ... V do
   for i = 1 ... V do
     for j = 1 ... V do
       D[i, j, k] = min (D[i, j, k - 1], D[i, k, k - 1] + D[k, j, k - 1])
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry><entry><title type="html">AI 第一部分“搜索”复习笔记</title><link href="/2018/09/23/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="AI 第一部分“搜索”复习笔记" /><published>2018-09-23T12:00:00+08:00</published><updated>2018-09-23T12:00:00+08:00</updated><id>/2018/09/23/AI%20%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/09/23/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
-
-&lt;h4 id=&quot;lecture-1&quot;&gt;Lecture 1&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Agents are systems that perceive and act in some environment, including humans, robots, softbots, thermostats, etc.&lt;/li&gt;
-  &lt;li&gt;Environment is world in which agent operates.&lt;/li&gt;
-  &lt;li&gt;Cognitive Cycle: Perception, Memory Access, Decision, Learning, Action.&lt;/li&gt;
-  &lt;li&gt;The agent function is a mathematical relationship that maps percept sequences to actions in the environment.&lt;/li&gt;
-  &lt;li&gt;The agent function is computed by an agent program; the agent program runs on the physical architecture to implement the function.&lt;/li&gt;
-  &lt;li&gt;A rational agent chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date and the prior environment knowledge.&lt;/li&gt;
-  &lt;li&gt;PEAS description of the task environment:
-    &lt;ul&gt;
-      &lt;li&gt;Performance: Measure for success/progress/quality;&lt;/li&gt;
-      &lt;li&gt;Environment: The world in which the agent operates;&lt;/li&gt;
-      &lt;li&gt;Actuators: How the agent affects the environment;&lt;/li&gt;
-      &lt;li&gt;Sensors: How the agent perceives the environment.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Environment Types: fully vs. partially observable; deterministic vs. stochastic; episodic vs. sequential; static vs. dynamic; discrete vs. continuous; single vs. multi-agent.&lt;/li&gt;
-  &lt;li&gt;Four basic kinds of agent programs:
-    &lt;ul&gt;
-      &lt;li&gt;Simple reflex agents: Select action on the basis of only the current percept;&lt;/li&gt;
-      &lt;li&gt;Model-based reflex agents: To tackle partially observable environments; maintain internal state representing best estimate of current world situation; over time update state using world knowledge;&lt;/li&gt;
-      &lt;li&gt;Goal-based agents: Goals describe what agent wants; by changing goals, can change what agent does in same situation;&lt;/li&gt;
-      &lt;li&gt;Utility-based agents: Some solutions may be “better” – have higher utility; utility function maps a (sequence of) state(s) onto a real number which can help in optimization or in arbitration among goals or solutions;&lt;/li&gt;
-      &lt;li&gt;All can be turned into learning agents; And a more complex variation is Hybrid agents.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-2-4&quot;&gt;Lecture 2-4&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Blind/uninformed search; heuristic/informed search&lt;/li&gt;
-  &lt;li&gt;Uninformed search stratigies:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;BFS&lt;/th&gt;
-      &lt;th&gt;Uniform Cost&lt;/th&gt;
-      &lt;th&gt;DFS&lt;/th&gt;
-      &lt;th&gt;Depth limited&lt;/th&gt;
-      &lt;th&gt;Iterative deepening&lt;/th&gt;
-      &lt;th&gt;Bidirectional&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Complete?&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Optimal?&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Time&lt;/td&gt;
-      &lt;td&gt;b^d&lt;/td&gt;
-      &lt;td&gt;b^(1 + C* / ε)&lt;/td&gt;
-      &lt;td&gt;b^m&lt;/td&gt;
-      &lt;td&gt;b^l&lt;/td&gt;
-      &lt;td&gt;b^d&lt;/td&gt;
-      &lt;td&gt;b^(d / 2)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Space&lt;/td&gt;
-      &lt;td&gt;b^d&lt;/td&gt;
-      &lt;td&gt;b^(1 + C* / ε)&lt;/td&gt;
-      &lt;td&gt;b * m&lt;/td&gt;
-      &lt;td&gt;b * l&lt;/td&gt;
-      &lt;td&gt;b * d&lt;/td&gt;
-      &lt;td&gt;b^(d / 2)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Why do people have a hard time solving missionaries and cannibals? There are a number of constraints on solutions to this problem, for example, the boat only holds one or two people, you can never have more cannibals than missionaries on either side of the river, etc. Constraints are generally thought of as making it harder to solve a problem.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Informed search stratigies:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;BestFS&lt;/th&gt;
-      &lt;th&gt;A*&lt;/th&gt;
-      &lt;th&gt;RBFS&lt;/th&gt;
-      &lt;th&gt;((S)MA*)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Complete?&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;Y&lt;/td&gt;
-      &lt;td&gt;Y (same as A*)&lt;/td&gt;
-      &lt;td&gt;Y (if solution is reachable)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Optimal?&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-      &lt;td&gt;Y (if admissible (Tree Search) or consistent (Graph Search))&lt;/td&gt;
-      &lt;td&gt;Y (same as A*)&lt;/td&gt;
-      &lt;td&gt;Y (if solution is reachable)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Time&lt;/td&gt;
-      &lt;td&gt;b^m&lt;/td&gt;
-      &lt;td&gt;A* expands all nodes with f(n) &amp;lt; C* (C* is cost of optimal path); some nodes with f(n) = C&lt;em&gt;; no nodes with f(n) &amp;gt; C&lt;/em&gt;&lt;/td&gt;
-      &lt;td&gt;hard&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Space&lt;/td&gt;
-      &lt;td&gt;b^m&lt;/td&gt;
-      &lt;td&gt;Exponential&lt;/td&gt;
-      &lt;td&gt;b * d&lt;/td&gt;
-      &lt;td&gt;constant&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;A heuristic is admissible if it never overestimates the cost to reach the goal.&lt;/li&gt;
-  &lt;li&gt;A heuristic is consistent if for every node n and every successor n’ of n generated by any action: h(n) ≤ c(n, a, n’) + h(n’). A consistent heuristic is also admissible. It is rare for an admissible heuristic to be inconsistent.&lt;/li&gt;
-  &lt;li&gt;Memory-Bounded Heuristic Search:
-    &lt;ul&gt;
-      &lt;li&gt;Iterative-deepening A* (IDA*): Cutoff information is the f-cost (g + h) instead of depth;&lt;/li&gt;
-      &lt;li&gt;Recursive best-first search (RBFS): Search depth-first, only keep current path and branches from it in memory (saves memory over keeping entire level); Keep track of f value (f-limit) of best sibling of path currently exploring; a bit more efficient than IDA*;&lt;/li&gt;
-      &lt;li&gt;(Simple) Memory-bounded A* ((S)MA*): Drop the worst-leaf node when memory is full.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Branching factor → 1 ⇒ heuristic quality ↑.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The success of hill climbing depends very much on the shape of the state-space land-scape: if there are few local maxima and plateaux, random-restart hill climbing will find a good solution very quickly. NP-hard problems typically have an exponential number of local maxima to get stuck on. Despite this, a reasonably good local maximum can often be found after a small number of restarts.&lt;/li&gt;
-  &lt;li&gt;Local beam search: Start with k randomly generated nodes; generate all successors of each of the k; keep the best k out of the them; repeat till goal or stop condition reached.&lt;/li&gt;
-  &lt;li&gt;Simulated annealing: T ↓ ⇒ e^(△E / T) → -∞ ⇒ Probability of bad moves ↓&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;checkers/draughts: like chess; scrabble: like poker.&lt;/li&gt;
-  &lt;li&gt;Minimax: Complete? Y; Optimal? Y; Time? O(b^m); Space? O(b * m) or O(m).&lt;/li&gt;
-  &lt;li&gt;With “perfect ordering”, the alpha-beta pruning can reduce time complexity to O(b^(m/2)).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Methods for imporving backtracking efficiency in CSP:
-    &lt;ul&gt;
-      &lt;li&gt;Most constrained variable (minimum remaining values (MRV) heuristic): Choose the variable with the fewest legal values;&lt;/li&gt;
-      &lt;li&gt;Most constraining variable: Choose the variable with the most constraints on remaining variables;&lt;/li&gt;
-      &lt;li&gt;Least constraining value: Given a variable, choose the one that rules out the fewest values in the remaining variables.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.&lt;/li&gt;
-  &lt;li&gt;Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).&lt;/li&gt;
-  &lt;li&gt;Iterative min-conflicts is often surprisingly effective in solving CSP.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry></feed>
