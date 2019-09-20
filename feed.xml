@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-20T10:38:53-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-20T10:54:22-07:00</updated><id>/</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
 
 &lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/median-of-two-sorted-arrays/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们很容易想到需要使用二分来完成这道题，但它的输入却是两个数组，这使普通的二分对此题无效。解这道题的关键在于意识到如果数组 1 的 break point i 确定了，那么数组 2 的 break point j 也确定了，因为我们需要维持中位数两端数字个数一致，因此我们只需要对 i 进行二分即可。这道题即使想到这里可能也需要一些时间才能写出，实现时我们需要对奇偶等一些细节进行探讨。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们很容易想到需要使用二分来完成这道题，但它的输入却是两个数组，这使普通的二分对此题无效。解这道题的关键在于意识到如果数组 1 的 break point i 确定了，那么数组 2 的 break point j 也就确定了，因为我们需要维持中位数两端数字个数一致，因此我们只需要对 i 进行二分即可。这道题即使想到这里可能也需要一些时间才能写出，实现时我们需要对奇偶等一些细节进行判断。&lt;/p&gt;
 
 &lt;h5 id=&quot;problem-5&quot;&gt;Problem 5&lt;/h5&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-palindromic-substring/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 看到这道题的直观想法是生成一个倒序字符串，然后使用动规找出最长公共子串，但是这样做需要考虑一种情况：acxyzca，它的“ac”和“ca”会被匹配到一起；另一种做法是直接动规，从一个点开始往两端寻找。但是这道题最快的解法其实是最简单的解法，那就是遍历字符串的每一个字符，同时往两端查找，虽然这种做法和动规同样是 O(n^2) 的最坏复杂度，但是考虑到多数情况下字符串都不对称，因此它的实际复杂度应该接近于 O(n)。我相信这道题应该还有更快的解法，但是刚刚提到的解法已经可以过这道题的要求了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 看到这道题的直观想法是生成一个倒序字符串，然后使用动规找出最长公共子串，但是这样做需要考虑一种情况：acxyzca，它的“ac”和“ca”会被匹配到一起；另一种做法是直接动规，但是这道题最快的解法其实是最简单的解法，那就是遍历字符串的每一个字符，同时往两端查找，虽然这种做法和动规同样是 O(n^2) 的最坏复杂度，但是考虑到多数情况下字符串都不对称，因此它的实际复杂度应该接近于 O(n)。我相信这道题应该还有更快的解法，但是刚刚提到的解法已经可以满足这道题的速度要求了。&lt;/p&gt;
 
 &lt;h5 id=&quot;problem-11&quot;&gt;Problem 11&lt;/h5&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们显然不能使用暴力 O(n^2) 来解这道题，凭直觉来看也不大可能是任何带 log 的复杂度，因此我们只能硬着头皮使用 O(n) 复杂度的算法：贪心。想出贪心算法非常简单，贪心的难点永远在于对它正确性的证明。&lt;/p&gt;
 
-&lt;p&gt;这道题我们使用的贪心算法是：起初将左边界和右边界分别安放在最两端，然后我们将较矮的那个边界向中心收，以此循环，直到左右边界相碰，最优解一定存在于这个过程的某个状态中。我们需要通过反证法来证明这个算法的正确性：假设某一时刻左边界为 i，右边界为 j，我们假设左边界较矮，因此我们需要进行 i++。算法的反面是，存在一个最优解，它的左边界就是 i，右边界是小于 j 的某一个值，而我们 i++ 时把它错过了。我们很容易证明这个反面的错误性，因为任何以 i 为左边界，右边界小于 j 的容器体积都不可能有容器 (i, j) 大，从而我们证明了贪心算法的正确性。&lt;/p&gt;
+&lt;p&gt;这道题我们使用的贪心算法是：起初将左边界和右边界分别安放在最两端，然后我们将较矮的那个边界向中心收，以此循环，直到左右边界相碰，最优解一定存在于这个过程的某个状态中。我们需要通过反证法来证明这个算法的正确性：假设某一时刻左边界为 i，右边界为 j，我们假设左边界较矮，因此我们需要进行 i++。算法的反面是，存在一个最优解，它的左边界就是 i，右边界是小于 j 的某一个值，而我们 i++ 时把它错过了。我们很容易证明这个反面的错误性，因为任何以 i 为左边界，右边界小于 j 的容器体积都不可能有容器 (i, j) 大，这与我们的假设矛盾，也从而我们证明了贪心算法的正确性。&lt;/p&gt;
 
 &lt;h5 id=&quot;problem-16&quot;&gt;Problem 16&lt;/h5&gt;
 
@@ -36,7 +36,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-valid-parentheses/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 直接给出一维动规的解法，这个答案有点巧妙：假设我们已经找到了当字符串长度为 n - 1 时的最长合理括号，那么如果第 n 位是“(”，答案保持不变；如果第 n 位是“)”，那么答案分两种情况：1. 如果第 n - 1 位是“(”，那么答案为上一步的答案加 2；2. 如果第 n - 1 位是“)”，上一步的答案为 a，那么答案为上一步的答案加 2 加上追踪到 a + 1 步前的答案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 直接给出一维动规的解法，这个答案有点巧妙：假设我们已经找到了当字符串长度小于 n - 1 时最长合理括号的所有答案，那么如果第 n 位是“(”，答案保持不变；如果第 n 位是“)”，那么答案分两种情况：1. 如果第 n - 1 位是“(”，那么答案为上一步的答案加 2；2. 如果第 n - 1 位是“)”，上一步的答案为 a，那么答案为上一步的答案加 2 加上追踪到 a + 1 步前的答案。&lt;/p&gt;
 
 &lt;p&gt;一个简单的例子是：()((()))，前 7 步的答案是 ans = [0, 2, 2, 2, 2, 2, 4]，那么第 8 步的答案为 ans[7] + 2 + ans[7 - ans[7] - 1] = 4 + 2 + ans[2] = 8。&lt;/p&gt;
 
