@@ -1,14 +1,330 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-29T15:01:14-07:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">软件验证与测试期中复习笔记</title><link href="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-28T09:42:44-08:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">计算机网络知识总结</title><link href="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="计算机网络知识总结" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93</id><content type="html" xml:base="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html">&lt;p&gt;Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;computer-networks&quot;&gt;Computer Networks&lt;/h4&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">图像与视频处理期中复习笔记</title><link href="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="图像与视频处理期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;不喜欢数学或者数学功底薄弱的同学慎选。&lt;/p&gt;
+&lt;h5 id=&quot;chapter-1&quot;&gt;Chapter 1&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Routing &amp;amp; forwarding:
+    &lt;ul&gt;
+      &lt;li&gt;Routing: Determines source-destination route taken by packets;&lt;/li&gt;
+      &lt;li&gt;Forwarding: Move packets from router’s input to appropriate router output.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Circuit switching (dedicated resources &amp;amp; not sharing) vs packet switching.&lt;/li&gt;
+  &lt;li&gt;Delay: d&lt;sub&gt;nodal&lt;/sub&gt; = d&lt;sub&gt;proc&lt;/sub&gt; + d&lt;sub&gt;queue&lt;/sub&gt; + d&lt;sub&gt;trans&lt;/sub&gt; + d&lt;sub&gt;prop&lt;/sub&gt;
+    &lt;ul&gt;
+      &lt;li&gt;d&lt;sub&gt;proc&lt;/sub&gt;: Check bit errors, determine output;&lt;/li&gt;
+      &lt;li&gt;d&lt;sub&gt;queue&lt;/sub&gt;: Waiting at output link for transmission;&lt;/li&gt;
+      &lt;li&gt;d&lt;sub&gt;trans&lt;/sub&gt;: packet length / bandwidth;&lt;/li&gt;
+      &lt;li&gt;d&lt;sub&gt;prop&lt;/sub&gt;: distance / speed of light.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Layers:
+    &lt;ul&gt;
+      &lt;li&gt;Application: Message;&lt;/li&gt;
+      &lt;li&gt;Transport: Segment;&lt;/li&gt;
+      &lt;li&gt;Network: Datagram;&lt;/li&gt;
+      &lt;li&gt;Link: Frame;&lt;/li&gt;
+      &lt;li&gt;Physical: Bits on the wire.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;chapter-2&quot;&gt;Chapter 2&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;TCP &amp;amp; UDP:
+    &lt;ul&gt;
+      &lt;li&gt;TCP: Reliable transport, flow control (won’t overwhelm receiver), congestion control (throttle sender when network overloaded), connection-oriented;&lt;/li&gt;
+      &lt;li&gt;UDP: Unreliable data transfer;&lt;/li&gt;
+      &lt;li&gt;SSL provides encrypted TCP connection (Integrity &amp;amp; authentication). SSL is at app layer.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HTTP connections can be persistent (multiple objects over single TCP connection) or non-persistent (at most one object over single TCP connection, need at least 2 RTT).&lt;/li&gt;
+  &lt;li&gt;Client &amp;lt;– POP/IMAP/HTTP –&amp;gt; Mail server &amp;lt;– SMTP –&amp;gt; Mail server &amp;lt;– POP/IMAP/HTTP –&amp;gt; Client.&lt;/li&gt;
+  &lt;li&gt;DNS (Doomain name system) is an app-layer protocol. It’s distributed and hierarchical.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Iterated query (left) &amp;amp; recursive query (right):&lt;/p&gt;
+
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/1.png&quot; width=&quot;48%&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/2.png&quot; width=&quot;48%&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Types:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;A: Name: ranthot.cn, value: 8.8.8.8, type: A, TTL: …;&lt;/li&gt;
+          &lt;li&gt;NS: Name: ranthot.cn, value: ns1.registrar.com, …;&lt;/li&gt;
+          &lt;li&gt;CNAME: Name: ranthot.cn, value: servereast.backup2.ranthot.cn, …;&lt;/li&gt;
+          &lt;li&gt;MX: Name: ranthot.cn, value: mailserver.ranthot.cn, ….&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;chapter-3&quot;&gt;Chapter 3&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Transport layer: Logical communication between processes; Network layer: Logical communication between hosts.&lt;/li&gt;
+  &lt;li&gt;Multiplexing &amp;amp; demultiplexing:
+    &lt;ul&gt;
+      &lt;li&gt;Multiplexing: Handle data from multiple sockets, add transport header;&lt;/li&gt;
+      &lt;li&gt;Demultiplexing: Use header info to deliver received segments to correct socket.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Internet checksum: Add together, add carryout, then one’s complement.&lt;/li&gt;
+  &lt;li&gt;RDT (Reliable data transfer):
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/3.png&quot; width=&quot;48%&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/4.png&quot; width=&quot;48%&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Go-back-N &amp;amp; selective repeat:
+    &lt;ul&gt;
+      &lt;li&gt;Go-back-N: Send N unacked packets in pipeline; Receiver only sends cumulative ACK; Sender has timer for oldest unacked packet;&lt;/li&gt;
+      &lt;li&gt;Selective repeat: Send N unacked packets in pipeline: Receiver send individual ack for each; Sender has timer for each packet.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;TCP segment structure:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/5.png&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Timeout interval for TCP:
+    &lt;ul&gt;
+      &lt;li&gt;EstimatedRTT = (1 - α) * EstimatedRTT + α * SampleRTT, α can be 0.125;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;DevRTT = (1 - β) * DevRTT + β *&lt;/td&gt;
+              &lt;td&gt;SampleRTT - EstimatedRTT&lt;/td&gt;
+              &lt;td&gt;, β can be 0.25;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+      &lt;li&gt;TimeoutInterval = EstimatedRTT + 4 * DevRTT.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;TCP fast retransmit: If sender receives 3 ACKs for same data (triple duplicate ACK), resend unacked segment with smallest seq # without waiting for the timeout.&lt;/li&gt;
+  &lt;li&gt;TCP flow control: Receiver “advertises” free buffer space by including rwnd (free buffer space size).&lt;/li&gt;
+  &lt;li&gt;TCP building a connection and closing a connection:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/6.png&quot; width=&quot;48%&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/7.png&quot; width=&quot;48%&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;TCP congestion control:
+    &lt;ul&gt;
+      &lt;li&gt;MSS: Maximum segment size;&lt;/li&gt;
+      &lt;li&gt;AIMD: Additive increase (increase cwnd by 1 MSS every RTT until loss); Multiplicative decrease (cut cwnd in half after loss);&lt;/li&gt;
+      &lt;li&gt;Slow start: Initially cwnd = 1 MSS, double cwnd every RTT until first loss event;&lt;/li&gt;
+      &lt;li&gt;TCP Reno &amp;amp; TCP Tahoe:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/8.png&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;TCP is fair.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ECN (Explicit congestion notification): Two bits in IP header marked by router to indicate congestion.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;chapter-4&quot;&gt;Chapter 4&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Data plane &amp;amp; control plane:
+    &lt;ul&gt;
+      &lt;li&gt;Data plane: Per-router function, forwarding function;&lt;/li&gt;
+      &lt;li&gt;Control plane: Network-wide logic, two approaches:
+        &lt;ul&gt;
+          &lt;li&gt;Traditional routing algorithms: Implemented in routers;&lt;/li&gt;
+          &lt;li&gt;SDN (Software-defined networking): Implemented in (remote) server.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Destination-based forwarding is using longest prefix matching: Often preformed using TCAMs (ternary content addressable memories).
+    &lt;ul&gt;
+      &lt;li&gt;Content addressable: Present address to TCAM, retrieve address in one clock cycle, regardless of table size.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Switching fabrics: Memory, bus, crossbar.&lt;/li&gt;
+  &lt;li&gt;HOL (Head-of-the-Line) blocking.&lt;/li&gt;
+  &lt;li&gt;Input buffer overflow and output port buffer overflow can both lead to queueing delay and loss.&lt;/li&gt;
+  &lt;li&gt;IP datagram format:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/9.png&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Network links have MTU (max transfer size), so large IP datagram divided into smaller (fragmented) datagrams and “reassembled” only at final destination.&lt;/li&gt;
+  &lt;li&gt;One IP address (32-bit) per interface.&lt;/li&gt;
+  &lt;li&gt;Subnet: Device interfaces with same subnet part of IP address, can physically reach each other without intervening router. Isolated islands when you remove the routers.&lt;/li&gt;
+  &lt;li&gt;CIDR (Classless InterDomain Routing): a.b.c.d/x.&lt;/li&gt;
+  &lt;li&gt;DHCP (Dynamic Host Configuration Protocol): Dynamically get address from a server:
+    &lt;ul&gt;
+      &lt;li&gt;Host broadcasts “DHCP discover” (optional);&lt;/li&gt;
+      &lt;li&gt;DHCP server responds with “DHCP offer” (optional);&lt;/li&gt;
+      &lt;li&gt;Host requests IP address: “DHCP request”;&lt;/li&gt;
+      &lt;li&gt;DHCP server sends address: “DHCP ack”;&lt;/li&gt;
+      &lt;li&gt;DHCP can return more than just allocated IP address:
+        &lt;ul&gt;
+          &lt;li&gt;First-hop router;&lt;/li&gt;
+          &lt;li&gt;Name and IP of DNS server;&lt;/li&gt;
+          &lt;li&gt;Network mask.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;NAT (Network address translation): All datagrams leaving local network have same single source NAT IP address, but different source port number.&lt;/li&gt;
+  &lt;li&gt;IPv6 datagram format:
+    &lt;ul&gt;
+      &lt;li&gt;Fixed-length 40 byte header &amp;amp; no fragmentation allowed;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/10.png&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Tunneling: IPv6 datagram carried as payload in IPv4 datagram among IPv4 routers.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OpenFlow: Match + action to unify different kinds of devices (router, switch, firewall, NAT). Examples:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/Job%20Hunting/11.png&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;chapter-5&quot;&gt;Chapter 5&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Dijkstra’s algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;A link-state routing algorithm;&lt;/li&gt;
+      &lt;li&gt;https://ranthot.cn/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html;&lt;/li&gt;
+      &lt;li&gt;Oscillations possible.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bellman-Ford algorithm:
+    &lt;ul&gt;
+      &lt;li&gt;Distance vector algorithm;&lt;/li&gt;
+      &lt;li&gt;Each node sends its own distance vector estimate to neighbors, when x receives new DV, it updates its own DV using B-F:
+        &lt;ul&gt;
+          &lt;li&gt;D&lt;sub&gt;x&lt;/sub&gt;(y) = min&lt;sub&gt;v&lt;/sub&gt;{c(x, v) + D&lt;sub&gt;v&lt;/sub&gt;(y)}.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Iterative, asynchronous, distributed;&lt;/li&gt;
+      &lt;li&gt;Count to infinity problem &amp;amp; poisoned reverse &amp;amp; split horizon: https://www.geeksforgeeks.org/route-poisoning-and-count-to-infinity-problem-in-routing/.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scalable routing:
+    &lt;ul&gt;
+      &lt;li&gt;AS (Autonomous system).&lt;/li&gt;
+      &lt;li&gt;Intra-AS routing, also known as IGP (Interior gateway protocols):
+        &lt;ul&gt;
+          &lt;li&gt;RIP (Routing Information Protocol);&lt;/li&gt;
+          &lt;li&gt;OSPF (Open Shortest Path First, IS-IS (Intermediate System to Intermediate System) is essentially same as OSPF):
+            &lt;ul&gt;
+              &lt;li&gt;Using link-state algorithm (Dijkstra’s algorithm) over IP;&lt;/li&gt;
+              &lt;li&gt;Support security, can have multiple same-cost paths, support both uni- and multi-cast, can be hierarchical.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;IGRP (Interior Gatewat Routing Protocol).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Inter-AS routing:
+        &lt;ul&gt;
+          &lt;li&gt;BGP (Border Gateway Protocol):
+            &lt;ul&gt;
+              &lt;li&gt;eBGP: Obtain subnet reachability information from neighboring ASes;&lt;/li&gt;
+              &lt;li&gt;iBGP: Propagate reachability information to all AS-internal routers;&lt;/li&gt;
+              &lt;li&gt;Exchange over TCP connection;&lt;/li&gt;
+              &lt;li&gt;Hot potatp routing: Choose local gateway with least cost, don’t worry about inter-domain cost.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Intra-AS can focus on performance, while for inter-AS, policy may dominate over performance.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Problems with traditional routing algorithms: Can’t manipulate routes, do load balancing. But SDN can achieve that.&lt;/li&gt;
+  &lt;li&gt;ICMP: Internet control message protocol:
+    &lt;ul&gt;
+      &lt;li&gt;Network-layer “above” IP: ICMP carried in IP datagrams;&lt;/li&gt;
+      &lt;li&gt;Used to report errors (unreachable host), echo request/reply (ping).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SNMP (Simple network management protocol), MIB (Management Information Base).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;chapter-6&quot;&gt;Chapter 6&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Link layer implemented in “adaptor” (network interface card NIC) or on a chip.&lt;/li&gt;
+  &lt;li&gt;Cyclic redundancy check:
+    &lt;ul&gt;
+      &lt;li&gt;Let D be the data, G be r+1 bits generator, R be r CRC bits;&lt;/li&gt;
+      &lt;li&gt;R = remainder(D * 2&lt;sup&gt;r&lt;/sup&gt; / G);&lt;/li&gt;
+      &lt;li&gt;Can detect all burst errors less than r+1 bits.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MAC protocols:
+    &lt;ul&gt;
+      &lt;li&gt;Channel parititioning:
+        &lt;ul&gt;
+          &lt;li&gt;TDMA: Time division multiple access;&lt;/li&gt;
+          &lt;li&gt;FDMA: Frequency division multiple access;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Random access protocols:
+        &lt;ul&gt;
+          &lt;li&gt;Slotted ALOHA: If collison, retransmit frame in subsequent slot with probility p until success. Efficiency: 37%;&lt;/li&gt;
+          &lt;li&gt;ALOHA: Similiar to slotted ALOHA, but no slots. Efficiency: 18%;&lt;/li&gt;
+          &lt;li&gt;CSMA (Carrier sense multiple access):
+            &lt;ul&gt;
+              &lt;li&gt;If channel sensed idle: transmit. Collisions can still occur due to delay;&lt;/li&gt;
+              &lt;li&gt;CSMA/CD: Collisions detected within short time and aborted; Binary (exponential) backoff after collision.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Taking turns: Polling from central site, token passing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MAC address (48 bits).
+    &lt;ul&gt;
+      &lt;li&gt;ARP (Address resolution protocol): A wants to send datagram to B, A broadcasts ARP query, B receives it and reply to A with its MAC address, A caches IP-MAC pair.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ethernet: “Dominant” wired LAN technology.
+    &lt;ul&gt;
+      &lt;li&gt;Physical topology: bus, star.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Switch:
+    &lt;ul&gt;
+      &lt;li&gt;Maintain a self-learned switch table;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;if entry found for dest:
+    if dest from which frame arrived:
+        drop
+    else:
+        forward frame
+else:
+    flood
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;VLAN (Virtual Local Area Network): Multiple virtual LANs over single LAN infrastructure.&lt;/li&gt;
+  &lt;li&gt;Multiprotocol label switching (MPLS): High-speed IP forwarding using fixed length label (instead of IP address), using information of both src and dest.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="求职" /><summary type="html">Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。</summary></entry><entry><title type="html">计算机系统导论期中复习笔记</title><link href="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">图像与视频处理期中复习笔记</title><link href="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="图像与视频处理期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;不喜欢数学或者数学功底薄弱的同学慎选。&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">计算机系统导论期中复习笔记</title><link href="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">软件验证与测试期中复习笔记</title><link href="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
 
 &lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
 
@@ -1020,254 +1336,4 @@ return $x/title
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;BPEL supports long-running, stateful sequence, while WSDL supports a single, stateless model.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry><entry><title type="html">算法期末复习笔记</title><link href="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="算法期末复习笔记" /><published>2018-11-29T20:00:00-08:00</published><updated>2018-11-29T20:00:00-08:00</updated><id>/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。&lt;/p&gt;
-
-&lt;h4 id=&quot;lecture-5&quot;&gt;Lecture 5&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Steps for solving DP problems:
-    &lt;ol&gt;
-      &lt;li&gt;Describe subproblem;&lt;/li&gt;
-      &lt;li&gt;Describe base case;&lt;/li&gt;
-      &lt;li&gt;Describe recurrence;&lt;/li&gt;
-      &lt;li&gt;Analyze complexity;&lt;/li&gt;
-      &lt;li&gt;Write pseudo code.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-6&quot;&gt;Lecture 6&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Shortest path:
-    &lt;ul&gt;
-      &lt;li&gt;Single source &amp;amp; positive-weighted: Dijkstra’s Algorithm;&lt;/li&gt;
-      &lt;li&gt;Single source &amp;amp; negative-weighted: Bellman-Ford Algorithm;
-        &lt;ul&gt;
-          &lt;li&gt;Case 1: D[v, k] = D[v, k - 1], path uses at most k - 1 edges;&lt;/li&gt;
-          &lt;li&gt;Case 2: D[v, k] = min&lt;sub&gt;(w, v)∈E&lt;/sub&gt;(D[w, k - 1] + C&lt;sub&gt;wv&lt;/sub&gt;);&lt;/li&gt;
-          &lt;li&gt;Goal: Compute D(t, v - 1);&lt;/li&gt;
-          &lt;li&gt;Complexity: O(EV);&lt;/li&gt;
-          &lt;li&gt;Negative cycle? Run 1 more round for k = v, if D decrease for some point, then yes.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;All-pairs: 1. Run Bellman-Ford V times: O(EV&lt;sup&gt;2&lt;/sup&gt;); 2. Floyd-Warshall Algorithm;
-        &lt;ul&gt;
-          &lt;li&gt;D[i, j, k] = min&lt;sub&gt;u&lt;/sub&gt;(D[i, u, k - 1] + D[u, j, k - 1], D[i, j, k - 1]);&lt;/li&gt;
-          &lt;li&gt;Pseudo code:
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  D[i,j,V[0]] = c[i,j] for all i and j
-  for k in V:
-    for i in V:
-      for j in V:
-        D[i,j,k] = min(D[i,k,k-1]+D[k,j,k-1],D[i,j,k-1])
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Complexity: O(V&lt;sup&gt;3&lt;/sup&gt;)&lt;/li&gt;
-          &lt;li&gt;Negative cycle? If the diagonal has nagetive elements, then yes;&lt;/li&gt;
-          &lt;li&gt;Extract the shortest path? Every time we update D[i, j], we set P[i, j] to k. Then we recursively compute the shortest path from i to k = P[i, j] and the path from k = P[i, j] to j.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-7&quot;&gt;Lecture 7&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Max-flow problem: Ford-Fulkerson Algorithm:
-    &lt;ul&gt;
-      &lt;li&gt;Complexity: O(|f|(E + V));&lt;/li&gt;
-      &lt;li&gt;Edmonds-Karp Algorithm: If we replace DFS with BFS, the complexity would be O(E&lt;sup&gt;2&lt;/sup&gt;V);&lt;/li&gt;
-      &lt;li&gt;Capacity-Scaling Algorithm: If we choose the augmenting path with highest bottleneck capacity, the complexity would be O(log|f|E&lt;sup&gt;2&lt;/sup&gt;).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Max-flow theorem: the following conditions are equivalent for any f:
-    &lt;ul&gt;
-      &lt;li&gt;∃ cut(A, B) s.t. cap(A, B) = |f|;&lt;/li&gt;
-      &lt;li&gt;f is a max-flow;&lt;/li&gt;
-      &lt;li&gt;There is no augmenting path wrt to f.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Value of the max-flow = capacity of the min-cut.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Applications of max-flow:
-    &lt;ul&gt;
-      &lt;li&gt;Bipartite max matching: |f| ≤ V, V’ = 2V, so complexity: O(V(E + 2V)) = O(EV).&lt;/li&gt;
-      &lt;li&gt;Maximum number of edge disjoint paths. Complexity: O(EV)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-8&quot;&gt;Lecture 8&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Image segmentation problem: solved by min-cut problem.&lt;/li&gt;
-  &lt;li&gt;Circulation problem can be reduced to max-flow problem: there is a feasible circulation in G if and only if the max-flow can achieve Σ&lt;sub&gt;d(v)&amp;gt;0&lt;/sub&gt;d(v).&lt;/li&gt;
-  &lt;li&gt;Circulation problem with demands can be reduced to circulation problem without demands: just push the lower bounds of flow through each edges, then modify the capacity of each edge and demand of each vertex respectively.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Survey Design Problem.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-9&quot;&gt;Lecture 9&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Undecidable problems: there is no computer program that can always give the right answer: it may give the wrong answer, or run forever. NP-Hard contains undecidable problems.
-    &lt;ul&gt;
-      &lt;li&gt;Example: The halting problem.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;To prove X is in NP-Complete, we first prove X is in NP (answer can be verified in polynomial time), then we prove X is in NP-Hard (∃Y ∈ NP, Y ≤&lt;sub&gt;p&lt;/sub&gt; X).&lt;/li&gt;
-  &lt;li&gt;NP-Complete problems are the most difficult NP problems.&lt;/li&gt;
-  &lt;li&gt;Reductions of NP-Complete problems:
-    &lt;ul&gt;
-      &lt;li&gt;SAT is in NP-Complete without proof;&lt;/li&gt;
-      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; Independent set;&lt;/li&gt;
-      &lt;li&gt;Independent set ≤&lt;sub&gt;p&lt;/sub&gt; Vertex cover;&lt;/li&gt;
-      &lt;li&gt;Vertex cover ≤&lt;sub&gt;p&lt;/sub&gt; Vertex cover-even;&lt;/li&gt;
-      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; 3-colorable;&lt;/li&gt;
-      &lt;li&gt;3-SAT ≤&lt;sub&gt;p&lt;/sub&gt; Hamiltonian Cycle (without proof).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-10&quot;&gt;Lecture 10&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Standard linear programming problem in matrix form:&lt;br /&gt;
- max(c&lt;sup&gt;T&lt;/sup&gt;x),&lt;br /&gt;
- subject to: Ax ≤ b, x ≥ 0.
-    &lt;ul&gt;
-      &lt;li&gt;Linear programming can be used to solve max-flow and shortest path problem.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Integer linear programming (ILP) is in NP-Hard.
-    &lt;ul&gt;
-      &lt;li&gt;Independent set ≤&lt;sub&gt;p&lt;/sub&gt; ILP;&lt;/li&gt;
-      &lt;li&gt;ILP can be used to solve 0-1 Knapsack.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The dual of standard linear programming problem:&lt;br /&gt;
- min(b&lt;sup&gt;T&lt;/sup&gt;y),&lt;br /&gt;
- subject to: A&lt;sup&gt;T&lt;/sup&gt;y ≥ c, y ≥ 0.
-    &lt;ul&gt;
-      &lt;li&gt;The weak duality: if x is a feasible solution for primal and y is a feasible solution for dual, then c&lt;sup&gt;T&lt;/sup&gt;x ≤ b&lt;sup&gt;T&lt;/sup&gt;y;&lt;/li&gt;
-      &lt;li&gt;The strong duality: opt(primal) = opt(dual);&lt;/li&gt;
-      &lt;li&gt;
-        &lt;table&gt;
-          &lt;thead&gt;
-            &lt;tr&gt;
-              &lt;th&gt;P \ D&lt;/th&gt;
-              &lt;th&gt;F.B.&lt;/th&gt;
-              &lt;th&gt;F.U.&lt;/th&gt;
-              &lt;th&gt;I.&lt;/th&gt;
-            &lt;/tr&gt;
-          &lt;/thead&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td&gt;F.B.&lt;/td&gt;
-              &lt;td&gt;Yes&lt;/td&gt;
-              &lt;td&gt;No&lt;/td&gt;
-              &lt;td&gt;No&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;F.U.&lt;/td&gt;
-              &lt;td&gt;No&lt;/td&gt;
-              &lt;td&gt;No&lt;/td&gt;
-              &lt;td&gt;Yes&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;I.&lt;/td&gt;
-              &lt;td&gt;No&lt;/td&gt;
-              &lt;td&gt;Yes&lt;/td&gt;
-              &lt;td&gt;Yes&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;General form of primal and dual:&lt;/p&gt;
-
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Primal&lt;/th&gt;
-          &lt;th&gt;Dual&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;max(c&lt;sup&gt;T&lt;/sup&gt;x)&lt;/td&gt;
-          &lt;td&gt;min(b&lt;sub&gt;1&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;1&lt;/sub&gt; + b&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;2&lt;/sub&gt; + b&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;3&lt;/sub&gt;)&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;A&lt;sub&gt;1&lt;/sub&gt;x ≤ b&lt;sub&gt;1&lt;/sub&gt;&lt;/td&gt;
-          &lt;td&gt;A&lt;sub&gt;1&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;1&lt;/sub&gt; + A&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;2&lt;/sub&gt; + A&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;T&lt;/sup&gt;y&lt;sub&gt;3&lt;/sub&gt; ≥ c&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;A&lt;sub&gt;2&lt;/sub&gt;x = b&lt;sub&gt;2&lt;/sub&gt;&lt;/td&gt;
-          &lt;td&gt;y&lt;sub&gt;1&lt;/sub&gt; ≥ 0&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;A&lt;sub&gt;3&lt;/sub&gt;x ≥ b&lt;sub&gt;3&lt;/sub&gt;&lt;/td&gt;
-          &lt;td&gt;y&lt;sub&gt;2&lt;/sub&gt; unrestricted&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;x ≥ 0&lt;/td&gt;
-          &lt;td&gt;y&lt;sub&gt;3&lt;/sub&gt; ≤ 0&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-11&quot;&gt;Lecture 11&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Classic approximation algorithms:
-    &lt;ul&gt;
-      &lt;li&gt;2-approximation vertex cover: find matchings in graph;&lt;/li&gt;
-      &lt;li&gt;2-approximation TSP on complete graph with triangle inequality: use MST;&lt;/li&gt;
-      &lt;li&gt;1.5-approximation TSP on complete graph with triangle inequality:
-        &lt;ul&gt;
-          &lt;li&gt;MST of G → T;&lt;/li&gt;
-          &lt;li&gt;Vertices of odd degree in T → S;&lt;/li&gt;
-          &lt;li&gt;Min-cost matching on S → M;&lt;/li&gt;
-          &lt;li&gt;return T ∪ M.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;There is no polynomial α-approximation algorithm for general TSP: if such algorithm exists, we can use it to solve Hamiltonian Cycle.&lt;/li&gt;
-      &lt;li&gt;ln n-approximation set cover: greedy, each move covers at least 1/k of the elements, so k * ln n moves will cover all (k is the optimal).&lt;/li&gt;
-      &lt;li&gt;2-approximation load balance: greedy: assign next job to the machine with least load.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;lecture-12&quot;&gt;Lecture 12&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Classification of random algorithm:
-    &lt;ul&gt;
-      &lt;li&gt;Las Vegas algorithms: always returns the correct answer, but may run longer than you expect.
-        &lt;ul&gt;
-          &lt;li&gt;Example: quick sort.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Monte Carlo algorithms: may fail or return incorrect answer, but the runtime is independent of input randomness.
-        &lt;ul&gt;
-          &lt;li&gt;Example: random global min-cut.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Random data structre:
-    &lt;ul&gt;
-      &lt;li&gt;Skip list: O(log n) search time;&lt;/li&gt;
-      &lt;li&gt;Treap: a binary search tree with the heap ordering property (use rotation to maintain heap ordering property while do no change to BST ordering property).
-        &lt;ul&gt;
-          &lt;li&gt;Complexity: O(log n) search time &amp;amp; O(log n) insert time.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是康奈尔的 Algorithm Design 和 MIT 的 Introduction to Algorithms，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry></feed>
