@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-28T10:03:27-08:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">计算机网络知识总结</title><link href="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="计算机网络知识总结" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93</id><content type="html" xml:base="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html">&lt;p&gt;Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-30T16:24:17-08:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">Python 的奇妙用法</title><link href="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html" rel="alternate" type="text/html" title="Python 的奇妙用法" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/Python%20%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95</id><content type="html" xml:base="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html">&lt;p&gt;我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。&lt;/p&gt;
+
+&lt;h4 id=&quot;python&quot;&gt;Python&lt;/h4&gt;
+
+&lt;h5 id=&quot;decorator&quot;&gt;Decorator&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;def release(func):
+    def inner(pokemon):
+        print &quot;Release pokemon!&quot;
+        func(pokemon)
+        print &quot;Pokemon is released!&quot;
+    return inner
+
+@release
+def getPokemon(pokemon):
+    print pokemon + &quot;!&quot;
+
+getPokemon(&quot;Pikachu&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;special-function-parameters&quot;&gt;Special Function Parameters&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;def listPokemons(*args, **kwargs):
+    print &quot;Pokemons with unknown type:&quot;
+    print args
+    print &quot;Pokemons with type:&quot;
+    print kwargs
+
+listPokemons(&quot;Pikachu&quot;, &quot;Eevee&quot;, dragon=&quot;Dratini&quot;, ghost=&quot;Gengar&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-SHELL&quot;&gt;$ python test.py
+Pokemons with unknown type:
+('Pikachu', 'Eevee')
+Pokemons with type:
+{'ghost': 'Gengar', 'dragon': 'Dratini'}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;generator&quot;&gt;Generator&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;# Using the generator pattern (an iterable)
+class firstn(object):
+    def __init__(self, n):
+        self.n = n
+        self.num, self.nums = 0, []
+
+    def __iter__(self):
+        return self
+
+    # Python 3 compatibility
+    def __next__(self):
+        return self.next()
+
+    def next(self):
+        if self.num &amp;lt; self.n:
+            cur, self.num = self.num, self.num+1
+            return cur
+        else:
+            raise StopIteration()
+
+sum_of_first_n = sum(firstn(1000000))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;lambda-expression&quot;&gt;Lambda Expression&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;x = lambda a, b, c : a + b + c
+print x(5, 6, 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;testing-library&quot;&gt;Testing Library&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;import unittest
+
+class TestStringMethods(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    def test_isupper(self):
+        self.assertTrue('FOO'.isupper())
+        self.assertFalse('Foo'.isupper())
+
+    def test_split(self):
+        s = 'hello world'
+        self.assertEqual(s.split(), ['hello', 'world'])
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(TypeError):
+            s.split(2)
+
+if __name__ == '__main__':
+    unittest.main()
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><category term="求职" /><category term="网络" /><summary type="html">我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。</summary></entry><entry><title type="html">计算机网络知识总结</title><link href="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="计算机网络知识总结" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93</id><content type="html" xml:base="/2019/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html">&lt;p&gt;Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。&lt;/p&gt;
 
 &lt;h4 id=&quot;computer-networks&quot;&gt;Computer Networks&lt;/h4&gt;
 
@@ -314,17 +403,17 @@ else:
   &lt;/li&gt;
   &lt;li&gt;VLAN (Virtual Local Area Network): Multiple virtual LANs over single LAN infrastructure.&lt;/li&gt;
   &lt;li&gt;Multiprotocol label switching (MPLS): High-speed IP forwarding using fixed length label (instead of IP address), using information of both src and dest.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="求职" /><category term="网络" /><summary type="html">Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。</summary></entry><entry><title type="html">计算机系统导论期中复习笔记</title><link href="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">图像与视频处理期中复习笔记</title><link href="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="图像与视频处理期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;不喜欢数学或者数学功底薄弱的同学慎选。&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">软件验证与测试期中复习笔记</title><link href="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="求职" /><category term="网络" /><summary type="html">Facebook 这个岗位虽然叫 Network Engineer，但是它的 OA 基本只考了 BGP 这一个协议，而且考得十分的深入。如果没有直接相关经历，可能很难通过它的考核。不过总结出的这份资料对我以后还是蛮有用的。</summary></entry><entry><title type="html">软件验证与测试期中复习笔记</title><link href="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">图像与视频处理期中复习笔记</title><link href="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="图像与视频处理期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;不喜欢数学或者数学功底薄弱的同学慎选。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">计算机系统导论期中复习笔记</title><link href="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期中复习笔记" /><published>2019-10-28T21:00:00-07:00</published><updated>2019-10-28T21:00:00-07:00</updated><id>/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/10/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
 
 &lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
 
@@ -1065,266 +1154,4 @@ return $x/title
   &lt;li&gt;Latent defects: unknown defects, fixed defects, unfixed known defects.&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">虽然本科的时候学过软件工程，但是知识早已忘光。因此我希望将这学期所学到的内容记录下来。</summary></entry><entry><title type="html">如何写出高效的代码期中复习笔记</title><link href="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="如何写出高效的代码期中复习笔记" /><published>2019-03-20T21:00:00-07:00</published><updated>2019-03-20T21:00:00-07:00</updated><id>/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BB%A3%E7%A0%81%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课的内容很不错，但是质量并不是很好，慎选。&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry><entry><title type="html">面向服务的计算期中复习笔记</title><link href="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="面向服务的计算期中复习笔记" /><published>2019-03-03T20:00:00-08:00</published><updated>2019-03-03T20:00:00-08:00</updated><id>/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/03/03/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。&lt;/p&gt;
-
-&lt;h4 id=&quot;week-1&quot;&gt;Week 1&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Generations of SE:
-    &lt;ul&gt;
-      &lt;li&gt;1st generation: Waterfall model, structured design &amp;amp; analysis, compilers, OS, &lt;strong&gt;programming languages&lt;/strong&gt;;&lt;/li&gt;
-      &lt;li&gt;2nd generation: OO design &amp;amp; analysis, &lt;strong&gt;modeling&lt;/strong&gt;;&lt;/li&gt;
-      &lt;li&gt;3rd generation: SOC &lt;strong&gt;platform&lt;/strong&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Service operation models:
-    &lt;ul&gt;
-      &lt;li&gt;Hosted service model;&lt;/li&gt;
-      &lt;li&gt;Business process outsourcing;&lt;/li&gt;
-      &lt;li&gt;Data-centered outsourcing;&lt;/li&gt;
-      &lt;li&gt;Services through online broker agency.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Service charge models:
-    &lt;ul&gt;
-      &lt;li&gt;Free-of-charge model;&lt;/li&gt;
-      &lt;li&gt;Fee-based model;&lt;/li&gt;
-      &lt;li&gt;Government service model.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Service Level Agreement (SLA): Higher fee for higher quality of service. Support large user base and usage scenarios.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Service lifecycle&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Strategic planning &amp;amp; consulting;&lt;/li&gt;
-      &lt;li&gt;Service engagement;&lt;/li&gt;
-      &lt;li&gt;Service delivery;&lt;/li&gt;
-      &lt;li&gt;Service operation;&lt;/li&gt;
-      &lt;li&gt;Service billing;&lt;/li&gt;
-      &lt;li&gt;Service management.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Clarifications:
-    &lt;ul&gt;
-      &lt;li&gt;SOC is the umbrella, a discipline;&lt;/li&gt;
-      &lt;li&gt;SOA is the architectural model (overall software system design);&lt;/li&gt;
-      &lt;li&gt;Web service is the best enabling technology (to date).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Others:
-    &lt;ul&gt;
-      &lt;li&gt;IT-enabled service: Outsourcing of processes that can be enabled with information technology and covers diverse areas; Relationship between providers and consumers;&lt;/li&gt;
-      &lt;li&gt;Differences between business services and IT services: One is about business logics, the other can support multiple scenarios;&lt;/li&gt;
-      &lt;li&gt;Relationship between IT &amp;amp; non-IT services in a service ecosystem: Horizontal vs. vertical;&lt;/li&gt;
-      &lt;li&gt;Describe a typical service system: Inputs, outputs, goals, transformation, components, sensors.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;week-2&quot;&gt;Week 2&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;XML:
-    &lt;ul&gt;
-      &lt;li&gt;One of the most important difference between XML and HTML is that XML is &lt;strong&gt;content-oriented&lt;/strong&gt; while HTML is &lt;strong&gt;presentation-oriented&lt;/strong&gt;;&lt;/li&gt;
-      &lt;li&gt;XML is &lt;strong&gt;case-sensitive&lt;/strong&gt;;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;![CDATA[&amp;lt;tag&amp;gt;Here goes the comment&amp;lt;/tag&amp;gt;]]&amp;gt;&lt;/code&gt;;&lt;/li&gt;
-      &lt;li&gt;Each document must have a unique first element – the root node.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;DTD:
-    &lt;ul&gt;
-      &lt;li&gt;DTD serves as grammar for the underlying XML document, and it is part of XML language;&lt;/li&gt;
-      &lt;li&gt;Example of DTD (PPT 3, Page 25);&lt;/li&gt;
-      &lt;li&gt;DTD can be both inside XML file or outside XML file.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;XML Schema:
-    &lt;ul&gt;
-      &lt;li&gt;Grammar for specifying valid XML documents, uses XML as well;&lt;/li&gt;
-      &lt;li&gt;Example of XML Schema (PPT 3, Page 28);&lt;/li&gt;
-      &lt;li&gt;DTD can only check the grammar of XML, while XML Schema can check if it’s both well-formed and valid:
-        &lt;ul&gt;
-          &lt;li&gt;DTD is not XML and terse;&lt;/li&gt;
-          &lt;li&gt;XML Schema is XML and verbose and powerful (extensible to additions, data types, namespaces).&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;XML parsing:
-    &lt;ul&gt;
-      &lt;li&gt;DOM: Load whole XML into memory, fast;&lt;/li&gt;
-      &lt;li&gt;SAX: Is better for large XML file, less memory.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;XPath is used to navigate through elements and attributes in an XML document. Example on (PPT 3, Page 52).&lt;/li&gt;
-  &lt;li&gt;XQuery is like the SQL to XML. Example on (PPT 3, 57).&lt;/li&gt;
-  &lt;li&gt;Others:
-    &lt;ul&gt;
-      &lt;li&gt;JSON also has JSON Schema for validation;&lt;/li&gt;
-      &lt;li&gt;Same Origin Policy (SOP): Full access to same origin (network, documents, storage, cookies);&lt;/li&gt;
-      &lt;li&gt;XSLT (Extensible Stylesheet Language Transformations) is a language for transforming XML documents into other documents;&lt;/li&gt;
-      &lt;li&gt;XML data binding refers to the process of representing the information in an XML document as an object in computer memory.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;week-3&quot;&gt;Week 3&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;REST (Representational State Transfer)
-    &lt;ul&gt;
-      &lt;li&gt;Representational: Clients possess the information necessary to identify, modify, and/or delete a web resource;&lt;/li&gt;
-      &lt;li&gt;State: All state information is stored on the client;&lt;/li&gt;
-      &lt;li&gt;Transfer: State passed from client to server via HTTP;&lt;/li&gt;
-      &lt;li&gt;Everything in REST is considered as a resource.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;REST vs AJAX: REST can do operations (PUT, POST, GET, HEAD), while AJAX can only retrieve data from the back-end. AJAX can be a part of REST but REST can never be AJAX.&lt;/li&gt;
-  &lt;li&gt;Mashup:
-    &lt;ul&gt;
-      &lt;li&gt;Pros: “lightweight” application, “lightweight” development, low costs for gathering data, rapid development;&lt;/li&gt;
-      &lt;li&gt;Cons: Dependency from data source, standards &amp;amp; versions, copyright, security;&lt;/li&gt;
-      &lt;li&gt;Development process: Component discovery and selection -&amp;gt; Composition and immediate deployment -&amp;gt; Use and evolution -&amp;gt; loop…&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;week-4&quot;&gt;Week 4&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;WSDL (Web Services Description Language): Service name, types of input parameters, types of output parameters…
-    &lt;ul&gt;
-      &lt;li&gt;WSDL 1.1 example on PPT 5, Page 13;&lt;/li&gt;
-      &lt;li&gt;WSDL 2.0 example on PPT 5, Page 31.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SOAP (Simple Object Access Protocol): Messaging protocol for transport with binding to existing Internet protocols like HTTP and SMTP.
-    &lt;ul&gt;
-      &lt;li&gt;SOAP example on PPT 5, Page 21;&lt;/li&gt;
-      &lt;li&gt;Example of binding WSDL to SOAP on PPT 5, Page 24.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;BPEL (Business Process Execution Language):
-    &lt;ul&gt;
-      &lt;li&gt;BPM (Business Process Management);&lt;/li&gt;
-      &lt;li&gt;Example on PPT 5, Page 47-62.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Others:
-    &lt;ul&gt;
-      &lt;li&gt;Web Services Resources Property (WSRP): Stateful;&lt;/li&gt;
-      &lt;li&gt;Web Services Interoperability (WS-I): To tackle the challenges of interoperability among Web services.&lt;/li&gt;
-      &lt;li&gt;Service provider creates, publishes, and operates services. Service customer uses services. Service broker helps service customer find interested services.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;week-5&quot;&gt;Week 5&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;WSIL (Web services Inspection Language) example on PPT 6, Page 7.&lt;/li&gt;
-  &lt;li&gt;UDDI (Universal Description Discovery and Integration):
-    &lt;ul&gt;
-      &lt;li&gt;Data model: businessEntity, businessService, bindingTemplate, tModel.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;UDDI Search Markup Language (USML) for supporting “Google” style services Search.&lt;/li&gt;
-  &lt;li&gt;Others:
-    &lt;ul&gt;
-      &lt;li&gt;Advanced UDDI Search Engine (AUSE);&lt;/li&gt;
-      &lt;li&gt;Dynamic Service Discovery Framework (DSDF);&lt;/li&gt;
-      &lt;li&gt;The federated framework provides a uniform interface for both UDDI-based and WSIL-based service discovery.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;week-7&quot;&gt;Week 7&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Latent Dirichlet Allocation (LDA).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;others&quot;&gt;Others&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Pros of SOC: Reusability, interoperability.&lt;/li&gt;
-  &lt;li&gt;Services ecosystem: How all of the services can work together and what are their relationships.&lt;/li&gt;
-  &lt;li&gt;DTD:
-    &lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt; &amp;lt;!DOCTYPE bookshelf [
-     &amp;lt;!ELEMENT bookshelf (book*)&amp;gt;
-     &amp;lt;!ELEMENT book (author, content)&amp;gt;
-     &amp;lt;!ELEMENT author (#PCDATA)&amp;gt;
-     &amp;lt;!ELEMENT content (#PCDATA)&amp;gt;
- ]&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;XML Schema:&lt;/p&gt;
-    &lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt; &amp;lt;xs:element name=&quot;bookshelf&quot;&amp;gt;
-     &amp;lt;xs:complexType&amp;gt;
-         &amp;lt;xs:sequence&amp;gt;
-             &amp;lt;xs:element name=&quot;author&quot; type=&quot;xs:string&quot; /&amp;gt;
-             &amp;lt;xs:element name=&quot;content&quot; type=&quot;xs:string&quot; /&amp;gt;
-         &amp;lt;/xs:sequence&amp;gt;
-     &amp;lt;/xs:complexType&amp;gt;
- &amp;lt;/xs:element&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;WSDL 1.1:&lt;/p&gt;
-    &lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt; &amp;lt;message name=&quot;getCreditReq&quot;&amp;gt;
-     &amp;lt;part name=&quot;cardNum&quot; type=&quot;xs:string&quot; /&amp;gt;
-     &amp;lt;part name=&quot;ssn&quot; type=&quot;xs:string&quot; /&amp;gt;
- &amp;lt;/message&amp;gt;
- &amp;lt;message name=&quot;getCreditRes&quot;&amp;gt;
-     &amp;lt;part name=&quot;namw&quot; type=&quot;xs:string&quot; /&amp;gt;
-     &amp;lt;part name=&quot;address&quot; type=&quot;xs:string&quot; /&amp;gt;
-     &amp;lt;part name=&quot;accountBalance&quot; type=&quot;xs:string&quot; /&amp;gt;
- &amp;lt;/message&amp;gt;
- &amp;lt;portType name=&quot;personalCredit&quot;&amp;gt;
-     &amp;lt;operation name=&quot;getCredit&quot;&amp;gt;
-         &amp;lt;input message=&quot;getCreditReq&quot; /&amp;gt;
-         &amp;lt;output message=&quot;getCreditRes&quot; /&amp;gt;
-     &amp;lt;/operation&amp;gt;
- &amp;lt;/portType&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;WSDL 2.0:&lt;/p&gt;
-    &lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt; &amp;lt;types&amp;gt;
-     &amp;lt;schema&amp;gt;
-         &amp;lt;element name=&quot;getCreditReq&quot;&amp;gt;
-             &amp;lt;complexType&amp;gt;
-                 &amp;lt;element name=&quot;cardNum&quot; type=&quot;xs:string&quot; /&amp;gt;
-                 &amp;lt;element name=&quot;ssn&quot; type=&quot;xs:string&quot; /&amp;gt;
-             &amp;lt;/complexType&amp;gt;
-         &amp;lt;/element&amp;gt;
-         &amp;lt;element name=&quot;getCreditRes&quot;&amp;gt;
-             &amp;lt;complexType&amp;gt;
-                 &amp;lt;element name=&quot;name&quot; type=&quot;xs:string&quot; /&amp;gt;
-                 &amp;lt;element name=&quot;address&quot; type=&quot;xs:string&quot; /&amp;gt;
-                 &amp;lt;element name=&quot;accountBalance&quot; type=&quot;xs:string&quot; /&amp;gt;
-             &amp;lt;/complexType&amp;gt;
-         &amp;lt;/element&amp;gt;
-     &amp;lt;/schema&amp;gt;
- &amp;lt;/types&amp;gt;
- &amp;lt;interface name=&quot;personalCredit&quot;&amp;gt;
-     &amp;lt;operation name=&quot;getCredit&quot;&amp;gt;
-         &amp;lt;input messageLabel=&quot;In&quot; element=&quot;getCreditReq&quot; /&amp;gt;
-         &amp;lt;output messageLabel=&quot;Out&quot; element=&quot;getCreditRes&quot; /&amp;gt;
-     &amp;lt;/operation&amp;gt;
- &amp;lt;/interface&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;UDDI data model:
-    &lt;ul&gt;
-      &lt;li&gt;Business entity;&lt;/li&gt;
-      &lt;li&gt;Business service: service;&lt;/li&gt;
-      &lt;li&gt;Binding template: port;&lt;/li&gt;
-      &lt;li&gt;Technical models (tModel): service interface.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;UDDI for centralized web service publishing: Can’t dynamically updated; WSIL for distributed web service publishing: No uniform way to query a web service, and tModel is not stored in UDDI.&lt;/li&gt;
-  &lt;li&gt;&amp;lt;​partnerLinkType&amp;gt; d​escribes the way two business partners interact.&lt;/li&gt;
-  &lt;li&gt;Relations between service broker, service consumer and service provider:
-    &lt;ul&gt;
-      &lt;li&gt;Service provider - WSDL (publish or announce) -&amp;gt; service broker;&lt;/li&gt;
-      &lt;li&gt;Service consumer - UDDI (find or discover) -&amp;gt; service broker;&lt;/li&gt;
-      &lt;li&gt;Service consumer &amp;lt;- SOAP (invoke or bind) -&amp;gt; service provider.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;BPEL supports long-running, stateful sequence, while WSDL supports a single, stateless model.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课程所使用的教材是 Jia Zhang 老师自己编写的 Services Computing，课程内容其实相对老旧，不过我之前没有 Java 方面的经验，这门课还是让我学到了很多。</summary></entry></feed>
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/blog%20images/Fast%20Code/Fast%20Code%20Cheat%20Sheet.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课的内容很不错，但是质量并不是很好，慎选。</summary></entry></feed>
