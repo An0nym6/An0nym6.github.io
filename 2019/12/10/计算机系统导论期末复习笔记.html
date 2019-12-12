@@ -5,15 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Python 的奇妙用法</title>
-  <meta name="description" content="<p>我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。</p>
+  <title>计算机系统导论期末复习笔记</title>
+  <meta name="description" content="<p>极力推荐这门课程。</p>
 
 ">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/scss/main.css">
-  <link rel="canonical" href="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html">
+  <link rel="canonical" href="/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -50,101 +50,16 @@
     <div class="col-md-8 padding-top">
       <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <div class="title" itemprop="name headline">Python 的奇妙用法</div>
-    <div class="date" itemprop="datePublished">2019 年 11 月 27 日</div>
+    <div class="title" itemprop="name headline">计算机系统导论期末复习笔记</div>
+    <div class="date" itemprop="datePublished">2019 年 12 月 10 日</div>
   </header>
 
   <div class="padding-top" itemprop="articleBody">
-    <p>我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。</p>
+    <p>极力推荐这门课程。</p>
 
-<h4 id="python">Python</h4>
+<p><img class="photo" src="https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet.png" /></p>
 
-<h5 id="decorator">Decorator</h5>
-
-<pre><code class="language-Python">def release(func):
-    def inner(pokemon):
-        print "Release pokemon!"
-        func(pokemon)
-        print "Pokemon is released!"
-    return inner
-
-@release
-def getPokemon(pokemon):
-    print pokemon + "!"
-
-getPokemon("Pikachu")
-</code></pre>
-
-<h5 id="special-function-parameters">Special Function Parameters</h5>
-
-<pre><code class="language-Python">def listPokemons(*args, **kwargs):
-    print "Pokemons with unknown type:"
-    print args
-    print "Pokemons with type:"
-    print kwargs
-
-listPokemons("Pikachu", "Eevee", dragon="Dratini", ghost="Gengar")
-</code></pre>
-<pre><code class="language-SHELL">$ python test.py
-Pokemons with unknown type:
-('Pikachu', 'Eevee')
-Pokemons with type:
-{'ghost': 'Gengar', 'dragon': 'Dratini'}
-</code></pre>
-
-<h5 id="generator">Generator</h5>
-
-<pre><code class="language-Python"># Using the generator pattern (an iterable)
-class firstn(object):
-    def __init__(self, n):
-        self.n = n
-        self.num, self.nums = 0, []
-
-    def __iter__(self):
-        return self
-
-    # Python 3 compatibility
-    def __next__(self):
-        return self.next()
-
-    def next(self):
-        if self.num &lt; self.n:
-            cur, self.num = self.num, self.num+1
-            return cur
-        else:
-            raise StopIteration()
-
-sum_of_first_n = sum(firstn(1000000))
-</code></pre>
-
-<h5 id="lambda-expression">Lambda Expression</h5>
-
-<pre><code class="language-Python">x = lambda a, b, c : a + b + c
-print x(5, 6, 2)
-</code></pre>
-
-<h5 id="testing-library">Testing Library</h5>
-
-<pre><code class="language-Python">import unittest
-
-class TestStringMethods(unittest.TestCase):
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
-
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
-
-if __name__ == '__main__':
-    unittest.main()
-</code></pre>
+<p><img class="photo" src="https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet%202.png" /></p>
 
   </div>
   <!-- 引入评论系统 -->
