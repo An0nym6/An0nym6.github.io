@@ -1,0 +1,8 @@
+# Jekyll
+_site
+An0nym6.github.io
+.sass-cache
+.jekyll-metadata
+
+# macOS
+.DS_Store

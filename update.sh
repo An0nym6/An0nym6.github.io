@@ -10,6 +10,7 @@ cd An0nym6.github.io
 rm -rf *
 cd ..
 cp -r _site/. An0nym6.github.io
+cp .gitignore An0nym6.github.io
 
 # 上传网站到 GitHub Pages
 cd An0nym6.github.io
