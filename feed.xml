@@ -1,147 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-05T16:14:53-08:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">操作系统期中复习笔记</title><link href="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="操作系统期中复习笔记" /><published>2020-03-04T20:00:00-08:00</published><updated>2020-03-04T20:00:00-08:00</updated><id>/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。&lt;/p&gt;
-
-&lt;h4 id=&quot;chapter-1-2-3-4-5&quot;&gt;Chapter 1, 2, 3, 4, 5&lt;/h4&gt;
-
-&lt;p&gt;🍺&lt;/p&gt;
-
-&lt;h4 id=&quot;chapter-6&quot;&gt;Chapter 6&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Common atomic hardware instructions:
-    &lt;ul&gt;
-      &lt;li&gt;Test-and-Set: Return the original value of the passed in parameter, set the value of parameter to true;&lt;/li&gt;
-      &lt;li&gt;Compare-and-Swap: Return the original value of the passed in parameter, set the value of parameter to new_value if the old value equals expected.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Monitor:
-    &lt;ul&gt;
-      &lt;li&gt;With Mesa semantics, when a waiting thread’s resource becomes available, it is moved from the signal queue back to the entry queue. The currently executing thread finishes executing, and the other thread will eventually be dispatched from the entry queue;&lt;/li&gt;
-      &lt;li&gt;One risk of this implementation is that by the time that the unblocked process begins to execute again, the event it was waiting for has passed and the resource could be again unavailable. The cycle may repeat;&lt;/li&gt;
-      &lt;li&gt;Most common, e.g. Java synchronized objects.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;&lt;img src=&quot;1.png&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;chapter-7&quot;&gt;Chapter 7&lt;/h4&gt;
-
-&lt;p&gt;🍺&lt;/p&gt;
-
-&lt;h4 id=&quot;chapter-8&quot;&gt;Chapter 8&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conditions for deadlock:
-    &lt;ul&gt;
-      &lt;li&gt;Mutual exclusion, hold and wait, no preemption, circular wait;&lt;/li&gt;
-      &lt;li&gt;Invalidating circular wait is most common: Assign each resource a unique number, and resources must be acquired in order.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Banker algorithm:
-    &lt;ul&gt;
-      &lt;li&gt;Safe state =&amp;gt; no deadlocks; Unsafe state =&amp;gt; possible deadlocks; Avoidance =&amp;gt; ensure safe state;&lt;/li&gt;
-      &lt;li&gt;https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;synchronization-supplement&quot;&gt;Synchronization Supplement&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Different locks:
-    &lt;ul&gt;
-      &lt;li&gt;Spin lock: Busy wait, must shared among processors, not FIFO or even bounded wait;&lt;/li&gt;
-      &lt;li&gt;Ticket lock: Just one atomic instruction to block; Spins on not-atomic instruction, FIFO; But it spins on shared memory;&lt;/li&gt;
-      &lt;li&gt;MCS lock: FIFO, locks are acquired and released in O(1) time, spinning is bounded by time it takes to add to queue.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;homework-1&quot;&gt;Homework 1&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Resources can only be access in supervisor mode:
-    &lt;ul&gt;
-      &lt;li&gt;Hardware: I/O devices like disk drive, network board, keyboard, …&lt;/li&gt;
-      &lt;li&gt;Data structure: PCB (process control block), disk buffer, …&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Context switch:
-    &lt;ul&gt;
-      &lt;li&gt;Process: Register context virtual memory context;&lt;/li&gt;
-      &lt;li&gt;Thread: Register context.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Difference between “policy” and “mechanism”:
-    &lt;ul&gt;
-      &lt;li&gt;A policy is basically a goal. It is something the operating system is designed to achieve;&lt;/li&gt;
-      &lt;li&gt;The mechanism is the implementation that achieves this goal;&lt;/li&gt;
-      &lt;li&gt;Example: It might be policy to run higher priority processes first. The mechanism for doing this might be to have one list for each priority class and always running processes from the highest priority non-empty list.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;“process” and “program”: A program is something written by a programmer. It is a specification. A process is an instance of a program in execution. A process is a running model. A program is a description of a model.&lt;/li&gt;
-  &lt;li&gt;Key states in PCB &amp;amp; TCB:
-    &lt;ul&gt;
-      &lt;li&gt;PCB states: Status (running, runnable, etc), priority, process id, parent process id, accounting information, signal state, file state, and virtual memory state;&lt;/li&gt;
-      &lt;li&gt;TCB states: Register state, attached/detached, scheduling priority, accounting information, thread id.&lt;/li&gt;
-      &lt;li&gt;PCB and TCB don’t share any key state because it’s no necessary.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Gang scheduling: It is the identification of a group of threads as a group that should be run in parallel whenever possible. This is normally done when the threads are highly collaborative and communicate with each other a lot. By running them at the same time, the communication is fluid. Running them in series would result in a lot of blocking for communication while waiting for other threads in the gang to run.&lt;/li&gt;
-  &lt;li&gt;Multiprogramming: Make system interactive &amp;amp; allow I/O and CPU overlap.&lt;/li&gt;
-  &lt;li&gt;Multi-level feedback queues:
-    &lt;ul&gt;
-      &lt;li&gt;A scheduling algorithm that uses multiple queues of different priorities. Jobs in lower-priority queues get executed only if there’s no job in higher-priority queues. Jobs can be moved from one queue to another according to their “feedbacks” and some rules, and each queue can have different scheduling algorithms (round-robin, FCFS, etc);&lt;/li&gt;
-      &lt;li&gt;Advantages: Processes might slowly be promoted as they age. They also might get rewarded and promoted for giving up the CPU soon after dispatch.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;homework-2&quot;&gt;Homework 2&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;An example of monitor:
-    &lt;ul&gt;
-      &lt;li&gt;Worth noticing that there’s no lock because the lock is intrinsic within the monitor construct. The language is offering us the mutual exclusion guarantee and hiding it from us.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;pre&gt;&lt;code class=&quot;language-Java&quot;&gt; Monitor MultiPurpose {
-   cv allThreeCV, anyTwoCV, anyOneCV, stageCV;
-   bool section0, section1, section2 = false;
-
-   Entry mproom event_begin(event e) {
-     switch (e) {
-       case PLAY:
-         while (section0 || section1 || section2)
-           allThreeCV.wait();
-         return {true, true, true};
-       ...
-     }
-   }
-
-   Entry void event_end(event e, mproom allocated_sections) {
-     if (allocated_sections.section0) section0 = false;
-     ...
-     if (!section0 &amp;amp;&amp;amp; !section1 &amp;amp;&amp;amp; !section2)
-       allThreeCV.signal();
-     ...
-   }
- }
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The wait() and signal() operation upon a condition variable:
-    &lt;ul&gt;
-      &lt;li&gt;wait() is taking mutex as a parameter because: The mutex ensures that the check of the predicate and the wait are atomic. The logic of wait is such that the mutex will be freed before blocking but reacquired before waking up;&lt;/li&gt;
-      &lt;li&gt;signal() is not because: Whatever is changing state needs to protect that state. The signal is simply signalling. Any internal state that is changed, i.e. wait list, is protected internally.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Kernel data structures:
-    &lt;ul&gt;
-      &lt;li&gt;Kernel pages are mapped into all processes into the same address space so they are accessible in the same way, with the same page numbers and virtual addresses regardless of which page table is loaded;&lt;/li&gt;
-      &lt;li&gt;The pages are marked as requiring privilege in the page table’s per-process metadata. This is enforced by the MMU. A fault is generated if an access is attempted without sufficient privilege.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。</summary></entry><entry><title type="html">操作系统期中复习笔记</title><link href="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="操作系统期中复习笔记" /><published>2020-03-04T20:00:00-08:00</published><updated>2020-03-04T20:00:00-08:00</updated><id>/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-05T16:16:30-08:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>©️ Designed by shuq3 &amp; An0nym6</subtitle><entry><title type="html">操作系统期中复习笔记</title><link href="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="操作系统期中复习笔记" /><published>2020-03-04T20:00:00-08:00</published><updated>2020-03-04T20:00:00-08:00</updated><id>/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2020/03/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。&lt;/p&gt;
 
 &lt;h4 id=&quot;chapter-1-2-3-4-5&quot;&gt;Chapter 1, 2, 3, 4, 5&lt;/h4&gt;
 
@@ -288,17 +145,17 @@
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Real%20Final%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Real%20Final%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">计算机系统导论期末复习笔记</title><link href="/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期末复习笔记" /><published>2019-12-10T20:00:00-08:00</published><updated>2019-12-10T20:00:00-08:00</updated><id>/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">软件验证与测试期末复习笔记</title><link href="/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期末复习笔记" /><published>2019-12-10T20:00:00-08:00</published><updated>2019-12-10T20:00:00-08:00</updated><id>/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/IVP%20Real%20Final%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">不喜欢数学或者数学功底薄弱的同学慎选。</summary></entry><entry><title type="html">软件验证与测试期末复习笔记</title><link href="/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="软件验证与测试期末复习笔记" /><published>2019-12-10T20:00:00-08:00</published><updated>2019-12-10T20:00:00-08:00</updated><id>/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/12/10/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Final%20Cheatsheet%201.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Final%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Final%20Cheatsheet%203.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">Python 的奇妙用法</title><link href="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html" rel="alternate" type="text/html" title="Python 的奇妙用法" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/Python%20%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95</id><content type="html" xml:base="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html">&lt;p&gt;我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Final%20Cheatsheet%203.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">计算机系统导论期末复习笔记</title><link href="/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="计算机系统导论期末复习笔记" /><published>2019-12-10T20:00:00-08:00</published><updated>2019-12-10T20:00:00-08:00</updated><id>/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="/2019/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">&lt;p&gt;极力推荐这门课程。&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/FCS%20Final%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">极力推荐这门课程。</summary></entry><entry><title type="html">Python 的奇妙用法</title><link href="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html" rel="alternate" type="text/html" title="Python 的奇妙用法" /><published>2019-11-27T20:00:00-08:00</published><updated>2019-11-27T20:00:00-08:00</updated><id>/2019/11/27/Python%20%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95</id><content type="html" xml:base="/2019/11/27/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html">&lt;p&gt;我从没系统地学习过 Python，我决定借此契机总结一下我个人不常用的 Python 技巧，以备后用。&lt;/p&gt;
 
 &lt;h4 id=&quot;python&quot;&gt;Python&lt;/h4&gt;
 
@@ -713,4 +570,72 @@ else:
 
 &lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry></feed>
+&lt;p&gt;&lt;img class=&quot;photo&quot; src=&quot;https://raw.githubusercontent.com/An0nym6/Images/master/Fall%202019/SVT%20Midterm%20Cheatsheet%202.png&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="学习笔记" /><summary type="html">功利上来说这门对求职不会有特别大的帮助，因为每个公司都会有一套自家的软件测试流程，但是在学生时期建立起软件测试的思维还是挺有意义的。</summary></entry><entry><title type="html">LeetCode 刷题总结 1-50</title><link href="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html" rel="alternate" type="text/html" title="LeetCode 刷题总结 1-50" /><published>2019-09-16T21:00:00-07:00</published><updated>2019-09-16T21:00:00-07:00</updated><id>/2019/09/16/LeetCode%20%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93%201-50</id><content type="html" xml:base="/2019/09/16/LeetCode-%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93-1-50.html">&lt;p&gt;为了找工作，题还是要刷起来~&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/median-of-two-sorted-arrays/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们很容易想到需要使用二分来完成这道题，但它的输入却是两个数组，这使普通的二分对此题无效。解这道题的关键在于意识到如果数组 1 的 break point i 确定了，那么数组 2 的 break point j 也就确定了，因为我们需要维持中位数两端数字个数一致，因此我们只需要对 i 进行二分即可。这道题即使想到这里可能也需要一些时间才能写出，实现时我们需要对奇偶等一些细节进行判断。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-5&quot;&gt;Problem 5&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-palindromic-substring/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 看到这道题的直观想法是生成一个倒序字符串，然后使用动规找出最长公共子串，但是这样做需要考虑一种情况：acxyzca，它的“ac”和“ca”会被匹配到一起；另一种做法是直接动规，但是这道题最快的解法其实是最简单的解法，那就是遍历字符串的每一个字符，同时往两端查找，虽然这种做法和动规同样是 O(n^2) 的最坏复杂度，但是考虑到多数情况下字符串都不对称，因此它的实际复杂度应该接近于 O(n)。我相信这道题应该还有更快的解法，但是刚刚提到的解法已经可以满足这道题的速度要求了。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-11&quot;&gt;Problem 11&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/container-with-most-water/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我们显然不能使用暴力 O(n^2) 来解这道题，凭直觉来看也不大可能是任何带 log 的复杂度，因此我们只能硬着头皮使用 O(n) 复杂度的算法：贪心。想出贪心算法非常简单，贪心的难点永远在于对它正确性的证明。&lt;/p&gt;
+
+&lt;p&gt;这道题我们使用的贪心算法是：起初将左边界和右边界分别安放在最两端，然后我们将较矮的那个边界向中心收，以此循环，直到左右边界相碰，最优解一定存在于这个过程的某个状态中。我们需要通过反证法来证明这个算法的正确性：假设某一时刻左边界为 i，右边界为 j，我们假设左边界较矮，因此我们需要进行 i++。算法的反面是，存在一个最优解，它的左边界就是 i，右边界是小于 j 的某一个值，而我们 i++ 时把它错过了。我们很容易证明这个反面的错误性，因为任何以 i 为左边界，右边界小于 j 的容器体积都不可能有容器 (i, j) 大，这与我们的假设矛盾，也从而我们证明了贪心算法的正确性。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-16&quot;&gt;Problem 16&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/3sum-closest/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 这道题的解法其实很直观，暴力的话我们需要三重循环，但是其实这里有一个非常简单有效的优化，我们可以把首尾合到一个循环里，这样我们就可以使用 O(n^2) 的复杂度来解出这道题了。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-31&quot;&gt;Problem 31&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/next-permutation/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 先举一个例子：126543，它的下一个排列数是 132456。通过这个例子我们便已经可以得出算法了：倒序搜索这个数，找到第一个下降的点 2，颠倒它之后的所有数字 123456，再交换它与它之后的那个数字即可。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-32&quot;&gt;Problem 32&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-valid-parentheses/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 直接给出一维动规的解法，这个答案有点巧妙：假设我们已经找到了当字符串长度小于 n - 1 时最长合理括号的所有答案，那么如果第 n 位是“(”，答案保持不变；如果第 n 位是“)”，那么答案分两种情况：1. 如果第 n - 1 位是“(”，那么答案为上一步的答案加 2；2. 如果第 n - 1 位是“)”，上一步的答案为 a，那么答案为上一步的答案加 2 加上追踪到 a + 1 步前的答案。&lt;/p&gt;
+
+&lt;p&gt;一个简单的例子是：()((()))，前 7 步的答案是 ans = [0, 2, 2, 2, 2, 2, 4]，那么第 8 步的答案为 ans[7] + 2 + ans[7 - ans[7] - 1] = 4 + 2 + ans[2] = 8。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-37&quot;&gt;Problem 37&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/sudoku-solver/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 不用多想，DFS 是效率最高的解。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-41&quot;&gt;Problem 41&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/first-missing-positive/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 这道题很有意思，我们需要意识到一个问题，如果数组长度是 n 的话，那么我们需要找的那个丢掉的数一定是小于 n 的。根据这个思路我们就可以得出解决了，我们只需要遍历一下这个数组，如果扫描到数字 x，那么我们就把它放在第 x 位，如果 x 超出了 n，那么我们直接不管它即可；接着我们再扫描一次数组，找出数字不等于位置的第一个数，那个位置就是我们需要找的第一个丢失的整数。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-42&quot;&gt;Problem 42&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/trapping-rain-water/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 首先说这题的暴力思路：遍历每一个位置，往左往右找到边界，该位置的水的体积就是左右边界中的小值，这样的复杂度时 O(n^2)。优化它的思路也很简单，我们只需要实现正序倒序各遍历一次数组，求出每个位置的左右边界，计算水体积的时候直接查表，就可以成功地将复杂度压缩到 O(n)。&lt;/p&gt;
+
+&lt;h5 id=&quot;problem-45&quot;&gt;Problem 45&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/jump-game-ii/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt; 我觉得这个问题是有难度的。我们很容易可以想出 O(n^2) 复杂度的解，但是我们需要用线性的时间来完成这道题。解决它的思路是使用 BFS 去搜索，但是我们不会将图给建起来，因为建图的代价本身就是 O(n^2)。这里用了一个小技巧来标记 BFS 的 level，那就是当前能达到的最远的点：一旦越过了这个点，那么我们就需要另一跳来达到它之后的点。&lt;/p&gt;
+
+&lt;p&gt;还是举一个简单的例子：[2, 3, 1, 1, 4]，第一 level 是 2，因为 0 跳只能到起始点；第二 level 是 3， 1，因为根据 0 + 2 我们最远只能到 1 的位置；第三 level 是 1，4，因为 1 + 3 已经可以达到终点 4 了。&lt;/p&gt;
+
+&lt;p&gt;算法做的事情很简单，线性地扫描一次数组，如果当前位置超过了当前最大值，那么跳数加一；如果没有则看当前位置加当前距离能否更新当前最大值。当走到终点时的跳数就是我们需要的答案。&lt;/p&gt;</content><author><name></name></author><category term="算法" /><category term="求职" /><summary type="html">为了找工作，题还是要刷起来~</summary></entry></feed>
