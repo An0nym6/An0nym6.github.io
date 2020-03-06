@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Random Thoughts</title>
-  <meta name="description" content="©️ Designed by shuq3 & An0nym6">
+  <title>AI 第一部分“搜索”复习笔记</title>
+  <meta name="description" content="<p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
+
+">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/scss/main.css">
-  <link rel="canonical" href="/page4/">
+  <link rel="canonical" href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,107 +48,217 @@
         <div class="container">
   <div class="row">
     <div class="col-md-8 padding-top">
-      
-  <div class="post">
-    <div class="title">算法期末复习笔记</div>
-    <div class="date">2018 年 11 月 29 日</div>
-    <div class="padding-top">我在这学期选修了算法，期末考试的内容大概分为以下几个部分：动规、最大流算法及其应用、NP 问题、线性规划及对偶、近似算法和随机算法，本文是我准备期末考试时的复习笔记。</div>
-    <div class="padding-top">
-      <a href="/2018/11/29/%E7%AE%97%E6%B3%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">阅读全文</a>
-    </div>
-  </div>
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">AI 第一部分“搜索”复习笔记</div>
+    <div class="date" itemprop="datePublished">2018 年 09 月 22 日</div>
+  </header>
 
-  <div class="post">
-    <div class="title">AI 第三部分“机器学习”复习笔记</div>
-    <div class="date">2018 年 11 月 24 日</div>
-    <div class="padding-top">我在这学期选修了 AI，课程大纲大概分为三个部分：搜索、逻辑和机器学习，每个部分都有一次编程作业和一次测验，本文是我准备期末考试时的复习笔记。</div>
-    <div class="padding-top">
-      <a href="/2018/11/24/AI-%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">阅读全文</a>
-    </div>
-  </div>
+  <div class="padding-top" itemprop="articleBody">
+    <p>这门课程所使用的教材是 Artificial Intelligence: A Modern Approach，本份笔记直接沿用书本中对变量及名词的定义，在此没有对它们进行特殊解释。</p>
 
-  <div class="post">
-    <div class="title">AI 第二部分“逻辑”复习笔记</div>
-    <div class="date">2018 年 10 月 26 日</div>
-    <div class="padding-top">我在这学期选修了 AI，课程大纲大概分为三个部分：搜索、逻辑和机器学习，每个部分都有一次编程作业和一次测验，本文是我准备第二次测验时的复习笔记。</div>
-    <div class="padding-top">
-      <a href="/2018/10/26/AI-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%80%BB%E8%BE%91-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">阅读全文</a>
-    </div>
-  </div>
+<h4 id="lecture-1">Lecture 1</h4>
 
-  <div class="post">
-    <div class="title">算法期中复习笔记</div>
-    <div class="date">2018 年 10 月 09 日</div>
-    <div class="padding-top">我在这学期选修了算法，期中考试的内容大概分为以下几个部分：树与图、复杂度、贪心、分治与主定理和动规，本文是我准备期中考试时的复习笔记。</div>
-    <div class="padding-top">
-      <a href="/2018/10/09/%E7%AE%97%E6%B3%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">阅读全文</a>
-    </div>
-  </div>
+<ol>
+  <li>Agents are systems that perceive and act in some environment, including humans, robots, softbots, thermostats, etc.</li>
+  <li>Environment is world in which agent operates.</li>
+  <li>Cognitive Cycle: Perception, Memory Access, Decision, Learning, Action.</li>
+  <li>The agent function is a mathematical relationship that maps percept sequences to actions in the environment.</li>
+  <li>The agent function is computed by an agent program; the agent program runs on the physical architecture to implement the function.</li>
+  <li>A rational agent chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date and the prior environment knowledge.</li>
+  <li>PEAS description of the task environment:
+    <ul>
+      <li>Performance: Measure for success/progress/quality;</li>
+      <li>Environment: The world in which the agent operates;</li>
+      <li>Actuators: How the agent affects the environment;</li>
+      <li>Sensors: How the agent perceives the environment.</li>
+    </ul>
+  </li>
+  <li>Environment Types: fully vs. partially observable; deterministic vs. stochastic; episodic vs. sequential; static vs. dynamic; discrete vs. continuous; single vs. multi-agent.</li>
+  <li>Four basic kinds of agent programs:
+    <ul>
+      <li>Simple reflex agents: Select action on the basis of only the current percept;</li>
+      <li>Model-based reflex agents: To tackle partially observable environments; maintain internal state representing best estimate of current world situation; over time update state using world knowledge;</li>
+      <li>Goal-based agents: Goals describe what agent wants; by changing goals, can change what agent does in same situation;</li>
+      <li>Utility-based agents: Some solutions may be “better” – have higher utility; utility function maps a (sequence of) state(s) onto a real number which can help in optimization or in arbitration among goals or solutions;</li>
+      <li>All can be turned into learning agents; And a more complex variation is Hybrid agents.</li>
+    </ul>
+  </li>
+</ol>
 
-  <div class="post">
-    <div class="title">AI 第一部分“搜索”复习笔记</div>
-    <div class="date">2018 年 09 月 22 日</div>
-    <div class="padding-top">我在这学期选修了 AI，课程大纲大概分为三个部分：搜索、逻辑和机器学习，每个部分都有一次编程作业和一次测验，本文是我准备第一次测验时的复习笔记。</div>
-    <div class="padding-top">
-      <a href="/2018/09/22/AI-%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%9C%E7%B4%A2-%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">阅读全文</a>
-    </div>
-  </div>
+<h4 id="lecture-2-4">Lecture 2-4</h4>
 
-<nav aria-label="...">
-  <ul class="pagination justify-content-center">
-    
-      <li class="page-item">
-        <a class="page-link" href="/"><<</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="/page3/" tabindex="-1"><</a>
-      </li>
-    
-    
-    
-    
-    
-      
-      
-      
-    
-      
-      
-      
-        
-    
-      
-        <li class="page-item"><a class="page-link" href="/page2/">2</a></li>
-      
-    
-      
-        <li class="page-item"><a class="page-link" href="/page3/">3</a></li>
-      
-    
-      
-        <li class="page-item active">
-          <a class="page-link" href="#">4<span class="sr-only">(current)</span></a>
-        </li>
-      
-    
-      
-        <li class="page-item"><a class="page-link" href="/page5/">5</a></li>
-      
-    
-      
-        <li class="page-item"><a class="page-link" href="/page6/">6</a></li>
-      
-    
-    
-      <li class="page-item">
-        <a class="page-link" href="/page5/">></a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="/page6/">>></a>
-      </li>
-    
-  </ul>
-</nav>
+<ol>
+  <li>Blind/uninformed search; heuristic/informed search</li>
+  <li>Uninformed search stratigies:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>BFS</th>
+      <th>Uniform Cost</th>
+      <th>DFS</th>
+      <th>Depth limited</th>
+      <th>Iterative deepening</th>
+      <th>Bidirectional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complete?</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Optimal?</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>b^d</td>
+      <td>b^(1 + C* / ε)</td>
+      <td>b^m</td>
+      <td>b^l</td>
+      <td>b^d</td>
+      <td>b^(d / 2)</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>b^d</td>
+      <td>b^(1 + C* / ε)</td>
+      <td>b * m</td>
+      <td>b * l</td>
+      <td>b * d</td>
+      <td>b^(d / 2)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Why do people have a hard time solving missionaries and cannibals? There are a number of constraints on solutions to this problem, for example, the boat only holds one or two people, you can never have more cannibals than missionaries on either side of the river, etc. Constraints are generally thought of as making it harder to solve a problem.</li>
+</ol>
+
+<h4 id="lecture-5">Lecture 5</h4>
+
+<ol>
+  <li>Informed search stratigies:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>BestFS</th>
+      <th>A*</th>
+      <th>RBFS</th>
+      <th>((S)MA*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complete?</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y (same as A*)</td>
+      <td>Y (if solution is reachable)</td>
+    </tr>
+    <tr>
+      <td>Optimal?</td>
+      <td>N</td>
+      <td>Y (if admissible (Tree Search) or consistent (Graph Search))</td>
+      <td>Y (same as A*)</td>
+      <td>Y (if solution is reachable)</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>b^m</td>
+      <td>A* expands all nodes with f(n) &lt; C* (C* is cost of optimal path); some nodes with f(n) = C<em>; no nodes with f(n) &gt; C</em></td>
+      <td>hard</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>b^m</td>
+      <td>Exponential</td>
+      <td>b * d</td>
+      <td>constant</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>A heuristic is admissible if it never overestimates the cost to reach the goal.</li>
+  <li>A heuristic is consistent if for every node n and every successor n’ of n generated by any action: h(n) ≤ c(n, a, n’) + h(n’). A consistent heuristic is also admissible. It is rare for an admissible heuristic to be inconsistent.</li>
+  <li>Memory-Bounded Heuristic Search:
+    <ul>
+      <li>Iterative-deepening A* (IDA*): Cutoff information is the f-cost (g + h) instead of depth;</li>
+      <li>Recursive best-first search (RBFS): Search depth-first, only keep current path and branches from it in memory (saves memory over keeping entire level); Keep track of f value (f-limit) of best sibling of path currently exploring; a bit more efficient than IDA*;</li>
+      <li>(Simple) Memory-bounded A* ((S)MA*): Drop the worst-leaf node when memory is full.</li>
+    </ul>
+  </li>
+  <li>Branching factor → 1 ⇒ heuristic quality ↑.</li>
+</ol>
+
+<h4 id="lecture-6">Lecture 6</h4>
+
+<ol>
+  <li>The success of hill climbing depends very much on the shape of the state-space land-scape: if there are few local maxima and plateaux, random-restart hill climbing will find a good solution very quickly. NP-hard problems typically have an exponential number of local maxima to get stuck on. Despite this, a reasonably good local maximum can often be found after a small number of restarts.</li>
+  <li>Local beam search: Start with k randomly generated nodes; generate all successors of each of the k; keep the best k out of the them; repeat till goal or stop condition reached.</li>
+  <li>Simulated annealing: T ↓ ⇒ e^(△E / T) → -∞ ⇒ Probability of bad moves ↓</li>
+</ol>
+
+<h4 id="lecture-7">Lecture 7</h4>
+
+<ol>
+  <li>checkers/draughts: like chess; scrabble: like poker.</li>
+  <li>Minimax: Complete? Y; Optimal? Y; Time? O(b^m); Space? O(b * m) or O(m).</li>
+  <li>With “perfect ordering”, the alpha-beta pruning can reduce time complexity to O(b^(m/2)).</li>
+</ol>
+
+<h4 id="lecture-8">Lecture 8</h4>
+
+<ol>
+  <li>Methods for imporving backtracking efficiency in CSP:
+    <ul>
+      <li>Most constrained variable (minimum remaining values (MRV) heuristic): Choose the variable with the fewest legal values;</li>
+      <li>Most constraining variable: Choose the variable with the most constraints on remaining variables;</li>
+      <li>Least constraining value: Given a variable, choose the one that rules out the fewest values in the remaining variables.</li>
+    </ul>
+  </li>
+  <li>Forward checking: Keep track of remaining legal values for unassigned variables; terminate search when any variable has no legal values.</li>
+  <li>Arc consistency: Simplest form of propagation makes each arc consistent: X → Y is consistent iff for every value x of X there is some allowed y. Time complexity: O(n^2 * d^3) (n variables, d values), each arc can be queued only d times, n^2 arcs (at most), checking one arc is O(d^2).</li>
+  <li>Iterative min-conflicts is often surprisingly effective in solving CSP.</li>
+</ol>
+
+  </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
+
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
+
+</article>
 
     </div>
     <div class="col-md-4 padding-top">
