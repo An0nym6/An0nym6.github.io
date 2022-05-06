@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>操作系统期末复习笔记</title>
+  <meta name="description" content="<p>这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。后半学期老师逐渐脱离教材，开始自由发挥……</p>
+
+">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/scss/main.css">
+  <link rel="canonical" href="/2020/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/assets/js/av-min.js"></script>
+  <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <a href="/">
+      <img class="avatar" src="/assets/img/avatar.png" alt="">
+      <span class="header-title">Random Thoughts</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/archives/">归档</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">关于</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+    <main aria-label="Content">
+      <div>
+        <div class="container">
+  <div class="row">
+    <div class="col-md-8 padding-top">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="title" itemprop="name headline">操作系统期末复习笔记</div>
+    <div class="date" itemprop="datePublished">2020 年 04 月 30 日</div>
+  </header>
+
+  <div class="padding-top" itemprop="articleBody">
+    <p>这门课使用了斯坦福的 Pintos 项目，我觉得是一个很不错且有趣的项目。后半学期老师逐渐脱离教材，开始自由发挥……</p>
+
+<h4 id="virtual-memory">Virtual Memory</h4>
+
+<ol>
+  <li>Page and frame replacement algorithms:
+    <ol>
+      <li>FIFO: Can suffer from <strong>Belady’s Anomaly</strong>: More available frames can cause more page faults.</li>
+      <li>Optimal Algorithm: Replace page that will not be used for longest period of time: Not possible because can’t read the future.</li>
+      <li>LRU: Generally good &amp; frequently used.</li>
+      <li>Second-Chance Algorithm: Clock replacement. If a page has reference bit set to be 0, replace it; Otherwise, set the reference bit to 0, and check the next page.</li>
+      <li>Enhanced Second-Chance Algorithm: Consider (reference, modify).</li>
+      <li>Counting Algorithms: Keep a counter of number of references for each page:
+        <ol>
+          <li>LFU: Replace page with the smallest count.</li>
+          <li>MFU: Based on the argument that page with the smallest count was probably just brought in.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>Working Set: The set of resources, e.g. objects in memory, that are needed to work on the current task.</li>
+  <li>Thrashing: Page fault to get page, replace existing frame, but quickly need the replaced frame back: ∑ size of locality &gt; total memory size.
+    <ul>
+      <li>△ = working-set window = a fixed number of page references;</li>
+      <li>WSS<sub>i</sub> (working set of process P<sub>i</sub>) = total number of pages referenced in the most recent △;</li>
+      <li>D = ∑ WSS <sub>i</sub> = total demand frames: Approximation of locality;</li>
+      <li>D &gt; m: Thrashing.</li>
+    </ul>
+  </li>
+  <li>Stack growing down, heap growing up.</li>
+</ol>
+
+<h4 id="mass-storage-systems">Mass-Storage Systems</h4>
+
+<ol>
+  <li>Disk scheduling algorithms:
+    <ol>
+      <li>FCFS.</li>
+      <li>SCAN: Also called elevator algorithm.</li>
+      <li>C-SCAN: When it reaches the other end, it immediately returns to the beginning of the disk, without servicing any requests on the return trip.</li>
+      <li>SSTF: Shortest seek time first.</li>
+    </ol>
+  </li>
+  <li>
+    <p>Latencies:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>L1, L2, L3 cache</th>
+          <th>DRAM</th>
+          <th>SSD</th>
+          <th>Hard disk drive</th>
+          <th>Networking</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1ns, 3ns, 30ns</td>
+          <td>100ns</td>
+          <td>100μs</td>
+          <td>10ms</td>
+          <td>100ms</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Write amplification: A single write to a Flash-based SSD requires multiple writes and data movement:
+    <ul>
+      <li>Wear leveling: There is a limited number of times to which a unit of physical FLASH memory can be written. So, to maximize the capacity of an SSD drive by avoiding wearing parts out, when a block is written, if it has been written a lot recently, it is relocated.</li>
+      <li>Garbage collection: Data is written in smaller units than it is erased. So, as blocks are erased they are wasted until the larger unit that includes them can be erased. To free up space, blocks may need to be moved.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="file-systems">File Systems</h4>
+
+<ol>
+  <li>Caches:
+    <ol>
+      <li>Name cache (directory cache): Every time we look an inode # up, we cache it.</li>
+      <li>Block cache: a.k.a buffer cache or request cache, cache a block.
+        <ul>
+          <li>Unified cache: Page and block have the same size. This is a preferred solution for general-purpose OSes because flexibility is too important for a mixed workload with needs that vary over time.</li>
+          <li>Unified caches provide flexibility but it’s possible that one could starve the other: Data starving the processing that drives it.</li>
+        </ul>
+      </li>
+      <li>Inode cache: Inodes for open files are always kept in memory (up to any resource limit, then LRUed out memory):
+        <ul>
+          <li>Because inode is needed every time an access to the file data is made.</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Optimizations of organization of directory files:
+    <ol>
+      <li>A list of &lt;name, inode#&gt; tuples: For a few entries.</li>
+      <li>A tree (B-tree) of the same:
+        <ul>
+          <li>Dense on disk: Many comparisons per page;</li>
+          <li>Self-balancing;</li>
+          <li>Easy way to do in-order listing.</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>fsck: File system check: Verifies and makes consistent the FS metadata.</li>
+  <li>Ext4 Journaling: For consistency checking at start-up. Without it all metadata needs to be checked. With it, only open transactions need to be checked.
+    <ol>
+      <li>Journaled: Both metadata &amp; file data.</li>
+      <li>Ordered: Only metadata, but data are written to disk before the metadata is logged (or flushed into the FS).</li>
+      <li>Writeback: Only metadata and no control on the order.</li>
+    </ol>
+  </li>
+  <li>Per process file descriptor table: It exists to allow processes to share the same open file table entry. This might, for example, be the case with fork()s. Consider, for example the case of a pipe. The parent creates the two file descriptors, one for read and one for write, and each child gets its own copy. This enables one child to write into the pipe and another child to read from it.</li>
+  <li>System-wide open file table: It keeps track of file sessions. For example, what mode(s), e.g. read, write, read-write, etc, are permitted for the session, and the current offset into the file.</li>
+</ol>
+
+<h4 id="virtual-machines--containers">Virtual Machines &amp; Containers</h4>
+
+<ol>
+  <li>Why VM is important for cloud: Sharing of resources, fungibility, isolation, elasticity, robustness, metering.</li>
+  <li>Full-virtualization &amp; paravirtualization:
+    <ul>
+      <li>Full-virtualization: Virtual machines runs entirely as a program in guest OS without any special support from guest OS.</li>
+      <li>Paravirtualization: Host OS modified to provide an API to enable VM to request the host to perform operations on behalf of the guest.</li>
+    </ul>
+  </li>
+  <li>Hardware support: Eliminate problems for traps, hardware access like I/O, supervisor vs user mode.</li>
+  <li>Guest OS maintains a page table (shadow page table). When accesses fault, real OS looks in shadow page table, translates, fixes the page table, and operation resumes. Effectively, these are read-only page tables for the guest as they can only be updated by the host.</li>
+  <li>Containers: Maintain one host OS and share it for efficiency.</li>
+  <li>Mount points are the points where one file system grafted into another file system.</li>
+  <li>Hard link: It is the name -&gt; inode mapping in a directory file. Soft link: The soft linked file has a separate inode value that points to the original file.</li>
+</ol>
+
+  </div>
+  <!-- 引入评论系统 -->
+  <div>
+  <div class="divider"></div>
+  <div class="comment-title">评论</div>
+  <div id="comment"></div>
+</div>
+
+<script>
+  new Valine({
+    el: '#comment',
+    appId: '3j4RFjcpQQ8wNfd7DBwLm4vt-gzGzoHsz',
+    appKey: 'T5aGxAv2Mx0b1avzokvvpbYD',
+    placeholder: '添加评论',
+  })
+</script>
+
+</article>
+
+    </div>
+    <div class="col-md-4 padding-top">
+      <div class="card tags">
+        <div class="card-header card-title">
+          标签
+        </div>
+        <div class="card-body">
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/算法">算法</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 42%);">5</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/计算机系统">计算机系统</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 45%);">4</span>
+                </div>
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/阅读">阅读</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 49%);">3</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/人工智能">人工智能</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 49%);">3</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/软件工程">软件工程</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 49%);">3</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/求职">求职</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 49%);">3</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/网络">网络</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 52%);">2</span>
+                </div>
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/旅行">旅行</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 52%);">2</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/云计算">云计算</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 52%);">2</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/图像处理">图像处理</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 52%);">2</span>
+                </div>
+              
+            
+              
+            
+              
+            
+          
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/博客">博客</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 56%);">1</span>
+                </div>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="chip">
+                  <a class="tag" href="/archives/tag/Python 语言">Python 语言</a>
+                  <span class="count" style="background-color: hsl(208, 80%, 56%);">1</span>
+                </div>
+              
+            
+          
+        </div>
+      </div>
+      <div class="card new-essays">
+        <div class="card-header card-title">
+          最新文章
+        </div>
+        <ul class="list-group list-group-flush">
+            
+              
+                <li class="list-group-item">
+                  <a href="/2022/05/06/%E7%A7%91%E7%9B%AE%E4%B8%80%E7%AC%94%E8%AE%B0.html">科目一笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2020/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">操作系统期末复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2020/03/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">操作系统期中复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/12/13/%E5%9B%BE%E5%83%8F%E4%B8%8E%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">图像与视频处理期末复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/12/11/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">软件验证与测试期末复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/12/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">计算机系统导论期末复习笔记</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/11/28/Python-%E7%9A%84%E5%A5%87%E5%A6%99%E7%94%A8%E6%B3%95.html">Python 的奇妙用法</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/11/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93.html">计算机网络知识总结</a>
+                </li>
+              
+            
+              
+                <li class="list-group-item">
+                  <a href="/2019/10/29/%E8%BD%AF%E4%BB%B6%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.html">软件验证与测试期中复习笔记</a>
+                </li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </main>
+    <footer>
+  <div class="container">
+    <div class="divider"></div>
+    <div class="row footer-content">
+      <div class="col-md col-left">
+        <i class="fas fa-paint-brush icon"></i>
+        <span>Designed by shuq3 & An0nym6</span>
+      </div>
+      <div class="col-md col-middle">
+        <i class="fab fa-github icon"></i>
+        <a href="https://github.com/An0nym6">An0nym6</a>
+      </div>
+      <div class="col-md col-right">
+        <i class="fas fa-envelope icon"></i>
+        <a href="mailto:liuren6@gmail.com">liuren6@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
